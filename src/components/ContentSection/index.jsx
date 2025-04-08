@@ -23,7 +23,7 @@ function ContentSection() {
 
         <div className="profile-info">
           <h2>Alexis Vega</h2>
-          <p className="profile-title">Dev.Software</p>
+          <p className="profile-title">Desarrollador</p>
         </div>
       </div>
 
