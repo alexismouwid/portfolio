@@ -34,18 +34,22 @@
 }
 
 .cta-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: #FFC300;
+  padding: 1rem 2rem;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  transition: all 0.3s ease;
+  position: relative;
+  top: 4rem;
+  }
 
 .cta-button:hover {
-  background-color: #2980b9;
+  cursor: pointer;
+   background-color: #e6ac00;
+  color: #000000;
+  border: none;
+
 }
 
 /* Sección Perfil */
@@ -186,4 +190,32 @@
   top: 0rem;
   left: 2.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .hero-section {
+    position: relative;
+    left: -2rem;
+    width: 100%;
+    height: auto;
+  }
+  .profile-section {
+    position: relative;
+    left: 1.2rem;
+    width: 70%;
+    height: 31rem;
+  }
+  .profile-title {
+    position: relative;
+    left: 4rem;
+  }
+  .skills-section {
+    width: 80%;
+    height: auto;
+  }
+
+
 }

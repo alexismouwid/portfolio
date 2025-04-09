@@ -11,7 +11,7 @@ function ContentSection() {
           <p style={{ color: '#FFC300' , fontSize: '3rem'}}>Visualizar </p>
         Su Idea</h1>
         <p style={{ fontSize: '1rem', position: 'relative', top: '2rem' }}>Cuento con el conocimiento y las herramientas necesarias</p>
-        <button style={{fontweight: 'bold', color: 'black', backgroundColor: '#FFC300', position: 'relative', top: '4rem' }} className="cta-button">Contactame Ahora</button>
+        <button className="cta-button">Contactame Ahora</button>
       </div>
 
       {/* Sección 2: Perfil */}
@@ -91,21 +91,36 @@ function ContentSection() {
             <div className="skill-item-busqueda">
               <span className="skill-icon-busqueda">Buscame en</span>
 
-              <a className='links-redes'> <img width="30px" height="30px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" className="skill-icon" /> </a>
-            <a className='links-redes'><img width="30px" height="30px" src="./git.png" alt="Github" className="skill-icon" />
- </a>
+              <a 
+              href="https://www.linkedin.com/in/alexis-vega-3b4437333/" 
+              target="_blank"   
+              rel="noopener noreferrer" 
+              className='links-redes'> 
+              <img 
+              width="30px" height="30px" 
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
+              className="skill-icon"/> 
+              </a>
 
-              <a className='links-redes'>   <img width="30px" height="30px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" className="skill-icon" />
+            <a 
+              href="https://github.com/alexismouwid" 
+              target="_blank"   
+              rel="noopener noreferrer" 
+              className='links-redes'>
+              <img 
+              width="30px" height="30px" 
+              src="./git.png" alt="Github" 
+              className="skill-icon" />
  </a>
-                                     </div>
+                                                 </div>
             
           </div>
         </div>
       </div>
 
     </div>
-      <h1 style={{ position: 'relative', fontSize: '1.6rem',bottom: '1.5rem',fontweight: 'bold', color: 'black', backgroundColor: '#FFC300' }}> Cuenta con experiencia en el diseño de interfaces y experiencias 
-         digitales para web, apps móviles y software a medida. </h1>
+      <h2 style={{textAlign: "center", backgroundColor: "black", color: "white",margin: '0'}}> Cuenta con experiencia en el diseño de interfaces y experiencias 
+         digitales para web, apps móviles y software a medida. </h2>
     </>
   );
 }

@@ -18,7 +18,7 @@ function Header() {
             <li><a href="#proyectos" className="nav-link">Proyectos</a></li>
             <li><a href="#contacto" className="nav-link">
 
-<button  style={{ position: 'relative', top: '-0.5rem',fontweight: 'bold', color: 'black', backgroundColor: '#FFC300' }} className="cta-button">Contactame Ahora</button>
+<button   className="cta-buttonh">Contactame Ahora</button>
 
             </a></li>
           </ul>
