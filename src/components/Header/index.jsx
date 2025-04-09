@@ -1,31 +1,118 @@
-import React from 'react';
-import './Header.css';
 
-function Header() {
+import { useState, useEffect } from "react";
+import "./header.css";
+
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      if (!mobile) setMenuOpen(false);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [menuOpen]);
+
   return (
-    <header className="header">
-      <div className="header-container">
-  
-        <div className="logo">
-          <span className="logo-text">ALEXIS.IO</span>
-        </div>
+    <nav className="navbar">
+      <div className="navbar-container">
+               {/* Botón de menú hamburguesa solo en móvil */}
+        {isMobile && (
+          <button className="menu-button" onClick={toggleMenu}>
+            ☰
+          </button>
+        
+        )}
+        <span className="logo-rtx"> Alexis Logo</span>
+       
+        {/* Renderizado condicional de los menús */}
+        {isMobile ? (
+          <ul className={`nav-links-mobile ${menuOpen ? "active" : ""}`}> 
+            
 
-        {/* Menú de navegación */}
-        <nav className="nav-menu">
-          <ul className="nav-list">
-            <li><a href="#home" className="nav-link active">Home</a></li>
-            <li><a href="#servicios" className="nav-link">Servicios</a></li>
-            <li><a href="#proyectos" className="nav-link">Proyectos</a></li>
-            <li><a href="#contacto" className="nav-link">
+            <div className="header-menu-mobile"> 
 
-<button   className="cta-buttonh">Contactame Ahora</button>
+              <div className="logo-menu-mobile"> Alexis Logo
+                             </div>
+          <button className="button-close-menu" onClick={toggleMenu}>
+             x
+          </button>
+           </div>
 
-            </a></li>
+
+            <li className="li-mobile">
+              <button className="btn1">Home </button> 
+            </li>
+            <li className="li-mobile">
+              <button className="btn2">Servicios</button>
+            </li>
+            <li className="li-mobile">
+              <button className="btn3">Proyectos</button>
+              <span className="check">Recientes</span>
+            </li>
+            
+            
+<li className="li-life">
+ {/*Btn-6*/}<button className="btn6">Contactame ahora</button>
+            </li>
+            
+
+
+
+
+                     </ul>
+        ) : (
+             
+          <ul className="nav-links-desktop">
+                      <div className="logo">
+              <img src="./nombre-logo.png" alt="Logo" width="170px" />
+            </div>
+
+            <li className="li-desktop" >
+ {/*Btn-1*/} <button className="button1-desktop">Home</button>
+            </li>
+            
+              <li className="li-desktop">
+ {/*Btn-2*/}<button className="button2-desktop">
+              Servicios
+             </button>
+            </li>
+            
+                <li className="li-desktop">
+ {/*Btn-3*/}   <button className="button3-desktop">Proyectos
+              <span className="check">Recientes</span>
+              </button>
+            </li>
+            
+                       
+
+              <li className="li-desktop">
+ {/*Btn-6*/}<button className="button6-desktop">Contactame ahora</button>
+            </li>
           </ul>
-        </nav>
+        )}
       </div>
-    </header>
+    </nav>
   );
-}
+};
 
 export default Header;
+
