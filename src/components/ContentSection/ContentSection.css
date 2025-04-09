@@ -54,7 +54,6 @@
 
 /* Sección Perfil */
 .profile-section {
-  background-image: url('./perfil.png');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -75,7 +74,14 @@
 .profile-image {
   flex: 0 0 150px;
 }
-
+.perfil {
+  position: relative;
+  right: 2rem;
+  width: 120%;
+  height: 120%;
+  bottom: 2rem;
+  border: 2px solid #FFC300;
+}
 
 .profile-info{
   display: flex;
@@ -87,10 +93,12 @@
   width: 100%;
   height: 2%;
   position: relative;
-  top: 17.3rem;
+  bottom: 2.5rem;
   blur: 5px;
   background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
 }
+
 .profile-info h2 {
   font-size: 1.2rem;
   color: #FFC300;
