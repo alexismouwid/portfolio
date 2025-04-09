@@ -17,7 +17,7 @@ function ContentSection() {
       {/* Sección 2: Perfil */}
       <div className="profile-section">
         <div className="profile-image">
-          <img className="perfil" src="./perfil.png" alt="Perfil" />
+          <img className="perfil" src="./test.jpg" alt="Perfil" />
         </div>
        
 
