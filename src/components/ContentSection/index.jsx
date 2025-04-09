@@ -97,7 +97,7 @@ function ContentSection() {
               rel="noopener noreferrer" 
               className='links-redes'> 
               <img 
-              width="30px" height="30px" 
+              width="45px" height="45px" 
               src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
               className="skill-icon"/> 
               </a>
@@ -108,7 +108,7 @@ function ContentSection() {
               rel="noopener noreferrer" 
               className='links-redes'>
               <img 
-              width="30px" height="30px" 
+              width="45px" height="45px" 
               src="./git.png" alt="Github" 
               className="skill-icon" />
  </a>
