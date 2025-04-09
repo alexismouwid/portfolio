@@ -23,7 +23,8 @@ const ProyectosRecientes = ({ refProyectos }) => {
         <div className="proyecto-box">
           <div className="imagen-placeholder">
             <img
-              src='/paint.jpg'
+              src={isMobile ? '/paint-mobile.jpg' : '/paint.jpg'}
+
               alt="paint"
               className="image-proyect"
             />
