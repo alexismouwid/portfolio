@@ -23,9 +23,10 @@
 .logo-rtx{
   display: none;
 }
-.logo{
+.logo img{
   position: relative;
-  right: 5rem;
+  right: 32rem;
+  bottom: 61px;
 }
 .desktop-logo{
   margin-right: 45px;

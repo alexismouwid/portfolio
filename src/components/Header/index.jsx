@@ -41,7 +41,7 @@ const Header = () => {
           </button>
         
         )}
-        <span className="logo-rtx"> Alexis Logo</span>
+        <span className="logo-rtx"> <img src="./logo.png" alt="Logo" width="140px" />   </span>
        
         {/* Renderizado condicional de los menús */}
         {isMobile ? (
@@ -50,7 +50,7 @@ const Header = () => {
 
             <div className="header-menu-mobile"> 
 
-              <div className="logo-menu-mobile"> Alexis Logo
+              <div className="logo-menu-mobile"> <img src="./logo.png" alt="Logo" width="140px" />
                              </div>
           <button className="button-close-menu" onClick={toggleMenu}>
              x
@@ -83,7 +83,7 @@ const Header = () => {
              
           <ul className="nav-links-desktop">
                       <div className="logo">
-              <img src="./nombre-logo.png" alt="Logo" width="170px" />
+              <img src="./logo.png" alt="Logo" width="120px" />
             </div>
 
             <li className="li-desktop" >

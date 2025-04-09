@@ -1,9 +1,3 @@
-
- 
-
-
-
-
 /* 📱🔹 Móviles grandes */
 @media (max-width: 768px) and (min-width: 601px) {
  
@@ -35,7 +29,7 @@
 .logo-rtx{
   display: block;
   position: relative;
-  right: 10.2rem;
+  right: 9rem;
   top: 2px;
 }
 
@@ -69,10 +63,10 @@
 
 .nav-links-mobile {
   position: absolute;
-  top: -10px;
+  top: -60px;
   left: -100%;
   width: 100%;
-  min-height: auto;
+  min-height: 50;
   background: rgba(0,0,0,0.5);
   display: flex;
   align-items: left;
@@ -87,7 +81,7 @@
 .nav-links-mobile.active {
   position: fixed;
   left: 0;
-  min-height: 100vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
@@ -230,9 +224,9 @@ bottom: 10px;
 .logo-rtx{
   display: block;
   position: relative;
-  left: -7rem;
+  left: -3rem;
 }
-.logo-img-rtx{
+.logo-rtx img{
   display: block;
   width: 180px;
   position: relative;
@@ -274,11 +268,10 @@ bottom: 10px;
 
 .nav-links-mobile {
   position: absolute;
-  top: -10px;
+  top: -60px;
   left: -100%;
   width: 100%;
-  min-height: 50vh;
-
+  min-height: 60vh;
  backdrop-filter: blur(5px);
  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -294,7 +287,7 @@ bottom: 10px;
 .nav-links-mobile.active {
   position: fixed;
   left: 0;
-  min-height: 50vh;
+  min-height: 60vh;
  backdrop-filter: blur(5px);
   overflow: hidden;
  background-color: rgba(0, 0, 0, 0.7);
@@ -382,7 +375,7 @@ bottom: 10px;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 12px;
-  background-color: yellow;
+  background-color:  #FFC300;
   color: #000;
   font-size: 20px;
   width: calc(80vw - 20%);
@@ -396,7 +389,7 @@ bottom: 10px;
 }
 
 /* 📱🔹 Móviles ultra pequeños (Ej: iPhone SE, 320px) */
-@media (max-width: 350px) { 
+@media (max-width: 400px) { 
  .navbar{
     height: 45px;
   }
@@ -416,21 +409,19 @@ bottom: 10px;
   font-size: 18px;
   position: relative;
   cursor: pointer;
-  color: black;
+  color: white;
   margin-left: 5px;
 }
 .logo-rtx{
   display: block;
   position: relative;
   right: 8rem;
-  top: 2px;
 }
-.logo-img-rtx{
+.logo-rtx img{
   display: block;
-  width: 140px;
+  width: 150px;
   position: relative;
-  left: 1.6rem;
-  top: 1.5px;
+  left: -4rem;
 }
 
 
@@ -449,7 +440,7 @@ bottom: 10px;
     top: 2rem;
      }
   .logo-img-menu-mobile{
-       width: 150px;
+       width: 80px;
      }
      .button-close-menu{
        border: none;
@@ -459,7 +450,7 @@ bottom: 10px;
        align-items: center;
        font-size: 25px;
        cursor: pointer;
-       color: black;
+       color: white;
        position: relative;
        left: 3rem;
        top: 2rem;
@@ -467,11 +458,11 @@ bottom: 10px;
 
 .nav-links-mobile {
   position: absolute;
-  top: -10px;
+  top: -60px;
   left: -100%;
   width: 100%;
-  min-height: 40vh;
-  background: #fff;
+  min-height: 60vh;
+  background: #000;
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -485,13 +476,12 @@ bottom: 10px;
 .nav-links-mobile.active {
   position: fixed;
   left: 0;
-  min-height: 100vh;
+  min-height: 60vh;
   overflow: hidden;
 }
 
 .li-mobile{
   position: relative;
-  top: 50px;
   left: 15px;
   margin-top: 30px;
   height: 20px;
@@ -505,26 +495,13 @@ bottom: 10px;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   }
 
-  .li-end{
-    position: relative;
-     top: 50px;
-  left: 15px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    justify-content: left;
-    font-size: 11px;
-    transition: 0.20s;
-    padding: 0px 15px;
-    text-align: center;
-  }
-
-.btn1, .btn2 , .btn3 , .btn4, .btn5{
+ 
+.btn1, .btn2 , .btn3 , .btn4{
   height: 30px;
-color: rgba(0,0,0,0.8);
+color: #fff;
 position: relative;
 right: 27px;
-background-color: #fff;
+background-color: #000;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -537,37 +514,33 @@ border: none;
 }
 
 
-.btn1:hover, .btn2:hover , .btn3:hover , .btn4:hover, .btn5:hover{
-  color: #000000;
+.btn1:hover, .btn2:hover , .btn3:hover , .btn4:hover{
+  color: #fff;
   cursor: pointer;
   font-weight: bold;
 }
 
 .btn1:hover{
-  border-left: 5px solid green;
+  border-left: 5px solid  #FFC300;
 }
 .btn2:hover{
-  border-left: 5px solid red;
+  border-left: 5px solid #ffc300;
 }
 .btn3:hover{
-  border-left: 5px solid blue;
+  border-left: 5px solid #ffc300;
 }
 .btn4:hover{
-  border-left: 5px solid yellow;
+  border-left: 5px solid #ffc300;
 }
-.btn5:hover{
-  border-left: 5px solid black;
-}
-
 .check{
-  background-color: #328dde;
+  background-color: #ffc300;
   text-align: center;
   justify-content: center;
   align-items: center;
    font-size: 14px;
 position: relative;
 right: 39px;
-bottom: 10px;
+bottom: 2px;
   margin-bottom: 25px;
   height: 13px;
   width: 60px;
@@ -580,11 +553,11 @@ bottom: 10px;
 .btn6{
   position: relative;
   right: 0;
-  top: 60px;
+  top: 20px;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 12px;
-  background-color: transparent;
+  background-color:#ffc300;
   color: #000;
   font-size: 18px;
   width: calc(100vw - 10%);
@@ -592,50 +565,8 @@ bottom: 10px;
   height: 28px;
   transition: 0.20s;
   border: 2.1px solid #000;
-}
-
-.footer-menu-mobile{
-  
-  position: relative;
-  top: 7.4rem;
-  left: 0;
-  background-color: rgba(0,0,0,0.9);
-  width: calc(100vw - 0%);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: left;
-  align-items: left;
-  gap: 20px;
-}
-
-.btn1-footer, .btn2-footer, .btn-avianca-footer {
-
-  margin-top: 10px;
-  color: #fff;
-  position: relative;
-  top: 5rem;
-  background-color: transparent;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: 20px;
-  padding:0 15px;
-  text-align: center;
-  border: none;
-
-}
 
 
-
-.global-logo{
-  margin-right: 10px;
-}
-
-.colombia-logo{
-
-  margin-right: 10px;
 
 }
 
