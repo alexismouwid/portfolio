@@ -207,29 +207,22 @@
     height: auto;
   }
 .perfil {
-  position: relative;
-  right: 2rem;
-  width: 122%;
-  height: 122.5%;
-  bottom: 2rem;
-  border: 2px solid #ffc300;
-}
+  height: 125%;
+ }
 .profile-info{
-  top: 1.75rem;
+  top: 0.1rem;
 }
 
   .profile-section {
     position: relative;
-    left: 1.2rem;
-    width: 70%;
-    height: 31rem;
+    width: 100%;
   }
   .profile-title {
     position: relative;
-    left: 4rem;
+    left: 6rem;
   }
   .skills-section {
-    width: 80%;
+    width: 90%;
     height: auto;
   }
 
