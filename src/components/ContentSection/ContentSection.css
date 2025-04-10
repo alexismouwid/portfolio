@@ -1,6 +1,7 @@
 .content-container {
   max-width: 1666px;
   margin: 0 auto;
+  margin-top: 10vh;
   padding: 2rem;
   display: flex;
   flex-direction: row;

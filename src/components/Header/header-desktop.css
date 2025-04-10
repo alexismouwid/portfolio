@@ -1,4 +1,8 @@
 .navbar {
+position: fixed;        /* Lo hace quedarse fijo */
+  top: 0;                 /* Pegado al borde superior */
+  left: 0;                /* Pegado al borde izquierdo */
+  z-index: 9999;          /* Asegura que quede por encima de otros elementos */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,7 +29,7 @@
 }
 .logo img{
   position: relative;
-  right: 35rem;
+  right: 25rem;
   bottom: 61px;
 }
 .desktop-logo{
@@ -39,7 +43,7 @@
 
 .nav-links-desktop{
   position: relative;
-  left: 36rem;
+  left: 25rem;
   list-style: none;
     display: flex;
     flex-direction: row;
@@ -64,7 +68,7 @@ transition: 0.20s;
   cursor: pointer;
     font-weight: bold;
 }
-.button1-desktop, .button2-desktop, .button3-desktop {
+.button1-desktop, .button2-desktop, .button3-desktop, .button4-desktop{
   position: relative;
   background-color: #000;
   color: #fff;
@@ -75,7 +79,7 @@ transition: 0.20s;
   transition: 0.20s;
   border: none;}
 
-  .button1-desktop:hover, .button2-desktop:hover,.button3-desktop:hover{
+  .button1-desktop:hover, .button2-desktop:hover,.button3-desktop:hover, .button4-desktop:hover{
     cursor: pointer;
     font-weight: bold;
   }
@@ -123,10 +127,17 @@ transition: 0.20s;
   width: 180px;
  height: 49px;
 }
+.nav-links-desktop li:nth-child(5) { 
+  width: 200px;
+ height: 49px;
+}
+
 /* Borde inferior solo en hover */
 .nav-links-desktop li:nth-child(2):hover { border-bottom: 5px solid #FFC300; }
 .nav-links-desktop li:nth-child(3):hover { border-bottom: 5px solid #FFC300; }
 .nav-links-desktop li:nth-child(4):hover { border-bottom: 5px solid #FFC300; }
+.nav-links-desktop li:nth-child(5):hover { border-bottom: 5px solid #FFC300; }
+
 
 
 

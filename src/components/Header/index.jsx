@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -59,14 +59,18 @@ const Header = () => {
 
 
             <li className="li-mobile">
-              <button className="btn1">Home </button> 
+              <button onClick={scrollToHome} className="btn1">Home </button> 
             </li>
             <li className="li-mobile">
-              <button className="btn2">Servicios</button>
+              <button onClick={scrollToServicios} className="btn2">Servicios</button>
             </li>
             <li className="li-mobile">
-              <button className="btn3">Proyectos</button>
+              <button onClick={scrollToProyectos} className="btn3">Proyectos</button>
               <span className="check">Recientes</span>
+            </li>
+            <li className="li-mobile">
+              <button onClick={scrollToPreguntas} className="btn4">Preguntas</button>
+              <span className="check">Frecuentes</span>
             </li>
             
             
@@ -87,21 +91,24 @@ const Header = () => {
             </div>
 
             <li className="li-desktop" >
- {/*Btn-1*/} <button className="button1-desktop">Home</button>
+ {/*Btn-1*/} <button onClick={scrollToHome} className="button1-desktop">Home</button>
             </li>
             
               <li className="li-desktop">
- {/*Btn-2*/}<button className="button2-desktop">
+ {/*Btn-2*/}<button onClick={scrollToServicios} className="button2-desktop">
               Servicios
              </button>
             </li>
             
                 <li className="li-desktop">
- {/*Btn-3*/}   <button className="button3-desktop">Proyectos
+ {/*Btn-3*/}   <button onClick={scrollToProyectos} className="button3-desktop">Proyectos
               <span className="check">Recientes</span>
               </button>
             </li>
-            
+            <li className="li-mobile">
+              <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
+              <span className="check">Frecuentes</span>
+            </li>
                        
 
               <li className="li-desktop">

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Servicios.css";
 
-const Servicios = () => {
+const Servicios = forwardRef((_, ref) => {
   return (
-    <section className="servicios-container">
+    <section className="servicios-container" ref={ref}>
       <h2 className="servicios-titulo">Servicios que ofrezco</h2>
       <div className="servicios-grid">
         <div className="servicio-box">
@@ -32,11 +32,13 @@ const Servicios = () => {
         </div>
       </div>
       <div className="boton-container">
-        <button className="boton-contacto">Contactame</button>
+        <button className="boton-contacto" aria-label="Ir a la sección de contacto">
+          Contáctame
+        </button>
       </div>
     </section>
   );
-};
+});
 
 export default Servicios;
 
