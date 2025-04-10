@@ -25,7 +25,7 @@
   width: 26%;
   height: 360px;
   background-color: black;
-  border: 1px solid white;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -114,10 +114,13 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-bottom: 10px;
-    overflow-x: auto;  }
+    overflow-x: auto; 
+    gap: 1rem; 
+  }
 
   .proyecto-box {
-    border: 1px solid white;
+    
+    border: none;
     flex: 0 0 auto;
     scroll-snap-align: start;
     min-width: 90%;
