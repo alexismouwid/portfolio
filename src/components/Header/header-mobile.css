@@ -197,7 +197,7 @@ bottom: 10px;
 .menu-button {
   display: flex;
   position: relative;
-  left: 0.3rem;
+  left: 1.6rem;
   top: 0px;
   background: none;
   border: none;
@@ -214,10 +214,9 @@ bottom: 10px;
   left: -3rem;
 }
 .logo-rtx img{
-  display: block;
-  width: 180px;
+  width: 160px;
   position: relative;
-  right: 15rem;
+  right: 17rem;
 }
 
 
@@ -237,7 +236,7 @@ bottom: 10px;
 
      .logo-menu-mobile img{
        position: relative;
-       right: 3rem;
+       right: 4rem;
        width: 140px;
      }
      .button-close-menu{
@@ -390,11 +389,11 @@ bottom: 10px;
 .menu-button {
   display: flex;
   position: relative;
-  left: 0.3rem;
+  left: 1.2rem;
   top: 0px;
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
   cursor: pointer;
   color: white;
@@ -408,8 +407,8 @@ bottom: 10px;
 }
 .logo-rtx img{
   display: block;
-  width: 150px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
  background-color: transparent;
   position: relative;
   left: -15rem;
@@ -429,12 +428,12 @@ bottom: 10px;
     background-color: transparent;
     display: flex;
     position: relative;
-    right: 5rem;
+    right: 2rem;
     top: 2rem;
      }
   .logo-menu-mobile img{
         background-color: transparent;
-       width: 135px;
+       width: 140px;
      }
      .button-close-menu{
        border: none;
