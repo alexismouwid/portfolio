@@ -57,6 +57,7 @@
 }
 
 .faq-pregunta {
+  color: white;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
