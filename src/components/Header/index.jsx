@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import "./header.css";
 
-const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas}) => {
+const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -31,88 +31,77 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
     }
   }, [menuOpen]);
 
+  const handleClick = (scrollFn) => {
+    scrollFn();
+    if (menuOpen) toggleMenu();
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-               {/* Botón de menú hamburguesa solo en móvil */}
         {isMobile && (
           <button className="menu-button" onClick={toggleMenu}>
             ☰
           </button>
-        
         )}
-        <span className="logo-rtx"> <img src="./logo.png" alt="Logo" width="140px" />   </span>
-       
-        {/* Renderizado condicional de los menús */}
+
+        <span className="logo-rtx">
+          <img src="./logo.png" alt="Logo" width="140px" />
+        </span>
+
         {isMobile ? (
-          <ul className={`nav-links-mobile ${menuOpen ? "active" : ""}`}> 
-            
-
-            <div className="header-menu-mobile"> 
-
-              <div className="logo-menu-mobile"> <img src="./logo.png" alt="Logo" width="140px" />
-                             </div>
-          <button className="button-close-menu" onClick={toggleMenu}>
-             x
-          </button>
-           </div>
-
+          <ul className={`nav-links-mobile ${menuOpen ? "active" : ""}`}>
+            <div className="header-menu-mobile">
+              <div className="logo-menu-mobile">
+                <img src="./logo.png" alt="Logo" width="140px" />
+              </div>
+              <button className="button-close-menu" onClick={toggleMenu}>
+                x
+              </button>
+            </div>
 
             <li className="li-mobile">
-              <button onClick={scrollToHome} className="btn1">Home </button> 
+              <button onClick={() => handleClick(scrollToHome)} className="btn1">Home</button>
             </li>
             <li className="li-mobile">
-              <button onClick={scrollToServicios} className="btn2">Servicios</button>
+              <button onClick={() => handleClick(scrollToServicios)} className="btn2">Servicios</button>
             </li>
             <li className="li-mobile">
-              <button onClick={scrollToProyectos} className="btn3">Proyectos</button>
+              <button onClick={() => handleClick(scrollToProyectos)} className="btn3">Proyectos</button>
               <span className="check">Recientes</span>
             </li>
             <li className="li-mobile">
-              <button onClick={scrollToPreguntas} className="btn4">Preguntas</button>
+              <button onClick={() => handleClick(scrollToPreguntas)} className="btn4">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
-            
-            
-<li className="li-life">
- {/*Btn-6*/}<button className="btn6">Contactame ahora</button>
+            <li className="li-life">
+              <button className="btn6">Contactame ahora</button>
             </li>
-            
-
-
-
-
-                     </ul>
+          </ul>
         ) : (
-             
           <ul className="nav-links-desktop">
-                      <div className="logo">
+            <div className="logo">
               <img src="./logo.png" alt="Logo" width="120px" />
             </div>
 
-            <li className="li-desktop" >
- {/*Btn-1*/} <button onClick={scrollToHome} className="button1-desktop">Home</button>
+            <li className="li-desktop">
+              <button onClick={scrollToHome} className="button1-desktop">Home</button>
             </li>
-            
-              <li className="li-desktop">
- {/*Btn-2*/}<button onClick={scrollToServicios} className="button2-desktop">
-              Servicios
-             </button>
+            <li className="li-desktop">
+              <button onClick={scrollToServicios} className="button2-desktop">Servicios</button>
             </li>
-            
-                <li className="li-desktop">
- {/*Btn-3*/}   <button onClick={scrollToProyectos} className="button3-desktop">Proyectos
-              <span className="check">Recientes</span>
+            <li className="li-desktop">
+              <button onClick={scrollToProyectos} className="button3-desktop">
+                Proyectos
+                <span className="check">Recientes</span>
               </button>
             </li>
-            <li className="li-mobile">
+            <li className="li-desktop">
               <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
-                       
-
-              <li className="li-desktop">
- {/*Btn-6*/}<button className="button6-desktop">Contactame ahora</button>
+            <li className="li-desktop">
+              <button className="button6-desktop">Contactame ahora</button>
             </li>
           </ul>
         )}
