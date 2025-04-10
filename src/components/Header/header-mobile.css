@@ -4,8 +4,6 @@
 
   .navbar{
     height: 45px;
-    position: fixed;
-    z-index: 1000;
   }
 
   .navbar-container{
@@ -184,7 +182,6 @@ bottom: 10px;
 
 
   .navbar{
-    overflow: hidden;
     height: 70px;
   }
 
@@ -201,7 +198,7 @@ bottom: 10px;
   top: 0px;
   background: none;
   border: none;
-  font-size: 25px;
+  font-size: 30px;
   position: relative;
   cursor: pointer;
   color: white;
@@ -214,9 +211,9 @@ bottom: 10px;
   left: -3rem;
 }
 .logo-rtx img{
-  width: 160px;
+  width: 150px;
   position: relative;
-  right: 17rem;
+  right: 9rem;
 }
 
 
@@ -377,7 +374,6 @@ bottom: 10px;
 /* 📱🔹 Móviles ultra pequeños (Ej: iPhone SE, 320px) */
 @media (max-width: 400px) { 
  .navbar{
-   overflow: hidden;
     height: 60px;
   }
 
@@ -393,7 +389,7 @@ bottom: 10px;
   top: 0px;
   background: none;
   border: none;
-  font-size: 22px;
+  font-size: 30px;
   position: relative;
   cursor: pointer;
   color: white;
@@ -406,13 +402,10 @@ bottom: 10px;
   background-color: transparent;
 }
 .logo-rtx img{
-  display: block;
   width: 140px;
   height: 140px;
- background-color: transparent;
   position: relative;
-  left: -15rem;
-  top: -0rem;
+  left: -9rem;
 }
 
 
