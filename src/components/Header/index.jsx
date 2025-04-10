@@ -30,12 +30,6 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
       document.body.classList.remove("no-scroll");
     }
   }, [menuOpen]);
-
-  const handleClick = (scrollFn) => {
-    scrollFn();
-    if (menuOpen) toggleMenu();
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -61,17 +55,17 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
             </div>
 
             <li className="li-mobile">
-              <button onClick={() => handleClick(scrollToHome)} className="btn1">Home</button>
+              <button onClick={scrollToHome) className="btn1">Home</button>
             </li>
             <li className="li-mobile">
-              <button onClick={() => handleClick(scrollToServicios)} className="btn2">Servicios</button>
+              <button onClick={scrollToServicios} className="btn2">Servicios</button>
             </li>
             <li className="li-mobile">
-              <button onClick={() => handleClick(scrollToProyectos)} className="btn3">Proyectos</button>
+              <button onClick={scrollToProyectos} className="btn3">Proyectos</button>
               <span className="check">Recientes</span>
             </li>
             <li className="li-mobile">
-              <button onClick={() => handleClick(scrollToPreguntas)} className="btn4">Preguntas</button>
+              <button onClick={scrollToPreguntas} className="btn4">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
             <li className="li-life">
