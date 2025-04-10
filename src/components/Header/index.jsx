@@ -55,7 +55,7 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
             </div>
 
             <li className="li-mobile">
-              <button onClick={scrollToHome) className="btn1">Home</button>
+              <button onClick={scrollToHome} className="btn1">Home</button>
             </li>
             <li className="li-mobile">
               <button onClick={scrollToServicios} className="btn2">Servicios</button>
