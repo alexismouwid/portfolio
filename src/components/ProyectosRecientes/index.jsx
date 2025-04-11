@@ -16,9 +16,9 @@ const ProyectosRecientes = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section ref={ref} className="proyectos-container">
+    <section className="proyectos-container">
       <h2 className="proyectos-titulo">Mis proyectos recientes</h2>
-      <div className="proyectos-grid">
+      <div  ref={ref} className="proyectos-grid">
         {/* Proyecto 1 */}
         <div className="proyecto-box">
           <div className="imagen-placeholder">

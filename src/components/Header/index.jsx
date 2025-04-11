@@ -2,8 +2,7 @@
 import { useState, useEffect } from "react";
 import "./header.css";
 
-const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -15,7 +14,6 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
 
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
-
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
@@ -30,6 +28,14 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
       document.body.classList.remove("no-scroll");
     }
   }, [menuOpen]);
+
+  const handleScrollAndClose = (scrollFn) => {
+    setMenuOpen(false); // cerrar menú
+    setTimeout(() => {
+      scrollFn(); // hacer scroll después de cerrar
+    }, 300); // dar tiempo a la animación de cierre
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -55,17 +61,17 @@ const Header = ({ scrollToHome, scrollToServicios, scrollToProyectos, scrollToPr
             </div>
 
             <li className="li-mobile">
-              <button onClick={scrollToHome} className="btn1">Home</button>
+              <button onClick={() => handleScrollAndClose(scrollToHome)} className="btn1">Home</button>
             </li>
             <li className="li-mobile">
-              <button onClick={scrollToServicios} className="btn2">Servicios</button>
+              <button onClick={() => handleScrollAndClose(scrollToServicios)} className="btn2">Servicios</button>
             </li>
             <li className="li-mobile">
-              <button onClick={scrollToProyectos} className="btn3">Proyectos</button>
+              <button onClick={() => handleScrollAndClose(scrollToProyectos)} className="btn3">Proyectos</button>
               <span className="check">Recientes</span>
             </li>
             <li className="li-mobile">
-              <button onClick={scrollToPreguntas} className="btn4">Preguntas</button>
+              <button onClick={() => handleScrollAndClose(scrollToPreguntas)} className="btn4">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
             <li className="li-life">

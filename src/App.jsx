@@ -10,19 +10,28 @@ import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 
 export default function App() {
    const [loading, setLoading] = useState(true);
+   const [menuOpen, setMenuOpen] = useState(false);
 // 🔸 Creamos las referencias
   const serviciosRef = useRef(null);
   const proyectosRef = useRef(null);
   const preguntasRef = useRef(null);
   const HomeRef = useRef(null);
 
-  // 🔸 Funciones para hacer scroll
-  const scrollToHome = () => HomeRef.current?.scrollIntoView({ behavior: 'smooth' });
-  const scrollToServicios = () => serviciosRef.current?.scrollIntoView({ behavior: 'smooth' });
-  const scrollToProyectos = () => proyectosRef.current?.scrollIntoView({ behavior: 'smooth' });
-  const scrollToPreguntas = () => preguntasRef.current?.scrollIntoView({ behavior: 'smooth' });
+const scrollToHome = () => {
+    homeRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
+  const scrollToServicios = () => {
+    serviciosRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
+  const scrollToProyectos = () => {
+    proyectosRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToPreguntas = () => {
+    preguntasRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,7 +48,9 @@ export default function App() {
     <>
   
       <Header 
-        scrollToHome={scrollToHome}
+      menuOpen={menuOpen}
+      setMenuOpen={setMenuOpen}
+      scrollToHome={scrollToHome}
       scrollToServicios={scrollToServicios}
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
