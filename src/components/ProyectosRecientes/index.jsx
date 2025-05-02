@@ -15,20 +15,23 @@ const ProyectosRecientes = forwardRef((props, ref) => {
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
-  useEffect(() => {
-    const config = {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '-200px',
-      scale: 0,
-      easing: 'ease',
-      reset: false,
-    };
 
-    ScrollReveal().reveal(proyectosRef.current, config);
-  })
+  if (isMobile === false) {
+    useEffect(() => {
+      const config = {
+        origin: 'left',
+        duration: 1000,
+        delay: 150,
+        distance: '-200px',
+        scale: 0,
+        easing: 'ease',
+        reset: false,
+      };
 
+      ScrollReveal().reveal(proyectosRef.current, config);
+    }, []);
+  }
+   
   return (
     <section className="proyectos-container" >
       <h2 className="proyectos-titulo">Mis proyectos recientes</h2>
