@@ -32,7 +32,6 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
         <h2>
           Preguntas <br /> frecuentes
         </h2>
-        <button className="btn-contacto">Contáctame</button>
         <div className="faq-image">IMAGE</div>
       </div>
 

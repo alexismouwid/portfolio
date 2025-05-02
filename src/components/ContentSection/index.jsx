@@ -12,7 +12,7 @@ const ContentSection = forwardRef((props, ref) => {
             <p style={{ color: '#FFC300', fontSize: '3rem' }}>Visualizar </p>
             Su Idea
           </h1>
-          <p style={{ fontSize: '1rem', position: 'relative', top: '2rem' }}>
+          <p style={{color: '#242424', fontSize: '1rem', position: 'relative', top: '2rem' }}>
             Cuento con el conocimiento y las herramientas necesarias
           </p>
           <button className="cta-button">Contactame Ahora</button>
@@ -116,7 +116,7 @@ const ContentSection = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <h2 style={{textAlign: "center", backgroundColor: "black", color: "white", margin: '0'}}>
+      <h2 className="subtexto-info">
         Cuenta con experiencia en el diseño de interfaces y experiencias 
         digitales para web, apps móviles y software a medida.
       </h2>

@@ -1,7 +1,7 @@
 .proyectos-container {
   width: 100%;
   padding: 4rem 2rem;
-  background-color: #e5e5e5;
+  background: linear-gradient(to bottom, #242424 0%, #242424 80%, white 100%);
   text-align: center;
   color: white;
   background-color: #000000;
@@ -36,7 +36,7 @@
 
 .imagen-placeholder {
   flex: 1;
-  background-color: #dcdcdc;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
-  background-color: black;
+  background: transparent;
 }
 .image-proyect {
   width: 100%;

@@ -1,23 +1,31 @@
 .content-container {
-  max-width: 1666px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 10vh;
   padding: 2rem;
   display: flex;
   flex-direction: row;
   gap: 6rem;
-  background-color: #000000;
-  border-radius: 10px;
+
+  background: linear-gradient(to bottom, #242424 0%, #242424 40%, #ffffff 100%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: white;
+}
+
+.subtexto-info{
+  background-color: white;
+  color: black;
+  width: 108%;
+  margin: 0;
+  padding: 0;
+  border: none; 
 }
 
 /* Sección Hero */
 .hero-section {
   text-align: center;
   padding: 2rem;
-  background-color: #000000;
-  border-radius: 10px;
+   background: transparent;
   height: 500px;
   width: 30%;
 }
@@ -60,72 +68,62 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background-color: #000;
-  border: 0.9px solid #FFC300;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  height: 540px;
-  width: 30%;
+  background-color: transparent;
+  width: 35%;
+  position: relative;
   
 }
 
 .profile-image {
 
   width: 100%;
-  height: 100%;
+  border-radius: 360px;
+ background-color: transparent;
   margin: 0;
 }
 .perfil { 
   width: 100%;
-  height: 110%;
   object-fit: cover;
+  border-radius: 360px;
 }
 
 .profile-info{
   display: flex;
   flex-direction: row;
-  background-color: red;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
   width: 100%;
   height: 2%;
   position: relative;
-  blur: 5px;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
 }
 
 .profile-info h2 {
   font-size: 1.2rem;
   color: #FFC300;
   position: relative;
-  right: -2rem;
-  bottom: 1rem;
   
 }
 
 .profile-title {
-  font-size: 0.8rem;
-  color: #7f8c8d;
+  font-size: 1.1rem;
+  color: white ;
   font-weight: 500;
   position: relative;
-  left: 9rem;
-  bottom: 0.4rem;
+  left: 2.3rem;
 }
 
 /* Sección Habilidades */
 .skills-section {
   padding: 2rem;
-  background-color: #000000;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: transparent;
+   border: none;
   width: 30%;
   height: 500px;
 }
 
 .skills-section h3 {
   font-size: 1rem;
-  color: #ffffff;
+  color: #7f8c8d;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #ecf0f1;
   position: relative;
@@ -133,6 +131,7 @@
 }
 
 .skills-grid {
+  background-color: transparent;
   display: flex;
   gap: 3rem;
 }
@@ -145,11 +144,12 @@
   position: relative;
   bottom: 3.7rem;
   left: 2rem;
+  background-color: transparent;
 }
 
 .skill-item {
   padding: 0.1rem;
-  background-color: #000000;
+  background-color: transparent;
   border-radius: 5px;
   transition: transform 0.3s;
 }
