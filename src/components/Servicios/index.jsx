@@ -14,7 +14,7 @@ const Servicios = forwardRef((_, ref) => {
       origin: 'left',
       duration: 1000,
       delay: 150,
-      distance: '-600px',
+      distance: '-200px',
       scale: 0,
       easing: 'ease',
       reset: true,
@@ -25,9 +25,9 @@ const Servicios = forwardRef((_, ref) => {
   useEffect(() => {
     const config = {
       origin: 'right',
-      duration: 2500,
+      duration: 1500,
       delay: 150,
-      distance: '-600px',
+      distance: '-200px',
       scale: 0,
       easing: 'ease',
       reset: true,
