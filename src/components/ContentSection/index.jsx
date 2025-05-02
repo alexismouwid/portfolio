@@ -1,8 +1,15 @@
-import React, { forwardRef , useEffect, useState} from 'react';
+import React, { forwardRef , useEffect, useState, useRef} from 'react';
 import './ContentSection.css';
+import ScrollReveal from 'scrollreveal';
+
+
 
 const ContentSection = forwardRef((props, ref) => {
   const [isMobile, setIsMobile] = useState(false);
+  const heroRef = useRef(null);
+  const profileRef = useRef(null);
+  const experienceRef = useRef(null);
+  const subtextRef = useRef(null);
   useEffect(() => {
     const checkScreenSize = () => {
       const mobile = window.innerWidth <= 768;
@@ -16,11 +23,66 @@ const ContentSection = forwardRef((props, ref) => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
+  useEffect(() => {
+    const config = {
+      origin: 'right',
+      duration: 1200,
+      delay: 150,
+      distance: '-350px',
+      scale: 0,
+      easing: 'ease',
+      reset: true,
+    };
+
+    ScrollReveal().reveal(heroRef.current, config);
+  }, []);
+
+  useEffect(() => {
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 150,
+      distance: '-350px',
+      scale: 0,
+      easing: 'ease',
+      reset: true,
+    };
+
+    ScrollReveal().reveal(profileRef.current, config);
+  }, []);
+
+  useEffect(() => {
+    const config = {
+      origin: 'left',
+      duration: 1200,
+      delay: 150,
+      distance: '-350px',
+      scale: 0,
+      easing: 'ease',
+      reset: true,
+    };
+
+    ScrollReveal().reveal(experienceRef.current, config);
+  }, []);
+
+  useEffect(() => {
+    const config = {
+      origin: 'right',
+      duration: 800,
+      delay: 100,
+      distance: '-1000px',
+      scale: 0,
+      easing: 'ease',
+      reset: true,
+    };
+
+    ScrollReveal().reveal(subtextRef.current, config);
+  })
   return (
     <>
       <div className="content-container" ref={ref}>
         {/* Sección 1: Hero */}
-        <div className="hero-section">
+        <div className="hero-section" ref={heroRef}>
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
             <p style={{ color: '#FFC300', fontSize: '3rem' }}>Visualizar </p>
@@ -33,7 +95,7 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 2: Perfil */}
-        <div className="profile-section">
+        <div className="profile-section" ref={profileRef}>
           <div className="profile-image">
             <img className="perfil" src="./test.jpg" alt="Perfil" />
           </div>
@@ -69,7 +131,7 @@ const ContentSection = forwardRef((props, ref) => {
                   </div>
 
         {/* Sección 3: Habilidades */}
-        <div className="skills-section">
+        <div className="skills-section" ref={experienceRef}>
           <h3 className="software-experience">Software Experience</h3>
           <div className="skills-grid">
             {/* Columna 1 */}
@@ -131,7 +193,7 @@ const ContentSection = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <h2 className="subtexto-info">
+      <h2 className="subtexto-info" ref={subtextRef}>
         Cuenta con experiencia en el diseño de interfaces y experiencias 
         digitales para web, apps móviles y software a medida.
       </h2>
