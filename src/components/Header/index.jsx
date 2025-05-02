@@ -61,9 +61,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
           </button>
         )}
 
-        <span className="logo-rtx">
-          <img src="./logo.png" alt="Logo" width="140px" />
-        </span>
+        
 
         {isMobile ? (
           <ul className={`nav-links-mobile ${menuOpen ? "active" : ""}`}>
