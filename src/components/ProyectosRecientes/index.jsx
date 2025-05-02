@@ -20,8 +20,8 @@ const ProyectosRecientes = forwardRef((props, ref) => {
       origin: 'left',
       duration: 1000,
       delay: 150,
-      distance: '-300px',
-      scale: 1,
+      distance: '-100px',
+      scale: 0,
       easing: 'ease',
       reset: false,
     };

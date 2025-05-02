@@ -28,12 +28,12 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
   useEffect(() => {
     const config = {
       origin: 'left',
-      duration: 1200,
+      duration: 1000,
       delay: 150,
       distance: '-200px',
       scale: 0,
       easing: 'ease',
-      reset: true,
+      reset: false,
     };
 
     ScrollReveal().reveal(pregRef.current, config);
@@ -42,12 +42,12 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
   useEffect(() => {
     const config = {
       origin: 'right',
-      duration: 1500,
-      delay: 150,
+      duration: 1000,
+      delay: 100,
       distance: '-200px',
       scale: 0,
       easing: 'ease',
-      reset: true,
+      reset: false,
     };
 
     ScrollReveal().reveal(preguntasRef.current, config);
