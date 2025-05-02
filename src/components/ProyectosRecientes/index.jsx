@@ -17,10 +17,10 @@ const ProyectosRecientes = forwardRef((props, ref) => {
   }, []);
   useEffect(() => {
     const config = {
-      origin: 'left',
+      origin: 'bottom',
       duration: 1000,
       delay: 150,
-      distance: '-100px',
+      distance: '-200px',
       scale: 0,
       easing: 'ease',
       reset: false,
