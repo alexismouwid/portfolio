@@ -57,7 +57,7 @@ const ContentSection = forwardRef((props, ref) => {
       duration: 1200,
       delay: 150,
       distance: '-200px',
-      scale: 0,
+      scale: 1,
       easing: 'ease',
       reset: true,
     };
@@ -70,7 +70,7 @@ const ContentSection = forwardRef((props, ref) => {
       origin: 'right',
       duration: 800,
       delay: 100,
-      distance: '-1000px',
+      distance: '-200px',
       scale: 0,
       easing: 'ease',
       reset: true,

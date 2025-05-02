@@ -16,7 +16,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
       distance: '-200px',
       scale: 0,
       easing: 'ease',
-      reset: true,
+      reset: false,
     };
 
     ScrollReveal().reveal(headerRef.current, config);
