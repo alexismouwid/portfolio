@@ -1,10 +1,8 @@
-import React, { useEffect, useState, forwardRef , useRef} from "react";
+import React, { useEffect, useState, forwardRef  } from "react";
 import "./ProyectosRecientes.css";
-import ScrollReveal from "scrollreveal";
 
 const ProyectosRecientes = forwardRef((props, ref) => {
   const [isMobile, setIsMobile] = useState(false);
-  const proyectosRef = useRef(null);
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -16,26 +14,12 @@ const ProyectosRecientes = forwardRef((props, ref) => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  if (isMobile === false) {
-    useEffect(() => {
-      const config = {
-        origin: 'left',
-        duration: 1000,
-        delay: 150,
-        distance: '-200px',
-        scale: 0,
-        easing: 'ease',
-        reset: false,
-      };
-
-      ScrollReveal().reveal(proyectosRef.current, config);
-    }, []);
-  }
+  
    
   return (
     <section className="proyectos-container" >
       <h2 className="proyectos-titulo">Mis proyectos recientes</h2>
-      <div  ref={ref} className="proyectos-grid" ref={proyectosRef}>
+      <div  ref={ref} className="proyectos-grid" >
         {/* Proyecto 1 */}
         <div className="proyecto-box">
           <div className="imagen-placeholder">
