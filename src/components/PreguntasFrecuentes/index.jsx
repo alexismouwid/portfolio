@@ -1,5 +1,6 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState, forwardRef, useEffect, useRef } from "react";
 import "./PreguntasFrecuentes.css";
+import ScrollReveal from "scrollreveal";
 
 const preguntas = [
   {
@@ -21,21 +22,50 @@ const preguntas = [
 
 const PreguntasFrecuentes = forwardRef((props, ref) => {
   const [activa, setActiva] = useState(null);
+  const pregRef = useRef(null);
+  const preguntasRef = useRef(null);
 
+  useEffect(() => {
+    const config = {
+      origin: 'left',
+      duration: 1200,
+      delay: 150,
+      distance: '-300px',
+      scale: 1,
+      easing: 'ease',
+      reset: true,
+    };
+
+    ScrollReveal().reveal(pregRef.current, config);
+  }, []);
+
+  useEffect(() => {
+    const config = {
+      origin: 'right',
+      duration: 1500,
+      delay: 150,
+      distance: '-300px',
+      scale: 1,
+      easing: 'ease',
+      reset: true,
+    };
+
+    ScrollReveal().reveal(preguntasRef.current, config);
+  })
   const togglePregunta = (index) => {
     setActiva(activa === index ? null : index);
   };
 
   return (
     <div ref={ref} className="faq-container">
-      <div className="faq-left">
+      <div className="faq-left" ref={pregRef}>
         <h2>
           Preguntas <br /> frecuentes
         </h2>
         <div className="faq-image">IMAGE</div>
       </div>
 
-      <div className="faq-right">
+      <div className="faq-right" ref={preguntasRef}>
         {preguntas.map((item, index) => (
           <div key={index} className="faq-item">
             <div className="faq-pregunta" onClick={() => togglePregunta(index)}>
