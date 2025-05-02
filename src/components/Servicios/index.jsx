@@ -15,7 +15,7 @@ const Servicios = forwardRef((_, ref) => {
       distance: '-300px',
       scale: 0,
       easing: 'ease',
-      reset: false,
+      reset: true,
     };
 
     ScrollReveal().reveal(servRef.current, config);
@@ -28,7 +28,7 @@ const Servicios = forwardRef((_, ref) => {
       distance: '-400px',
       scale: 0,
       easing: 'ease',
-      reset: false,
+      reset: true,
     };
 
     ScrollReveal().reveal(serviciosRef.current, config);
