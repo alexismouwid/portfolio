@@ -30,8 +30,8 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
       origin: 'left',
       duration: 1200,
       delay: 150,
-      distance: '-300px',
-      scale: 1,
+      distance: '-200px',
+      scale: 0,
       easing: 'ease',
       reset: true,
     };
@@ -44,8 +44,8 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
       origin: 'right',
       duration: 1500,
       delay: 150,
-      distance: '-300px',
-      scale: 1,
+      distance: '-200px',
+      scale: 0,
       easing: 'ease',
       reset: true,
     };
