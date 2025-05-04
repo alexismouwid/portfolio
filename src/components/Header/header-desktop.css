@@ -1,4 +1,16 @@
+@keyframes aparecer {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .navbar {
+  animation: aparecer 1s ease-in-out;
 position: fixed;        /* Lo hace quedarse fijo */
   top: 0;                 /* Pegado al borde superior */
   left: 0;                /* Pegado al borde izquierdo */

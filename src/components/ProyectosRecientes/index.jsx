@@ -2,6 +2,33 @@ import React, { useEffect, useState, forwardRef  } from "react";
 import "./ProyectosRecientes.css";
 
 const ProyectosRecientes = forwardRef((props, ref) => {
+
+ useEffect(() => {
+    const elements = document.querySelectorAll('.ejeY');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.classList.remove('hidden');
+        } else {
+          entry.target.classList.remove('visible');
+          entry.target.classList.add('hidden');
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    elements.forEach(el => observer.observe(el));
+
+    // Limpieza
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
+
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const checkMobile = () => {
@@ -18,10 +45,10 @@ const ProyectosRecientes = forwardRef((props, ref) => {
    
   return (
     <section className="proyectos-container" >
-      <h2 className="proyectos-titulo">Mis proyectos recientes</h2>
+      <h2 className="proyectos-titulo ejeY">Mis proyectos recientes</h2>
       <div  ref={ref} className="proyectos-grid" >
         {/* Proyecto 1 */}
-        <div className="proyecto-box">
+        <div className="proyecto-box ejeY">
           <div className="imagen-placeholder">
             <img
               src={isMobile ? "/paint-mobile.jpg" : "/paint.jpg"}
@@ -53,7 +80,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
         </div>
 
         {/* Proyecto 2 */}
-        <div className="proyecto-box">
+        <div className="proyecto-box ejeY">
           <div className="imagen-placeholder">
             <img
               src={isMobile ? "/ecomerce-mobile.jpg" : "/ecomerce.jpg"}
@@ -85,7 +112,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
         </div>
 
         {/* Proyecto 3 */}
-        <div className="proyecto-box">
+        <div className="proyecto-box ejeY">
           <div className="imagen-placeholder">
             <img
               src={isMobile ? "/avianca-mobile.jpg" : "/avianca.jpg"}
@@ -118,7 +145,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
       </div>
 
       <div className="proyecto-boton-container">
-        <button className="proyecto-boton">
+        <button className="proyecto-boton ejeY">
           ¡Empecemos a discutir sobre tu proyecto!
         </button>
       </div>

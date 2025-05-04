@@ -1,16 +1,39 @@
-import React, { forwardRef, useRef } from 'react';
+import React, { forwardRef, useRef , useEffect} from 'react';
 import './ContentSection.css';
 
 const ContentSection = forwardRef((props, ref) => {
 
-  
+  useEffect(() => {
+    const elements = document.querySelectorAll('.ejeY');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.classList.remove('hidden');
+        } else {
+          entry.target.classList.remove('visible');
+          entry.target.classList.add('hidden');
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    elements.forEach(el => observer.observe(el));
+
+    // Limpieza
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
  
   return (
     <>
       <div className="content-principal">
  <div className="content-container" ref={ref}>
         {/* Sección 1: Hero */}
-        <div className="hero-section" >
+        <div className="hero-section ejeY" >
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
             <p style={{ color: '#FFC300', fontSize: '3rem' }}>Visualizar </p>
@@ -23,7 +46,7 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 2: Perfil */}
-        <div className="profile-section" >
+        <div className="profile-section ejeY" >
           <div className="profile-image">
             <img className="perfil" src="./test.jpg" alt="Perfil" />
           </div>
@@ -59,7 +82,7 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 3: Habilidades */}
-        <div className="skills-section">
+        <div className="skills-section ejeY">
           <h3 className="software-experience">Software Experience</h3>
           <div className="skills-grid">
             {/* Columna 1 */}
