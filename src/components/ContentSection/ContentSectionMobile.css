@@ -59,16 +59,17 @@
   }
 
   .profile-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 100%;
     height: auto;
   }
 
   .profile-image {
     width: 60%;
+    left: 1rem;
     top: 0;
   }
 
@@ -112,11 +113,13 @@
   
 
   .skills-section {
+
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    width: 100%;
+    margin-top: 4rem;
+    margin-left: -2rem;
   }
 
   .software-experience {
@@ -223,7 +226,7 @@
 }
 
 /* Para móviles pequeños (menos de 400px) */
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .content-container {
     padding: 0.8rem;
     gap: 1.5rem;
@@ -258,7 +261,9 @@
   .skills-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0.5rem;
+    margin-top: 10rem;
+    position: relative;
+    left: 2rem;
   }
 
   .skills-section h3 {

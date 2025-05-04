@@ -1,45 +1,24 @@
 import React, { forwardRef , useRef, useEffect} from "react";
 import "./Servicios.css";
-import ScrollReveal from "scrollreveal";
-
+import { useScrollReveal, useIsMobile } from "./ScrollRevealUtils";
 
 const Servicios = forwardRef((_, ref) => {
   const servRef = useRef(null);
-  const serviciosRef = useRef(null);
+  const targetOneRef = useRef(null);
+  const targetTwoRef = useRef(null);
+  const targetThreeRef = useRef(null);
 
-  useEffect(() => {
-    const config = {
-      origin: 'left',
-      duration: 1000,
-      delay: 150,
-      distance: '-300px',
-      scale: 0,
-      easing: 'ease',
-      reset: true,
-    };
+  const isMobile = useIsMobile();
 
-    ScrollReveal().reveal(servRef.current, config);
-  }, []);
-  useEffect(() => {
-    const config = {
-      origin: 'right',
-      duration: 1500,
-      delay: 150,
-      distance: '-400px',
-      scale: 0,
-      easing: 'ease',
-      reset: true,
-    };
-
-    ScrollReveal().reveal(serviciosRef.current, config);
-     })
-
-  
+  useScrollReveal(servRef, 'serv', isMobile);
+  useScrollReveal(targetOneRef, 'targetOne', isMobile);
+  useScrollReveal(targetTwoRef, 'targetTwo', isMobile);
+  useScrollReveal(targetThreeRef, 'targetThree', isMobile);
   return (
     <section className="servicios-container" ref={ref}>
       <h2 className="servicios-titulo" ref={servRef}>Servicios que ofrezco</h2>
-      <div className="servicios-grid" ref={serviciosRef}>
-        <div className="servicio-box" >
+      <div className="servicios-grid">
+        <div className="servicio-box"  ref={targetOneRef}>
           <h3>Diseño de UI/UX de sitios web</h3>
           <p>
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
@@ -47,7 +26,7 @@ const Servicios = forwardRef((_, ref) => {
             visualmente efectivos y adaptados a tus objetivos.
           </p>
         </div>
-        <div className="servicio-box" >
+        <div className="servicio-box" ref={targetTwoRef} >
           <h3>Diseño de UI/UX de aplicaciones móviles</h3>
           <p>
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
@@ -55,7 +34,7 @@ const Servicios = forwardRef((_, ref) => {
             modernas y adaptadas a las necesidades de tus usuarios.
           </p>
         </div>
-        <div className="servicio-box" >
+        <div className="servicio-box" ref={targetThreeRef}>
           <h3>Diseño de dashboards de control y software</h3>
           <p>
             Diseño dashboards y software personalizados con interfaces claras y

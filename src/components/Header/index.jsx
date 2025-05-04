@@ -2,37 +2,13 @@
 import { useState, useEffect , useRef} from "react";
 import "./header.css";
 import ScrollReveal from "scrollreveal";
+import { useScrollReveal, useIsMobile } from './ScrollRevealUtils';
 
 const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
-  const [isMobile, setIsMobile] = useState(false);
   const headerRef = useRef(null);
 
-
-  useEffect(() => {
-    const config = {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '-200px',
-      scale: 0,
-      easing: 'ease',
-      reset: false,
-    };
-
-    ScrollReveal().reveal(headerRef.current, config);
-  }, []); // Se ejecuta solo una vez al montar
-  useEffect(() => {
-    const checkScreenSize = () => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      if (!mobile) setMenuOpen(false);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
+  const isMobile = useIsMobile();
+  
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };

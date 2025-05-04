@@ -1,83 +1,22 @@
-import React, { forwardRef , useEffect, useState, useRef} from 'react';
+import React, { forwardRef, useRef } from 'react';
 import './ContentSection.css';
-import ScrollReveal from 'scrollreveal';
-
-
+import { useScrollReveal, useIsMobile } from './ScrollRevealUtils';
 
 const ContentSection = forwardRef((props, ref) => {
-  const [isMobile, setIsMobile] = useState(false);
+  // Usar el hook personalizado para detectar dispositivos móviles
+  const isMobile = useIsMobile();
+  
+  // Referencias para los elementos
   const heroRef = useRef(null);
   const profileRef = useRef(null);
   const experienceRef = useRef(null);
   const subtextRef = useRef(null);
-  useEffect(() => {
-    const checkScreenSize = () => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      if (!mobile) ;
-    }; 
+  
+  // Aplicar efectos de ScrollReveal usando nuestro hook personalizado
+  useScrollReveal(heroRef, 'hero', isMobile);
+  useScrollReveal(profileRef, 'profile', isMobile);
+  useScrollReveal(experienceRef, 'experience', isMobile);
 
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
-  useEffect(() => {
-    const config = {
-      origin: 'right',
-      duration: 1200,
-      delay: 150,
-      distance: '-200px',
-      scale: 0,
-      easing: 'ease',
-      reset: true,
-    };
-
-    ScrollReveal().reveal(heroRef.current, config);
-  }, []);
-
-  useEffect(() => {
-    const config = {
-      origin: 'top',
-      duration: 2000,
-      delay: 150,
-      distance: '-200px',
-      scale: 0,
-      easing: 'ease',
-      reset: true,
-    };
-
-    ScrollReveal().reveal(profileRef.current, config);
-  }, []);
-
-  useEffect(() => {
-    const config = {
-      origin: 'left',
-      duration: 1200,
-      delay: 150,
-      distance: '-200px',
-      scale: 1,
-      easing: 'ease',
-      reset: true,
-    };
-
-    ScrollReveal().reveal(experienceRef.current, config);
-  }, []);
-
-  useEffect(() => {
-    const config = {
-      origin: 'right',
-      duration: 800,
-      delay: 100,
-      distance: '-200px',
-      scale: 0,
-      easing: 'ease',
-      reset: true,
-    };
-
-    ScrollReveal().reveal(subtextRef.current, config);
-  })
   return (
     <>
       <div className="content-container" ref={ref}>
@@ -102,33 +41,33 @@ const ContentSection = forwardRef((props, ref) => {
           <div className="profile-info">
             <h2>Alexis Vega</h2>
             <p className="profile-title">Desarrollador</p>
- <div className="skill-item-busqueda">
-                <span className="buscame-en">Buscame en</span>
-                <a 
-                  href="https://www.linkedin.com/in/alexis-vega-3b4437333/" 
-                  target="_blank"   
-                  rel="noopener noreferrer" 
-                  className='links-redes'> 
-                  <img 
-                    width="45px" height="45px" 
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
-                    className="skill-icon" 
-                  /> 
-                </a>
-                <a 
-                  href="https://github.com/alexismouwid" 
-                  target="_blank"   
-                  rel="noopener noreferrer" 
-                  className='links-redes'>
-                  <img 
-                    width="45px" height="45px" 
-                    src="./git.png" alt="Github" 
-                    className="skill-icon" 
-                  />
-                </a>
-              </div> 
+            <div className="skill-item-busqueda">
+              <span className="buscame-en">Buscame en</span>
+              <a 
+                href="https://www.linkedin.com/in/alexis-vega-3b4437333/" 
+                target="_blank"   
+                rel="noopener noreferrer" 
+                className='links-redes'> 
+                <img 
+                  width="45px" height="45px" 
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
+                  className="skill-icon" 
+                /> 
+              </a>
+              <a 
+                href="https://github.com/alexismouwid" 
+                target="_blank"   
+                rel="noopener noreferrer" 
+                className='links-redes'>
+                <img 
+                  width="45px" height="45px" 
+                  src="./git.png" alt="Github" 
+                  className="skill-icon" 
+                />
+              </a>
+            </div> 
           </div>
-                  </div>
+        </div>
 
         {/* Sección 3: Habilidades */}
         <div className="skills-section" ref={experienceRef}>
@@ -188,18 +127,12 @@ const ContentSection = forwardRef((props, ref) => {
                 <span className="skill-icon">Linux</span>
                 <img width="45px" height="45px" src="./linux.png" alt="Linux" className="skill-icon" />
               </div>
-            
             </div>
           </div>
         </div>
       </div>
-      <h2 className="subtexto-info" ref={subtextRef}>
-        Cuenta con experiencia en el diseño de interfaces y experiencias 
-        digitales para web, apps móviles y software a medida.
-      </h2>
-    </>
+         </>
   );
 });
 
 export default ContentSection;
-
