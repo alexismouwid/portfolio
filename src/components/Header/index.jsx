@@ -1,13 +1,12 @@
 
 import { useState, useEffect , useRef} from "react";
 import "./header.css";
-import ScrollReveal from "scrollreveal";
-import { useIsMobile } from './ScrollRevealUtils';
+import { useIsMobile}  from "../../utils/useIsMobile";
 
 const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
   const headerRef = useRef(null);
 
-  const isMobile = useIsMobile();
+ const isMobile = useIsMobile();
   
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

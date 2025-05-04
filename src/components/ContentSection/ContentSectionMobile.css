@@ -29,7 +29,7 @@
     margin: 0;
     text-align: center;
     background: transparent;
-    width: 90%;
+    width: 80%;
     height: auto;
   }
 
@@ -62,7 +62,7 @@
   }
 
   .profile-section {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,7 +120,7 @@
 
   .skills-section {
 
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,8 +129,8 @@
   }
 
   .software-experience {
-    font-size: 1rem;
-    color: #7f8c8d;
+    font-size: 1.2rem;
+    color: white;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #ecf0f1;
   }

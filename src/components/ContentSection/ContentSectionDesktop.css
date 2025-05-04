@@ -16,11 +16,11 @@
 }
 
 .ejeY.visible {
-  animation: fadeInY 0.6s forwards;
+  animation: fadeInY 1s forwards;
 }
 
 .ejeY.hidden {
-  animation: fadeOutY 0.6s forwards;
+  animation: fadeOutY 1s forwards;
 }
 
 
