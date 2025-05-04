@@ -2,7 +2,7 @@
 import { useState, useEffect , useRef} from "react";
 import "./header.css";
 import ScrollReveal from "scrollreveal";
-import { useScrollReveal, useIsMobile } from './ScrollRevealUtils';
+import { useIsMobile } from './ScrollRevealUtils';
 
 const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
   const headerRef = useRef(null);
@@ -13,13 +13,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-  }, [menuOpen]);
+ 
 
   const handleScrollAndClose = (scrollFn) => {
     setMenuOpen(false); // cerrar menú
@@ -29,7 +23,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
   };
 
   return (
-    <nav className="navbar" ref={headerRef}>
+    <nav className="navbar" >
       <div className="navbar-container">
         {isMobile && (
           <button className="menu-button" onClick={toggleMenu}>

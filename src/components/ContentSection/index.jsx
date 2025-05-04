@@ -1,27 +1,16 @@
 import React, { forwardRef, useRef } from 'react';
 import './ContentSection.css';
-import { useScrollReveal, useIsMobile } from './ScrollRevealUtils';
 
 const ContentSection = forwardRef((props, ref) => {
-  // Usar el hook personalizado para detectar dispositivos móviles
-  const isMobile = useIsMobile();
-  
-  // Referencias para los elementos
-  const heroRef = useRef(null);
-  const profileRef = useRef(null);
-  const experienceRef = useRef(null);
-  const subtextRef = useRef(null);
-  
-  // Aplicar efectos de ScrollReveal usando nuestro hook personalizado
-  useScrollReveal(heroRef, 'hero', isMobile);
-  useScrollReveal(profileRef, 'profile', isMobile);
-  useScrollReveal(experienceRef, 'experience', isMobile);
 
+  
+ 
   return (
     <>
-      <div className="content-container" ref={ref}>
+      <div className="content-principal">
+ <div className="content-container" ref={ref}>
         {/* Sección 1: Hero */}
-        <div className="hero-section" ref={heroRef}>
+        <div className="hero-section" >
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
             <p style={{ color: '#FFC300', fontSize: '3rem' }}>Visualizar </p>
@@ -34,7 +23,7 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 2: Perfil */}
-        <div className="profile-section" ref={profileRef}>
+        <div className="profile-section" >
           <div className="profile-image">
             <img className="perfil" src="./test.jpg" alt="Perfil" />
           </div>
@@ -70,7 +59,7 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 3: Habilidades */}
-        <div className="skills-section" ref={experienceRef}>
+        <div className="skills-section">
           <h3 className="software-experience">Software Experience</h3>
           <div className="skills-grid">
             {/* Columna 1 */}
@@ -131,7 +120,8 @@ const ContentSection = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-         </>
+      </div>
+              </>
   );
 });
 

@@ -5,32 +5,26 @@
   justify-content: center;
    background: linear-gradient(to bottom, white 0%, white 30%, #242424 100%);
   color: black;
-  padding: 2rem;
-  gap: 3rem;
-  height: auto; /* Cambiado de 80vh para mejor adaptación */
+  padding: 5rem;
+  margin: 0;
 }
 
 .faq-left {
   background-color: transparent;
-  padding: 2rem;
-  flex: 1 1 300px;
-  max-width: 400px;
+  padding: 1rem;
+  max-width: 280px;
 }
 
 .faq-left h2 {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 
-
-.btn-contacto:hover {
-  background-color: #CC9F00;
-}
 
 .faq-image {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: #ccc;
   color: black;
   display: flex;
@@ -74,17 +68,17 @@
 @media (max-width: 768px) {
   .faq-container {
     width: 100%;
-    height: 100vh;
     flex-direction: column;
     background: linear-gradient(to bottom, white 0%,white 40%, #242424 100%);
     align-items: center;
-    padding: 1.5rem;
     position: relative;
     top: 13rem;
   }
 
   .faq-left,
   .faq-right {
+    position: relative;
+    left: -2rem;
   width: 100%;
   }
 

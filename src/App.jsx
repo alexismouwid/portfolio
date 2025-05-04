@@ -62,8 +62,10 @@ const scrollToHome = () => {
   }  
   return (
     <>
-  
-      <Header 
+
+      <div className='App'> 
+        <div className='content'> 
+ <Header 
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
       scrollToHome={scrollToHome}
@@ -74,6 +76,12 @@ const scrollToHome = () => {
       <Servicios ref={serviciosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>
       <PreguntasFrecuentes ref={preguntasRef}/>
+
+        </div>
+
+      </div>
+  
+     
     </>
   );
 }

@@ -1,24 +1,25 @@
+
+.content-principal {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
 .content-container {
   width: 100%;
   margin: 0 auto;
   margin-top: 10vh;
-  padding: 2rem;
+  padding: 6rem;
   display: flex;
   flex-direction: row;
-  gap: 5rem;
 
   background: linear-gradient(to bottom, #242424 0%, #242424 40%, #ffffff 100%);
   color: white;
 }
 
-.subtexto-info{
-  background-color: white;
-  color: black;
-  width: 108%;
-  margin: 0;
-  padding: 0;
-  border: none; 
-}
+
 
 /* Sección Hero */
 .hero-section {
@@ -68,7 +69,7 @@
   align-items: center;
   gap: 2rem;
   background-color: transparent;
-  width: 30%;
+  width: 35%;
   height: 500px;
   position: relative;
   

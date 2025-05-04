@@ -1,10 +1,16 @@
 /* Para tablets y móviles grandes */
 @media (max-width: 768px) {
+.content-principal {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
   .content-container {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 5vh;
-    padding: 1rem;
+    margin: 0;
+    margin-top: 0vh;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -17,21 +23,20 @@
     color: black;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
     border: none;
   }
 
   .hero-section {
+    margin: 0;
     text-align: center;
-    padding: 1rem;
     background: transparent;
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
   .hero-section h1 {
     font-size: 2rem;
-    color: black;
+    color: white;
     margin-bottom: 1rem;
   }
 
@@ -45,7 +50,6 @@
     font-weight: bold;
     color: black;
     background-color: #FFC300;
-    padding: 0.8rem 1.5rem;
     border-radius: 5px;
     transition: all 0.3s ease;
     position: relative;
@@ -59,7 +63,7 @@
   }
 
   .profile-section {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,8 +72,8 @@
   }
 
   .profile-image {
-    width: 60%;
-    left: 1rem;
+    width: 90%;
+    left: 2rem;
     top: 0;
   }
 
@@ -84,6 +88,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    left: 2rem;
     top: 0;
     text-align: center;
   }
@@ -104,8 +109,10 @@
     width: 100%;
     height: auto;
     top: 0;
+    left: 2rem;
   }
   .ico-busquedaMobile{
+    left: 2rem;
     font-size: 1.5rem;
 
   }
@@ -165,7 +172,7 @@
 
   .skill-item-busqueda {
     font-size: 1rem;
-    top: 0;
+    top: 5rem;
     right: 0;
     text-align: center;
   }
@@ -228,7 +235,6 @@
 /* Para móviles pequeños (menos de 400px) */
 @media (max-width: 350px) {
   .content-container {
-    padding: 0.8rem;
     gap: 1.5rem;
   }
 

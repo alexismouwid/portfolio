@@ -5,7 +5,7 @@
   text-align: center;
   color: white;
   background-color: #000000;
-  height: 90vh;
+  height: auto;
 }
 
 .proyectos-titulo {
@@ -22,8 +22,9 @@
 }
 
 .proyecto-box {
-  
-  width: 26%;
+  width: 30%;
+  min-width: 280px;
+  max-width: 350px;
   height: 360px;
   background-color: black;
   border: none;
@@ -31,7 +32,6 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  right: 2rem;
 }
 
 .imagen-placeholder {
@@ -45,7 +45,7 @@
 }
 
 .proyecto-detalle {
-  height: 12%;
+  height: auto;
   padding: 1rem;
   display: flex;
   flex-direction: row;
@@ -53,11 +53,13 @@
   gap: 0.5rem;
   background: transparent;
 }
+
 .image-proyect {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .proyecto-link {
   text-decoration: none;
   color: black;
@@ -99,58 +101,38 @@
   background-color: #CC9F00;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .proyectos-titulo{
-  font-size: 23px;
-    position: relative;
-    left: -2rem;
+/* Responsive ajustes */
+@media (max-width: 1024px) {
+  .proyecto-box {
+    width: 45%;
   }
+}
+
+@media (max-width: 768px) {
+  .proyectos-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
   .proyectos-grid {
-     flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
-    padding-left: 20px;
-    justify-content: flex-start;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-    overflow-x: auto; 
-    gap: 1rem; 
+    gap: 1.5rem;
   }
 
   .proyecto-box {
-    
-    border: none;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    min-width: 90%;
-    max-width: 90%;
-    height: auto;  }
-
-  .proyectos-titulo {
-    font-size: 23px;
-    position: relative;
-    left: -2rem;
-  }
-  .proyecto-boton{
-   position: relative;
-    left: -2rem;
-    width: 270px;  }
-}
-/* Scrollbar personalizada */
-  .proyectos-grid::-webkit-scrollbar {
-    height: 5px;
+    width: 90%;
+    height: auto;
   }
 
-  .proyectos-grid::-webkit-scrollbar-track {
-    background: #eee;
-    border-radius: 4px;
-  }
-
-  .proyectos-grid::-webkit-scrollbar-thumb {
-    background-color: gray;
-    border-radius: 2px;
-    border: 2px solid #FFC300;
+  .proyecto-boton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .proyectos-container {
+    padding: 2rem 1
+

@@ -3,22 +3,22 @@ import "./Servicios.css";
 import { useScrollReveal, useIsMobile } from "./ScrollRevealUtils";
 
 const Servicios = forwardRef((_, ref) => {
-  const servRef = useRef(null);
-  const targetOneRef = useRef(null);
-  const targetTwoRef = useRef(null);
-  const targetThreeRef = useRef(null);
+const isMobile = useIsMobile();
+  const servTitleRef = useRef(null);
+const targetOneRef = useRef(null);
+const targetTwoRef = useRef(null);
+const targetThreeRef = useRef(null);
+  useScrollReveal(servTitleRef, "serv", isMobile);
+  useScrollReveal(targetOneRef, "targetOne", isMobile);
+  useScrollReveal(targetTwoRef, "targetTwo", isMobile);
+  useScrollReveal(targetThreeRef, "targetThree", isMobile);
 
-  const isMobile = useIsMobile();
 
-  useScrollReveal(servRef, 'serv', isMobile);
-  useScrollReveal(targetOneRef, 'targetOne', isMobile);
-  useScrollReveal(targetTwoRef, 'targetTwo', isMobile);
-  useScrollReveal(targetThreeRef, 'targetThree', isMobile);
-  return (
+   return (
     <section className="servicios-container" ref={ref}>
-      <h2 className="servicios-titulo" ref={servRef}>Servicios que ofrezco</h2>
+      <h2 className="servicios-titulo" ref={servTitleRef}>Servicios que ofrezco</h2>
       <div className="servicios-grid">
-        <div className="servicio-box"  ref={targetOneRef}>
+        <div className="servicio-box" ref={targetOneRef}  >
           <h3>Diseño de UI/UX de sitios web</h3>
           <p>
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
@@ -26,7 +26,7 @@ const Servicios = forwardRef((_, ref) => {
             visualmente efectivos y adaptados a tus objetivos.
           </p>
         </div>
-        <div className="servicio-box" ref={targetTwoRef} >
+        <div className="servicio-box"  ref={targetTwoRef}>
           <h3>Diseño de UI/UX de aplicaciones móviles</h3>
           <p>
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
