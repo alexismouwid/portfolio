@@ -9,8 +9,7 @@
   align-items: center;
 }
   .content-container {
-    margin: 0;
-    margin-top: 0vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -121,7 +120,7 @@
 
   .skills-section {
 
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;

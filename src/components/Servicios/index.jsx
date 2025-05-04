@@ -1,24 +1,12 @@
 import React, { forwardRef , useRef, useEffect} from "react";
 import "./Servicios.css";
-import { useScrollReveal, useIsMobile } from "./ScrollRevealUtils";
 
 const Servicios = forwardRef((_, ref) => {
-const isMobile = useIsMobile();
-  const servTitleRef = useRef(null);
-const targetOneRef = useRef(null);
-const targetTwoRef = useRef(null);
-const targetThreeRef = useRef(null);
-  useScrollReveal(servTitleRef, "serv", isMobile);
-  useScrollReveal(targetOneRef, "targetOne", isMobile);
-  useScrollReveal(targetTwoRef, "targetTwo", isMobile);
-  useScrollReveal(targetThreeRef, "targetThree", isMobile);
-
-
    return (
     <section className="servicios-container" ref={ref}>
-      <h2 className="servicios-titulo" ref={servTitleRef}>Servicios que ofrezco</h2>
+      <h2 className="servicios-titulo" >Servicios que ofrezco</h2>
       <div className="servicios-grid">
-        <div className="servicio-box" ref={targetOneRef}  >
+        <div className="servicio-box"  >
           <h3>Diseño de UI/UX de sitios web</h3>
           <p>
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
@@ -26,7 +14,7 @@ const targetThreeRef = useRef(null);
             visualmente efectivos y adaptados a tus objetivos.
           </p>
         </div>
-        <div className="servicio-box"  ref={targetTwoRef}>
+        <div className="servicio-box"  >
           <h3>Diseño de UI/UX de aplicaciones móviles</h3>
           <p>
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
@@ -34,7 +22,7 @@ const targetThreeRef = useRef(null);
             modernas y adaptadas a las necesidades de tus usuarios.
           </p>
         </div>
-        <div className="servicio-box" ref={targetThreeRef}>
+        <div className="servicio-box" >
           <h3>Diseño de dashboards de control y software</h3>
           <p>
             Diseño dashboards y software personalizados con interfaces claras y
