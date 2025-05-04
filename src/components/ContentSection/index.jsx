@@ -1,33 +1,11 @@
 import React, { forwardRef, useRef , useEffect} from 'react';
 import './ContentSection.css';
+import { useVisibilityObserver } from '../../utils/useVisibilityObserver';
+
 
 const ContentSection = forwardRef((props, ref) => {
 
-  useEffect(() => {
-    const elements = document.querySelectorAll('.ejeY');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          entry.target.classList.remove('hidden');
-        } else {
-          entry.target.classList.remove('visible');
-          entry.target.classList.add('hidden');
-        }
-      });
-    }, {
-      threshold: 0.1,
-    });
-
-    elements.forEach(el => observer.observe(el));
-
-    // Limpieza
-    return () => {
-      elements.forEach(el => observer.unobserve(el));
-    };
-  }, []);
- 
+  useVisibilityObserver(".ejeY");
   return (
     <>
       <div className="content-principal">

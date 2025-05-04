@@ -1,4 +1,5 @@
 import React, { useState, forwardRef, useEffect, useRef } from "react";
+import { useVisibilityObserver } from "../../utils/useVisibilityObserver";
 import "./PreguntasFrecuentes.css";
 
 const preguntas = [
@@ -20,6 +21,7 @@ const preguntas = [
 ];
 
 const PreguntasFrecuentes = forwardRef((props, ref) => {
+  useVisibilityObserver(".ejeX");
   const [activa, setActiva] = useState(null);
   const togglePregunta = (index) => {
     setActiva(activa === index ? null : index);
@@ -27,14 +29,14 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="faq-container">
-      <div className="faq-left">
+      <div className="faq-left ejeX">
         <h2>
           Preguntas <br /> frecuentes
         </h2>
         <div className="faq-image">IMAGE</div>
       </div>
 
-      <div className="faq-right" >
+      <div className="faq-right ejeX" >
         {preguntas.map((item, index) => (
           <div key={index} className="faq-item">
             <div className="faq-pregunta" onClick={() => togglePregunta(index)}>
