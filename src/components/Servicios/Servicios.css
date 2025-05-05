@@ -1,29 +1,3 @@
-
-@keyframes fadeInX {
-  from { opacity: 0; transform: translateX(-200px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeOutX {
-  from { opacity: 1; transform: translateX(0); }
-  to { opacity: 0; transform: translateX(200px); }
-}
-
-.ejeX {
-  opacity: 0;
-  transform: translateX(-200px);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.ejeX.visible {
-  animation: fadeInX 1s forwards;
-}
-
-.ejeX.hidden {
-  animation: fadeOutX 1s forwards;
-}
-
-
 .servicios-container {
   width: 100%;
 

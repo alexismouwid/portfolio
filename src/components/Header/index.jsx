@@ -4,6 +4,7 @@ import "./header.css";
 import { useIsMobile}  from "../../utils/useIsMobile";
 
 const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
+
   const headerRef = useRef(null);
 
  const isMobile = useIsMobile();
@@ -22,7 +23,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
   };
 
   return (
-    <nav className="navbar" >
+    <nav className="navbar " >
       <div className="navbar-container">
         {isMobile && (
           <button className="menu-button" onClick={toggleMenu}>
