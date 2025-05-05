@@ -30,7 +30,9 @@
     text-align: center;
     background: transparent;
     width: 80%;
-    height: auto;
+    position: relative;
+    bottom: 4rem;
+    
   }
 
   .hero-section h1 {
@@ -195,12 +197,12 @@
   }
 
   .hero-section p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .cta-button {
  position: relative;
- top: 2rem;
+ top: 4rem;
     padding: 0.7rem 1.2rem;
     font-size: 0.95rem;
   }
