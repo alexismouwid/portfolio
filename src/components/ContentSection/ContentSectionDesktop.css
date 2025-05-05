@@ -216,6 +216,13 @@
   right: 7rem;
   font-weight: bold;
   font-size: 1.2rem;
+} 
+
+.skill-icon{
+  transition: transform 0.3s;
+}
+.skill-icon:hover{
+  transform: translateY(-3px);
 }
 
 .links-redes{

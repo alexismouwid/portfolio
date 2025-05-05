@@ -89,11 +89,7 @@ const ContentSection = forwardRef((props, ref) => {
                 <span className="skill-icon">MongoDB</span>
                 <img width="45px" height="45px" src="./mongodb.png" alt="MongoDB" className="skill-icon" />
               </div>
-              <div className="skill-item">
-                <span className="skill-icon">SQL</span>
-                <img width="45px" height="45px" src="./sql.png" alt="SQL" className="skill-icon" />
-              </div>
-            </div>
+                          </div>
 
             {/* Columna 2 */}
             <div className="skill-column">
@@ -117,6 +113,11 @@ const ContentSection = forwardRef((props, ref) => {
                 <span className="skill-icon">Linux</span>
                 <img width="45px" height="45px" src="./linux.png" alt="Linux" className="skill-icon" />
               </div>
+<div className="skill-item">
+                <span className="skill-icon">SQL</span>
+                <img width="45px" height="45px" src="./sql.png" alt="SQL" className="skill-icon" />
+              </div>
+
             </div>
           </div>
         </div>
