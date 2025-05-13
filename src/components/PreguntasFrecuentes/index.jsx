@@ -33,7 +33,7 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
         <h2>
           Preguntas <br /> frecuentes
         </h2>
-        <div className="faq-image">IMAGE</div>
+        <div className="faq-image"> <img src="./diseño.jpg" alt="preguntas" className="image-proyect" /></div>
       </div>
 
       <div className="faq-right ejeX" >
