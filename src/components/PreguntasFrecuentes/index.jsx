@@ -29,17 +29,17 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="faq-container">
-      <div className="faq-left ejeX">
+      <div className="faq-left ">
         <h2>
           Preguntas <br /> frecuentes
         </h2>
         <div className="faq-image"> <img src="./diseño.jpg" alt="preguntas" className="image-proyect" /></div>
       </div>
 
-      <div className="faq-right ejeX" >
+      <div className="faq-right " >
         {preguntas.map((item, index) => (
           <div key={index} className="faq-item">
-            <div className="faq-pregunta" onClick={() => togglePregunta(index)}>
+            <div className="faq-pregunta ejeX" onClick={() => togglePregunta(index)}>
               <span>{item.pregunta}</span>
               <span className="icono">{activa === index ? "−" : "+"}</span>
             </div>
