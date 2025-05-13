@@ -14,7 +14,7 @@ const ContentSection = forwardRef((props, ref) => {
         <div className="hero-section ejeY" >
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
-            <p style={{ color: '#FFC300', fontSize: '3rem' }}>Visualizar </p>
+            <p style={{ color: ' #8CDA05', fontSize: '3rem' }}>Visualizar </p>
             Su Idea
           </h1>
           <p style={{color: 'white', fontSize: '1.2rem', position: 'relative', top: '2rem' }}>

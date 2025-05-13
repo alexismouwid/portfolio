@@ -49,7 +49,7 @@
 
 .boton-contacto {
   color: black;
-  background-color: #FFC300;
+  background-color: #8CDA05;
   border: none;
   padding: 0.8rem 2rem;
   font-size: 1rem;
@@ -60,7 +60,7 @@
 }
 
 .boton-contacto:hover {
-  background-color: #CC9F00;
+  background-color: #A4F522;
 }
 
 /* Responsive */

@@ -104,7 +104,7 @@ transition: 0.20s;
 .button6-desktop{
   position: relative;
   left: 2rem;
-  background-color: #FFC300;
+  background-color: #8CDA05;
   color: black;
   font-weight: bold;
   font-size: 12px;
@@ -117,7 +117,7 @@ transition: 0.20s;
 
 }
 .button6-desktop:hover{
-  background-color: #CC9F00;
+  background-color:#A4F522;
   cursor: pointer;
   border: none;
 }
@@ -127,7 +127,7 @@ transition: 0.20s;
   color: black;
   font-weight: bold;
   font-size: 13px;
-  background-color: #FFC300;
+  background-color: #8CDA05;
   padding: 5px 7px;
   border-radius: 12px;
 }
@@ -150,10 +150,10 @@ transition: 0.20s;
 }
 
 /* Borde inferior solo en hover */
-.nav-links-desktop li:nth-child(2):hover { border-bottom: 5px solid #FFC300; }
-.nav-links-desktop li:nth-child(3):hover { border-bottom: 5px solid #FFC300; }
-.nav-links-desktop li:nth-child(4):hover { border-bottom: 5px solid #FFC300; }
-.nav-links-desktop li:nth-child(5):hover { border-bottom: 5px solid #FFC300; }
+.nav-links-desktop li:nth-child(2):hover { border-bottom: 5px solid #8CDA05; }
+.nav-links-desktop li:nth-child(3):hover { border-bottom: 5px solid #8CDA05; }
+.nav-links-desktop li:nth-child(4):hover { border-bottom: 5px solid #8CDA05; }
+.nav-links-desktop li:nth-child(5):hover { border-bottom: 5px solid #8CDA05; }
 
 
 
