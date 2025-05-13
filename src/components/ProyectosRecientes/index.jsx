@@ -33,7 +33,13 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               className="image-proyect"
             />
           </div>
+          <div className="proyecto-desc"> 
+
+            <span>Una aplicación que permite al usuario trazar y dibujar figuras geometricas. </span>
+          </div>
+
           <div className="proyecto-detalle">
+
             <a
               href="https://new-paint-with-me.vercel.app/"
               target="_blank"
@@ -65,6 +71,11 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               className="image-proyect"
             />
           </div>
+<div className="proyecto-desc"> 
+
+            <span>Tienda virtual con catalogos de productos, carrito de compras, login y register, autenticación y encriptación.</span>
+          </div>
+
           <div className="proyecto-detalle">
             <a
               href="https://e-commerce-two-topaz-93.vercel.app/"
@@ -97,6 +108,12 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               className="image-proyect"
             />
           </div>
+<div className="proyecto-descA"> 
+
+            <span>Este es el clon de la web oficial de Avianca, tiene grandes detalles, animaciones y funcionalidades.</span>
+          </div>
+
+
           <div className="proyecto-detalle">
             <a
               href="https://avianca-co-fn142.vercel.app/"

@@ -24,8 +24,8 @@
 .proyecto-box {
   width: 30%;
   min-width: 280px;
-  max-width: 350px;
-  height: 360px;
+  max-width: 550px;
+  height: 357px;
   background-color: black;
   border: none;
   display: flex;
@@ -44,6 +44,36 @@
   font-size: 1.2rem;
 }
 
+.proyecto-desc {
+  flex: 1;
+  blur: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  top: 16rem;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+}
+.proyecto-descA{
+ flex: 1;
+  blur: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  top: 16rem;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+
+    }
+.proyecto-desc span{
+  font-size: 0.9rem;
+}
 .proyecto-detalle {
   
   height: auto;
@@ -126,6 +156,19 @@
     align-items: center;
     gap: 1.5rem;
   }
+
+  .proyecto-desc{
+    padding: 0.8rem;
+    top: 30rem;
+  }
+  .proyecto-detalle{
+    padding: 1rem;
+  }
+.proyecto-descA{
+   top: 29.2rem;
+    padding: 1rem;
+  }
+
 
   .proyecto-box {
     width: 90%;
