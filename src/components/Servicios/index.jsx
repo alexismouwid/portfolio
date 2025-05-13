@@ -37,7 +37,7 @@ const Servicios = forwardRef((_, ref) => {
         </div>
       </div>
       <div className="boton-container">
-         <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" class="boton-contacto">
+         <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="boton-contacto">
             Contactame 
             </a>            </div>
     </section>

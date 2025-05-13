@@ -7,7 +7,6 @@ import { useEffect } from 'react';
  */
 export const useVisibilityObserver = (selector) => {
   useEffect(() => {
-    console.log(`useVisibilityObserver: ${selector}`);
     const elements = document.querySelectorAll(selector);
 
     const observer = new IntersectionObserver((entries) => {
