@@ -1,0 +1,48 @@
+
+/* ✅ Responsive styles */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(to bottom, white 0%,white 40%, #242424 100%);
+    align-items: center;
+    position: relative;
+    top: 13rem;
+  }
+
+  .faq-left,
+  .faq-right {
+    position: relative;
+    left: 1rem;
+  width: 100%;
+  }
+
+  .faq-left h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+
+  .faq-image {
+    position: relative;
+    left: -2rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 200px;
+    font-size: 1rem;
+  }
+
+  .faq-pregunta {
+    font-size: 1.2rem;
+  }
+
+  .icono {
+    font-size: 1.2rem;
+  }
+
+  .faq-respuesta {
+    font-size: 1rem;
+  }
+}
+
+
