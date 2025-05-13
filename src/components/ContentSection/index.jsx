@@ -20,7 +20,9 @@ const ContentSection = forwardRef((props, ref) => {
           <p style={{color: 'white', fontSize: '1.2rem', position: 'relative', top: '2rem' }}>
             Cuento con el conocimiento y las herramientas necesarias
           </p>
-          <button className="cta-button">Contactame Ahora</button>
+         <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" class="cta-button">
+  Contactame Ahora
+</a>
         </div>
 
         {/* Sección 2: Perfil */}

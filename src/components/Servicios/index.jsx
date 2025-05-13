@@ -37,10 +37,9 @@ const Servicios = forwardRef((_, ref) => {
         </div>
       </div>
       <div className="boton-container">
-        <button className="boton-contacto" aria-label="Ir a la sección de contacto">
-          Contáctame
-        </button>
-      </div>
+         <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" class="boton-contacto">
+            Contactame 
+            </a>            </div>
     </section>
   );
 });

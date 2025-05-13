@@ -59,8 +59,9 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               <span className="check">Frecuentes</span>
             </li>
             <li className="li-life">
-              <button className="btn6">Contactame ahora</button>
-            </li>
+             <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" class="btn6">
+            Contactame Ahora
+            </a>             </li>
           </ul>
         ) : (
           <ul className="nav-links-desktop">
@@ -85,7 +86,9 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               <span className="check">Frecuentes</span>
             </li>
             <li className="li-desktop">
-              <button className="button6-desktop">Contactame ahora</button>
+            <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" class="button6-desktop">
+            Contactame Ahora
+            </a> 
             </li>
           </ul>
         )}

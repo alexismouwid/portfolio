@@ -139,9 +139,10 @@ const ProyectosRecientes = forwardRef((props, ref) => {
       </div>
 
       <div className="proyecto-boton-container">
-        <button className="proyecto-boton ejeY">
-          ¡Empecemos a discutir sobre tu proyecto!
-        </button>
+                <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" class="proyecto-boton ejeY">
+            ¡Empecemos a discutir sobre tu proyecto!
+
+            </a>
       </div>
     </section>
   );
