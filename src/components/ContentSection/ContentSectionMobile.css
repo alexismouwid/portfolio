@@ -57,6 +57,7 @@
   }
 
   .cta-button:hover {
+    color: black;
     cursor: pointer;
     color: #000000;
   }

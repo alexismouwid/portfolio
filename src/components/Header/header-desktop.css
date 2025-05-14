@@ -118,6 +118,7 @@ transition: 0.20s;
 
 }
 .button6-desktop:hover{
+  color: black;
   background-color:#A4F522;
   cursor: pointer;
   border: none;

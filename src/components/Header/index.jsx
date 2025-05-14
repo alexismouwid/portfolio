@@ -2,8 +2,12 @@
 import { useState, useEffect , useRef} from "react";
 import "./header.css";
 import { useIsMobile}  from "../../utils/useIsMobile";
+import { useVisibilityObserver } from "../../utils/useVisibilityObserver";
 
 const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
+
+  useVisibilityObserver(".ejeL");
+  useVisibilityObserver(".ejeX");
 
   const headerRef = useRef(null);
 
@@ -64,28 +68,28 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
             </a>             </li>
           </ul>
         ) : (
-          <ul className="nav-links-desktop">
+          <ul className="nav-links-desktop ">
             <div className="logo">
               <img src="./logo.png" alt="Logo" width="120px" />
             </div>
 
-            <li className="li-desktop">
+            <li className="li-desktop ejeL">
               <button onClick={scrollToHome} className="button1-desktop">Home</button>
             </li>
-            <li className="li-desktop">
+            <li className="li-desktop ejeL">
               <button onClick={scrollToServicios} className="button2-desktop">Servicios</button>
             </li>
-            <li className="li-desktop">
+            <li className="li-desktop ejeL">
               <button onClick={scrollToProyectos} className="button3-desktop">
                 Proyectos
                 <span className="check">Recientes</span>
               </button>
             </li>
-            <li className="li-desktop">
+            <li className="li-desktop ejeL">
               <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
-            <li className="li-desktop">
+            <li className="li-desktop ejeL">
             <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="button6-desktop">
             Contactame Ahora
             </a> 

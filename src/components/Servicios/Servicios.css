@@ -48,6 +48,7 @@
 }
 
 .boton-contacto {
+  position: relative;
   color: black;
   background-color: #8CDA05;
   border: none;
@@ -60,6 +61,7 @@
 }
 
 .boton-contacto:hover {
+  color: black;
   background-color: #A4F522;
 }
 

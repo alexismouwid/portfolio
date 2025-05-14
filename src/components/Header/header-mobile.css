@@ -176,6 +176,11 @@
     transition: 0.20s;
     border: 2.1px solid #000;
   }
+  .btn6:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
 }
 
 /* 📱🔹 Móviles pequeños */

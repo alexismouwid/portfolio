@@ -1,5 +1,6 @@
 @import "./utils/ejeX.css";
 @import "./utils/ejeY.css";
+@import "./utils/ejeL.css";
 
 html, body, #root, .App {
     height: 100%;

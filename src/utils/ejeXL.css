@@ -1,0 +1,25 @@
+@keyframes fadeInL {
+  from { opacity: 0; transform: translateX(-300px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeOutL {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-300px); }
+}
+
+.ejeL {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.ejeL.visible {
+  animation: fadeInX 0.6s forwards;
+}
+
+.ejeL.hidden {
+  animation: fadeOutX 0.6s forwards;
+}
+
+

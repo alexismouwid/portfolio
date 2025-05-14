@@ -6,6 +6,7 @@ import { useVisibilityObserver } from '../../utils/useVisibilityObserver';
 const ContentSection = forwardRef((props, ref) => {
 
   useVisibilityObserver(".ejeY");
+  useVisibilityObserver(".ejeL");
   return (
     <>
       <div className="content-principal">
@@ -33,7 +34,7 @@ const ContentSection = forwardRef((props, ref) => {
           <div className="profile-info">
             <h2>Alexis Vega</h2>
             <p className="profile-title">Desarrollador</p>
-            <div className="skill-item-busqueda">
+            <div className="skill-item-busqueda ejeL">
               <span className="buscame-en">Buscame en</span>
               <a 
                 href="https://www.linkedin.com/in/alexis-vega-3b4437333/" 
