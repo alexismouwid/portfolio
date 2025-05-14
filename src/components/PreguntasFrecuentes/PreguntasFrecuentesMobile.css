@@ -12,7 +12,6 @@
   .faq-left,
   .faq-right {
     position: relative;
-    left: 1rem;
   width: 100%;
   }
 
@@ -32,7 +31,7 @@
   }
 
   .faq-pregunta {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .icono {
@@ -40,7 +39,8 @@
   }
 
   .faq-respuesta {
-    font-size: 1rem;
+    position: relative;
+    font-size: 0.8rem;
   }
 }
 
