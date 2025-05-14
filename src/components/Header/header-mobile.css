@@ -52,7 +52,7 @@
     display: flex;
     position: relative;
     right: 0rem;
-    top: 1rem;
+    top: 3rem;
   }
 
   .button-close-menu {
@@ -87,7 +87,7 @@
   }
 
   .nav-links-mobile.active {
-    background-color: #000;
+    background-color: #242424;
     position: fixed;
     left: 0;
     min-height: 50vh;
@@ -112,11 +112,11 @@
   }
 
   .btn1, .btn2 , .btn3 , .btn4 {
-    height: 20px;
-    color: rgba(0,0,0,0.8);
+    height: 30px;
+    color: white;
     position: relative;
     right: 27px;
-    background-color: #fff;
+    background-color: #242424;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +187,7 @@
 @media (max-width: 600px) {
   .navbar {
     width: 100%;
-    height: 70px;
+    height: 60px;
 
     /* 🔧 agregado para navbar fija */
     position: fixed;
@@ -225,7 +225,7 @@
   }
 
   .logo-rtx img {
-    width: 150px;
+    width: 100px;
     position: relative;
     right: 20rem;
   }
@@ -259,7 +259,7 @@
     align-items: center;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: #8CDA05;
     position: relative;
     left: 5rem;
     top: 2rem;
@@ -288,6 +288,7 @@
     min-height: 60vh;
     overflow: hidden;
     background-color: #242424;
+    border-bottom: 3px solid #8CDA05;
     z-index: 1000;
   }
 
@@ -295,7 +296,7 @@
     position: relative;
     left: 15px;
     margin-top: 20px;
-    height: 20px;
+    height: 35px;
     width: calc(100vw - 20%);
     display: flex;
     align-items: center;
@@ -304,7 +305,6 @@
     transition: 0.20s;
     padding: 0px 15px;
     text-align: center;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
   }
 
   .btn1, .btn2 , .btn3 , .btn4 {

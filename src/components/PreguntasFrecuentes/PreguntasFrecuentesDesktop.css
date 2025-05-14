@@ -65,11 +65,13 @@
 }
 
 .icono {
+  color: #8CDA05;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
 .faq-respuesta {
-  color: black;
+  color: #242424;
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.4;

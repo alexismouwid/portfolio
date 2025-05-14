@@ -62,10 +62,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               <button onClick={() => handleScrollAndClose(scrollToPreguntas)} className="btn4">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
-            <li className="li-life">
-             <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="btn6">
-            Contactame Ahora
-            </a>             </li>
+           
           </ul>
         ) : (
           <ul className="nav-links-desktop ">

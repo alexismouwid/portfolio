@@ -121,7 +121,7 @@
 
   .skills-section {
 
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,12 +129,7 @@
     margin-left: -2rem;
   }
 
-  .software-experience {
-    font-size: 1.2rem;
-    color: white;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #ecf0f1;
-  }
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -217,7 +212,7 @@
   }
 
   .skills-section h3 {
-    color:  #ddd;
+    color:  #8CDA05;
     display:grid;
     font-size: 1.5rem;
   }
@@ -231,10 +226,11 @@
   .skill-item-busqueda {
     font-size: 0.95rem;
   }
+ 
 }
 
 /* Para móviles pequeños (menos de 400px) */
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .content-container {
     gap: 1.5rem;
   }
@@ -274,6 +270,7 @@
   }
 
   .skills-section h3 {
+    color: #8cda05;
     font-size: 0.9rem;
   }
 
