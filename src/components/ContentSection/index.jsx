@@ -7,6 +7,7 @@ const ContentSection = forwardRef((props, ref) => {
 
   useVisibilityObserver(".ejeY");
   useVisibilityObserver(".ejeL");
+  useVisibilityObserver(".ejeX");
   return (
     <>
       <div className="content-principal">
