@@ -3,9 +3,9 @@
   .navbar {
     width: 100%;
     overflow: hidden;
-    height: 40px;
-
-    /* 🔧 agregado para navbar fija */
+    height: 60px;
+  backdrop-filter: blur(3px);
+   background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
@@ -14,6 +14,9 @@
   }
 
   .navbar-container {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
   }
 
@@ -187,10 +190,10 @@
 @media (max-width: 600px) {
   .navbar {
     width: 100%;
-    height: 60px;
-
-    /* 🔧 agregado para navbar fija */
-    position: fixed;
+    height: 70px;
+  backdrop-filter: blur(3px);
+   background-color: rgba(0, 0, 0, 0.3);
+   position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -198,6 +201,9 @@
   }
 
   .navbar-container {
+    padding: 1rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
   }
 
@@ -234,14 +240,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    wbackdrop-filter: blur(3px);
+   background-color: rgba(0, 0, 0, 0.8);
+
     margin-bottom: 30px;
-    background-color: #242424;
   }
 
   .logo-menu-mobile {
     display: flex;
     position: relative;
-    right: 3rem;
+    right: 6rem; 
     top: 2rem;
   }
 
@@ -261,7 +269,7 @@
     cursor: pointer;
     color: #8CDA05;
     position: relative;
-    left: 5rem;
+    left: 7rem;
     top: 2rem;
   }
 
@@ -271,7 +279,8 @@
     left: -100%;
     width: 100%;
     min-height: 60vh;
-    background-color: #242424;
+ backdrop-filter: blur(3px);
+   background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -287,7 +296,8 @@
     left: 0;
     min-height: 60vh;
     overflow: hidden;
-    background-color: #242424;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 3px solid #8CDA05;
     z-index: 1000;
   }
@@ -299,6 +309,7 @@
     height: 35px;
     width: calc(100vw - 20%);
     display: flex;
+
     align-items: center;
     justify-content: left;
     font-size: 11px;
@@ -312,7 +323,7 @@
     color: #fff;
     position: relative;
     right: 27px;
-    background-color: #242424;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
