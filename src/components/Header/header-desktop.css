@@ -41,24 +41,23 @@ position: fixed;        /* Lo hace quedarse fijo */
 .logo-rtx{
   display: none;
 }
-.logo img{
-  background-color: transparent;
-  position: relative;
-  padding : 20px 25px; 
-  right: 25rem;
-  bottom: 61px;
-  width: 140px;
-  height: 68px;
-}
-.desktop-logo{
+.logo{
   background-color: transparent;
   margin-right: 45px;
   margin-left: 10px;
   position: relative;
-  bottom: 17px;
-  right: 5px;
-    height: 50px;
+  bottom: 5rem;
+  right: -2rem;
 }
+.logo img{
+  background-color: transparent;
+  position: relative;
+
+  right: 25rem;
+  width: 150px;
+  height: 150px;
+}
+
 
 .nav-links-desktop{
   position: relative;
