@@ -4,12 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-background: radial-gradient(
-    circle at top center,
-    #1f0b2f 0%,
-    #2d0e40 40%,
-    #8CDA05 100%
-  );
+background: #FFF;
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(140, 220, 2, 1) 60%, rgba(140, 218, 5, 1) 80%);
   color: black;
   padding: 5rem;
   margin: 0;
