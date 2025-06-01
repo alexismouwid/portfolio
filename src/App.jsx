@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState,  useEffect, useRef } from 'react';
 import './App.css';
-
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
 import Header from './components/Header';
 import ContentSection from './components/ContentSection';
 import Servicios from './components/Servicios';
@@ -9,6 +10,8 @@ import ProyectosRecientes from './components/ProyectosRecientes';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 
 export default function App() {
+
+
    const [loading, setLoading] = useState(true);
    const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -17,6 +20,34 @@ export default function App() {
   const proyectosRef = useRef(null);
   const preguntasRef = useRef(null);
   const HomeRef = useRef(null);
+
+useEffect(() => {
+		createChat({
+		webhookUrl: 'http://localhost:6598/webhook/5aee2cac-5bf0-4ab3-9403-6a0af2e0f4d8/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		 'Tienes alguna duda?'
+	],
+	i18n: {
+		en: {
+			title: 'Hey! 👋',
+			subtitle: "Aqui puedes hacerme cualquier pregunta",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Type your question..',
+		},
+	},		});
+	}, []);
 
 
   useEffect(() => {
@@ -76,7 +107,7 @@ const scrollToHome = () => {
       <Servicios ref={serviciosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>
       <PreguntasFrecuentes ref={preguntasRef}/>
-
+     <div id="n8n-chat" />
         </div>
 
       </div>

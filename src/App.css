@@ -1,35 +1,120 @@
+/* Importaciones */
 @import "./utils/ejeX.css";
 @import "./utils/ejeY.css";
 @import "./utils/ejeL.css";
 
+:root {
+	--chat--color-primary: #e74266;
+	--chat--color-primary-shade-50: #db4061;
+	--chat--color-primary-shade-100: #cf3c5c;
+	--chat--color-secondary: #20b69e;
+	--chat--color-secondary-shade-50: #1ca08a;
+	--chat--color-white: #ffffff;
+	--chat--color-light: #f2f4f8;
+	--chat--color-light-shade-50: #e6e9f1;
+	--chat--color-light-shade-100: #c2c5cc;
+	--chat--color-medium: #d2d4d9;
+	--chat--color-dark: #242424;
+	--chat--color-disabled: #777980;
+	--chat--color-typing: #242424;
+
+	--chat--spacing: 0.6rem !important; 
+	--chat--border-radius: 25rem !important;
+	--chat--transition-duration: 0.15s;
+
+	--chat--window--width: 300px !important;
+	--chat--window--height: 500px !important;
+	--chat--window--border: 1px solid #8CDA05 !important;
+  --chat--window--border-radius: 15px !important;
+
+  --chat--input--background: #242424 ; /* Fondo negro */
+  --chat--input--color: #ffffff;      /* Texto blanco */
+  --chat--input--placeholder-color: #c2c5cc; /* Placeholder gris claro */
+
+	--chat--header-height: auto;
+	--chat--header--padding: 10px 15px;
+	--chat--header--background: 	#242424;
+  --chat--header--color: var(--chat--color-light);
+	--chat--header--border-top: none;
+	--chat--header--border-bottom: none;
+	--chat--header--border-bottom: none;
+	--chat--header--border-bottom: none;
+	--chat--heading--font-size: 1em !important;
+	--chat--header--color: var(--chat--color-light);
+	--chat--subtitle--font-size: inherit;
+	--chat--subtitle--line-height: 1.8;
+
+	--chat--textarea--height: 40px !important;
+  --chat--textarea--background: #242424;
+  --chat--textarea--color: #ffffff;
+  --chat--textarea--placeholder-color: #c2c5cc;
+
+	--chat--message--font-size: 0.7rem;
+	--chat--message--padding: 7px 10px;
+	--chat--message--border-radius: 25px  !important;
+	--chat--message-line-height: 1.2 !important;
+	--chat--message--bot--background: rgb(140, 218, 5); 
+	--chat--message--bot--color: #242424 !important;
+	--chat--message--bot--border: none;
+	--chat--message--user--background: #8CDA05 !important;
+	--chat--message--user--color: black !important;
+	--chat--message--user--border: none !important;
+	--chat--message--pre--background: rgba(0, 0, 0, 0.05) !important;
+	--chat--input--send-bottom-background: #8CDA05 !important;
+
+	--chat--toggle--background: #8CDA05 !important;
+	--chat--toggle--hover--background: #A4F522!important;
+	--chat--toggle--active--background: #8CDA05 !important;
+	--chat--toggle--color: black  !important;
+	--chat--toggle--size: 50px !important;
+
+  --chat--body--background: #242424 !important;
+}
+
 html, body, #root, .App {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #242424;
-}
-#root{
- 
-max-width: none;
+  height: 100%;
   width: 100%;
-  margin: 0 auto;
-  padding: 0rem;
-  text-align: center;
-  background-color: #242424;
-}
-html{
-  scroll-snap-type:  y mandatory;
-  overflow-y: auto;
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #242424;
-}
-html, body{
   overflow-x: hidden;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+/* Estilo para el div raíz */
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #242424;
+}
+
+/* App principal */
+.App {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  text-align: center;
+}
+
+/* Contenedor del contenido */
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Logo */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -37,7 +122,7 @@ html, body{
   transition: filter 300ms;
 }
 
-/* From Uiverse.io by fanishah */ 
+/* Loading spinner personalizado */
 .loading-bar {
   position: relative;
   top: 50%;
@@ -46,7 +131,7 @@ html, body{
   width: 110px;
   height: 110px;
   background: transparent;
-  border: 0px solid  #A4F522;
+  border: 0 solid #A4F522;
   border-radius: 50%;
   text-align: center;
   line-height: 111px;
@@ -68,31 +153,16 @@ html, body{
   height: 100%;
   border: 3px solid transparent;
   border-top: 5px solid #8CDA05;
-  border-right: 5px solid  #8CDA05;
+  border-right: 5px solid #8CDA05;
   border-radius: 50%;
   animation: animateC 2s linear infinite;
 }
-.App{ width: 100%;
-  height: 100vh;
-  padding: 0rem;
-  text-align: center;
-}
-.content{
-  width: 100%;
-  height: auto;
-  display: flex;
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3 ease;
- 
-}
+
+/* Animaciones */
 @keyframes animateC {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -102,15 +172,15 @@ html, body{
   0% {
     transform: rotate(45deg);
   }
-
   100% {
     transform: rotate(405deg);
   }
 }
+
+/* Media queries para responsive */
 @media (max-width: 768px) {
   html, body {
-    overflow-x: block;
+    overflow-x: auto;
   }
-  }
-
+}
 
