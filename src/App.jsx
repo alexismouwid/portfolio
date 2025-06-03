@@ -23,7 +23,7 @@ export default function App() {
 
 useEffect(() => {
 		createChat({
-		webhookUrl: 'http://localhost:6598/webhook/5aee2cac-5bf0-4ab3-9403-6a0af2e0f4d8/chat',
+		webhookUrl: 'https://n8n-i83n.onrender.com/webhook/e8d05464-738b-466c-93cf-47c1456ec0fe/chat',
 	webhookConfig: {
 		method: 'POST',
 		headers: {}
