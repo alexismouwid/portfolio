@@ -36,7 +36,7 @@ useEffect(() => {
 	showWelcomeScreen: false,
 	defaultLanguage: 'en',
 	initialMessages: [
-		 'Tienes alguna duda?'
+		 'Haz una pregunta?'
 	],
 	i18n: {
 		en: {
