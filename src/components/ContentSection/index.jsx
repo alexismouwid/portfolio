@@ -34,8 +34,8 @@ const ContentSection = forwardRef((props, ref) => {
           </div>
           <div className="profile-info">
             <h2>Alexis Vega</h2>
-            <p className="profile-title">Desarrollador</p>
-            <div className="skill-item-busqueda ejeL">
+            <p className="profile-title">Desarrollador web en formación continua, con experiencia práctica y pasión por aprender. Busco crecer y aportar en un equipo con grandes desafíos.</p>
+            <div className="skill-item-busqueda ">
               <span className="buscame-en">Buscame en</span>
               <a 
                 href="https://www.linkedin.com/in/alexis-vega-3b4437333/" 

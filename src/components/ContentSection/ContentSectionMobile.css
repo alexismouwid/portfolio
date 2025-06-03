@@ -73,7 +73,7 @@
   }
 
   .profile-image {
-    width: 60%;
+    width: 70%;
     left: 2rem;
     top: 0;
   }
@@ -94,12 +94,17 @@
     text-align: center;
   }
 
-  .profile-info h2,
-  .profile-title {
-    color: #7f8c8d;
+  .profile-info h2{
+
+  
+    color: #ffffff;
     position: static;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
+  .profile-title {
+
+  }
+
 
   .busquedaMobile{
     display: flex;
@@ -120,12 +125,12 @@
 
   
 
-  .skills-section.visible {
+  .skills-section {
     position: relative;
     width: 100%;
+    top: 10rem;
     display: flex;
     align-items: center;
-    top: 4rem;
     left: 1rem;
     margin-left: -2rem;
   }
@@ -203,7 +208,7 @@
     align-items: center;
     position: relative;
     font-size: 1rem;
-    top: 5rem;
+    top: 1rem;
     right: 0;
     text-align: center;
   }
@@ -300,5 +305,6 @@
   .links-redes {
     font-size: 0.9rem;
   }
+
 }
 
