@@ -178,18 +178,17 @@
 }
 .skill-item-busqueda.visible {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   position: relative;
   top: -2rem;
-  right: -5.5rem;
+  left: 0rem;
   font-weight: bold;
   font-size: 1.2rem; 
 }
 .skill-item-busqueda a{
   position: relative;
   top: 0rem;
-  left: 1.5rem;
   font-weight: bold;
   font-size: 1.2rem;
   color: #7f8c8d;
@@ -197,7 +196,6 @@
 .skill-item-busqueda span{
   color:  #8CDA05;
   position: relative;
-  left: -5.4rem;
 }
 
 .skill-item:hover {
