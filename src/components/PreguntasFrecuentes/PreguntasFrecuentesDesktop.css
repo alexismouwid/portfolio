@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
 background: #FFF;
-background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(140, 220, 2, 1) 60%, rgba(140, 218, 5, 1) 80%);
-  color: black;
+background: linear-gradient(to right, #0f2027, #8e2de2);
+  color: white;
   padding: 5rem;
   margin: 0;
 }
@@ -23,7 +23,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(140, 220, 2
   position: relative;
   left: -2rem;
   bottom: 4rem;
-  color: black;
+  color: white;
 }
 
 
@@ -32,7 +32,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(140, 220, 2
   width: 100%;
   height: 250px;
   background-color: #ccc;
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(140, 220, 2
 
 
 .faq-pregunta {
-  color: #242424;
+  color: white;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -72,7 +72,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(140, 220, 2
 }
 
 .faq-respuesta {
-  color: #242424;
+  color: white;
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.4;

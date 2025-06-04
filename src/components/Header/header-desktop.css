@@ -19,7 +19,7 @@ position: fixed;        /* Lo hace quedarse fijo */
     flex-direction: row;
     justify-content: space-between;
    backdrop-filter: blur(3px);
-   background-color: rgba(0, 0, 0, 0.3);
+   background-color: rgba(0, 0, 0, 0.1);
     align-items: center;
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ position: fixed;        /* Lo hace quedarse fijo */
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   justify-content: space-between;
 }
 .logo-rtx{
@@ -137,19 +137,19 @@ transition: 0.20s;
 
 .nav-links-desktop li:nth-child(2) { 
   width: 70px;
- height: 49px;
+ height: 43.5px;
 }
 .nav-links-desktop li:nth-child(3) { 
   width: 100px;
- height: 49px;
+ height: 42.5px;
 }
 .nav-links-desktop li:nth-child(4) { 
   width: 180px;
- height: 49px;
+ height: 43.2px;
 }
 .nav-links-desktop li:nth-child(5) { 
   width: 200px;
- height: 49px;
+ height: 43.2px;
 }
 
 /* Borde inferior solo en hover */

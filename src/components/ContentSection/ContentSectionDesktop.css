@@ -16,8 +16,8 @@
   gap: 8rem;
   display: flex;
   flex-direction: row;
+background: linear-gradient(to right, #0f2027, #8e2de2);
 
-  background: linear-gradient(to bottom, #242424 0%, #242424 40%, #ffffff 100%);
   color: white;
 }
 

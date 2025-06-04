@@ -33,7 +33,7 @@
 
 	--chat--header-height: auto;
 	--chat--header--padding: 10px 15px;
-	--chat--header--background: 	#242424;
+	--chat--header--background: 	#0f2027;
   --chat--header--color: var(--chat--color-light);
 	--chat--header--border-top: none;
 	--chat--header--border-bottom: none;
@@ -45,7 +45,7 @@
 	--chat--subtitle--line-height: 1.8;
 
 	--chat--textarea--height: 40px !important;
-  --chat--textarea--background: #242424;
+  --chat--textarea--background: #0f2027 !important;
   --chat--textarea--color: #ffffff;
   --chat--textarea--placeholder-color: #c2c5cc;
 
@@ -68,7 +68,7 @@
 	--chat--toggle--color: #f4f4f4  !important;
 	--chat--toggle--size: 50px !important;
 
-  --chat--body--background: #242424 !important;
+  --chat--body--background: #0f2027 !important;
 }
 
 html, body, #root, .App {
