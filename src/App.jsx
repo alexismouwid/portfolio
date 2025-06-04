@@ -8,6 +8,7 @@ import ContentSection from './components/ContentSection';
 import Servicios from './components/Servicios';
 import ProyectosRecientes from './components/ProyectosRecientes';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
+import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 
 export default function App() {
 
@@ -108,6 +109,7 @@ const scrollToHome = () => {
       <ProyectosRecientes ref={proyectosRef}/>
       <PreguntasFrecuentes ref={preguntasRef}/>
      <div id="n8n-chat" />
+          <FloatingWhatsAppButton />
         </div>
 
       </div>
