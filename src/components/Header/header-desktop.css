@@ -159,6 +159,42 @@ transition: 0.20s;
 .nav-links-desktop li:nth-child(5):hover { border-bottom: 5px solid #8CDA05; }
 
 
+@media (max-width: 1366px) and (min-width: 912px) {
+  
+.nav-links-desktop{
+  position: relative;
+  left: -3rem;
+  list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+
+}
+
+.logo{
+  background-color: transparent;
+  margin-right: 45px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 5rem;
+  right: -2rem;
+}
+.logo img{
+  background-color: transparent;
+  position: relative;
+  right: 2rem;
+  width: 150px;
+  height: 150px;
+}
+
+
+}
+
+
+
+
 
 
 
