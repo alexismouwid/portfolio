@@ -2,9 +2,71 @@ import React, { forwardRef, useRef , useEffect} from 'react';
 import './ContentSection.css';
 import { useVisibilityObserver } from '../../utils/useVisibilityObserver';
 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 
 const ContentSection = forwardRef((props, ref) => {
 
+  gsap.registerPlugin(useGSAP);
+
+ 
+  useGSAP(() => {
+
+     const splitText = new SplitText(".hero-section p", { type: "words, chars, lines" });
+
+    const splitText2 = new SplitText(".hero-section h2", { type: "words, chars, lines" });
+    
+    const splitText3 = new SplitText(".profile-title", { type: "words, chars, lines" });
+const tl = gsap.timeline();
+   
+    tl.from(splitText2.words, {
+        duration: 0.5,
+        y: 20,
+        stagger: 0.2,
+        opacity: 0,
+				filter: "blur(10px)",
+
+     })
+.from(".profile-image", {
+	  	duration: 2,
+			scale: .11,
+	    opacity: 0,
+    }, "<")
+
+
+    .from(splitText.words, {
+        duration: 0.02,
+        y: 10,
+        stagger: 0.02,
+        opacity: 0,
+        filter: "blur(10px)",
+     })
+
+    
+
+        .from(splitText3.words, {
+        duration: 0.1,
+        y: 20,
+        stagger: 0.02,
+        opacity: 0,
+        filter: "blur(10px)",
+    }, ">")
+    .from(".skill-column", {
+      x: 500,
+      y: 500,
+      opacity: 0,
+      duration: 1,
+      
+    }, "<")
+      .from(".skill-item-busqueda", { 
+        y: 500,
+        opacity: 0,
+        rotate: 360,
+        duration: 1,
+        
+      })
+  }, []);
   useVisibilityObserver(".ejeY");
   useVisibilityObserver(".ejeL");
   useVisibilityObserver(".ejeX");
@@ -13,10 +75,10 @@ const ContentSection = forwardRef((props, ref) => {
       <div className="content-principal">
  <div className="content-container" ref={ref}>
         {/* Sección 1: Hero */}
-        <div className="hero-section ejeY" >
+        <div className="hero-section ejeY " >
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
-            <p style={{ color: ' #8CDA05', fontSize: '3rem' }}>Visualizar </p>
+            <h2 className="visualizar" style={{ color: ' #8CDA05', fontSize: '2.9rem' }}>Visualizar </h2>
             Su Idea
           </h1>
           <p style={{color: 'white', fontSize: '1.2rem', position: 'relative', top: '2rem' }}>
