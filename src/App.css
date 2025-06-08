@@ -77,7 +77,6 @@ html, body, #root, .App {
   margin: 0;
   padding: 0;
   background-color: #242424;
-  overflow-x: hidden;
 }
 
 html {
@@ -177,10 +176,4 @@ html {
   }
 }
 
-/* Media queries para responsive */
-@media (max-width: 768px) {
-  html, body {
-    overflow-x: auto;
-  }
-}
 

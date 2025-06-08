@@ -96,6 +96,7 @@ const scrollToHome = () => {
     <>
 
       <div className='App'> 
+
         <div className='content'> 
  <Header 
       menuOpen={menuOpen}
@@ -104,6 +105,7 @@ const scrollToHome = () => {
       scrollToServicios={scrollToServicios}
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
+
       <ContentSection ref={HomeRef}/>
       <Servicios ref={serviciosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>

@@ -1,65 +1,80 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useRef , useEffect} from 'react';
 import './ContentSection.css';
+import { useVisibilityObserver } from '../../utils/useVisibilityObserver';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const ContentSection = forwardRef((props, ref) => {
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+  gsap.registerPlugin(useGSAP);
+
+ 
   useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".content-container",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-        pin: true
-      }
-    });
 
-    // Aparece la sección hero
-    tl.fromTo(".hero-section",
-      { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 1 }
-    );
-    // Desaparece la sección hero
-    tl.to(".hero-section", {
-      scale: 2,
-      autoAlpha: 0,
-      duration: 2
-    });
+     const splitText = new SplitText(".hero-section p", { type: "words, chars, lines" });
 
-    // Aparece la sección perfil justo después
-    tl.fromTo(".profile-section",
-      { scale: 0.4, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 2 }
-    );
+    const splitText2 = new SplitText(".hero-section h2", { type: "words, chars, lines" });
+    
+    const splitText3 = new SplitText(".profile-title", { type: "words, chars, lines" });
+const tl = gsap.timeline();
+   
+    tl.from(splitText2.chars, {
+        duration: 2,
+        y: 20,
+        stagger: 0.3,
+        opacity: 0,
+				filter: "blur(10px)",
 
-    tl.to(".profile-section", {
-      scale: 2,
-      autoAlpha: 0,
-      duration: 2
-    });
+     })
+.from(".profile-image", {
+	  	duration: 2,
+			scale: .11,
+	    opacity: 0,
+    }, "<")
 
-    // Aparece la sección habilidades justo despues
-    tl.fromTo(".skills-section",
-      { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 2 }
-    );
 
-    tl.to(".skills-section", {
-      scale: 2,
-      autoAlpha: 0,
-      duration: 3
-    });
+    .from(splitText.words, {
+        duration: 0.5,
+        y: 10,
+        stagger: 0.2,
+        opacity: 0,
+        filter: "blur(10px)",
+     })
+
+    
+
+        .from(splitText3.words, {
+        duration: 1,
+        y: 20,
+        stagger: 0.3,
+        opacity: 0,
+        filter: "blur(10px)",
+    }, ">")
+    .from(".skill-column", {
+      x: 500,
+      y: 500,
+      opacity: 0,
+      duration: 1,
+      
+    }, 3)
+      .from(".skill-item-busqueda", { 
+        y: 500,
+        opacity: 0,
+        rotate: 360,
+        duration: 1,
+        
+      })
   }, []);
+  useVisibilityObserver(".ejeY");
+  useVisibilityObserver(".ejeL");
+  useVisibilityObserver(".ejeX");
   return (
     <>
       <div className="content-principal">
  <div className="content-container" ref={ref}>
         {/* Sección 1: Hero */}
-        <div className="hero-section" >
+        <div className="hero-section ejeY " >
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
             <h2 className="visualizar" style={{ color: ' #8CDA05', fontSize: '2.9rem' }}>Visualizar </h2>
@@ -74,7 +89,7 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 2: Perfil */}
-        <div className="profile-section " >
+        <div className="profile-section ejeY" >
           <div className="profile-image">
             <img className="perfil" src="./test.jpg" alt="Perfil" />
           </div>
@@ -89,7 +104,7 @@ const ContentSection = forwardRef((props, ref) => {
                 rel="noopener noreferrer" 
                 className='links-redes'> 
                 <img 
-                  width="45px" height="45px" 
+                  width="35px" height="35px" 
                   src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
                   className="skill-icon" 
                 /> 
@@ -100,7 +115,7 @@ const ContentSection = forwardRef((props, ref) => {
                 rel="noopener noreferrer" 
                 className='links-redes'>
                 <img 
-                  width="45px" height="45px" 
+                  width="35px" height="35px" 
                   src="./git.png" alt="Github" 
                   className="skill-icon" 
                 />
@@ -110,60 +125,65 @@ const ContentSection = forwardRef((props, ref) => {
         </div>
 
         {/* Sección 3: Habilidades */}
-        <div className="skills-section ">
+        <div className="skills-section ejeY">
           <h3 className="software-experience">Software Experience</h3>
           <div className="skills-grid">
             {/* Columna 1 */}
+            <div className="skill-column">
               <div className="skill-item">
                 <span className="skill-namej">Javascript</span>
-                <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Javascript" className="skill-icon" />
+                <img width="35px" height="35px" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Javascript" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-nameh">HTML5</span>
-                <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" className="skill-icon" />
+                <img width="35px" height="35px" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">CSS</span>
-                <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" className="skill-icon" />
+                <img width="35px" height="35px" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">React</span>
-                <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" className="skill-icon" />
+                <img width="35px" height="35px" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">Node.js</span>
-                <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" className="skill-icon" />
+                <img width="35px" height="35px" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">MongoDB</span>
-                <img width="45px" height="45px" src="./mongodb.png" alt="MongoDB" className="skill-icon" />
+                <img width="35px" height="35px" src="./mongodb.png" alt="MongoDB" className="skill-icon" />
               </div>
+                          </div>
 
+            {/* Columna 2 */}
+            <div className="skill-column">
               <div className="skill-item">
                 <span className="skill-icon">Figma</span>
-                <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" className="skill-icon" />
+                <img width="35px" height="35px" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">Github</span>
-                <img width="45px" height="45px" src="./git.png" alt="Github" className="skill-icon" />
+                <img width="35px" height="35px" src="./git.png" alt="Github" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">Postman</span>
-                <img width="45px" height="45px" src="./postman.png" alt="Postman" className="skill-icon" />
+                <img width="35px" height="35px" src="./postman.png" alt="Postman" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">Neovim</span>
-                <img width="45px" height="45px" src="./neovim.png" alt="Nvim" className="skill-icon" />
+                <img width="35px" height="35px" src="./neovim.png" alt="Nvim" className="skill-icon" />
               </div>
               <div className="skill-item">
                 <span className="skill-icon">Linux</span>
-                <img width="45px" height="45px" src="./linux.png" alt="Linux" className="skill-icon" />
+                <img width="35px" height="35px" src="./linux.png" alt="Linux" className="skill-icon" />
               </div>
 <div className="skill-item">
                 <span className="skill-icon">Docker</span>
-                <img width="45px" height="45px" src="./docker.png" alt="SQL" className="skill-icon" />
+                <img width="35px" height="35px" src="./docker.png" alt="SQL" className="skill-icon" />
               </div>
 
+            </div>
           </div>
         </div>
       </div>
