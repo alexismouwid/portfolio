@@ -1,11 +1,11 @@
 .servicios-container {
   width: 100%;
- height: 100dvh;
+  min-height: 100dvh;
   margin: 0 auto;
- background: linear-gradient(to right, #0f2027, #8e2de2);
+  background: linear-gradient(to right, #0f2027, #8e2de2);
   text-align: center;
   color: white;
-
+  padding: 2rem;
 }
 
 .servicios-titulo {
@@ -14,7 +14,6 @@
   font-weight: bold;
   margin-bottom: 3rem;
   position: relative;
-  left: -2rem;
 }
 
 .servicios-grid {
@@ -27,10 +26,8 @@
 .servicio-box {
   color: white;
   background-color: transparent;
-  width: 24%;
+  width: 22%;
   text-align: left;
-  position: relative;
-  left: -2rem;
 }
 
 .servicio-box h3 {
@@ -48,9 +45,6 @@
 }
 
 .boton-contacto {
-  position: relative;
-  top: 2rem;
-  left -5rem;
   color: black;
   background-color: #8CDA05;
   border: none;
@@ -70,38 +64,25 @@
 /* Responsive */
 @media (max-width: 768px) {
   .servicios-container {
-    width: 100%;
-    height: 1300px;
-    padding: 2rem;
-    position: relative;
-    top: 0rem;
-  }
-  .servicios-grid {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    position: relative;
-    top: 10rem;
-    gap: 2rem;
-  }
-
-  .servicio-box {
-    margin-bottom: 0rem;
-    width: 80%;
+    min-height: auto;
   }
 
   .servicios-titulo {
-    
-  margin-bottom: -1rem;
     font-size: 2rem;
-    position: relative;
-    top: 10rem;
-    left: -2rem;
+    margin-bottom: 2rem;
   }
-  .boton-contacto{
-    position: relative;
-    top: 10rem;
-    left: -2rem;
+
+  .servicios-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+ 
+
+  .boton-contacto {
+    margin-top: 2rem;
   }
 }
 

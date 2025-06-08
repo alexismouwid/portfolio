@@ -21,7 +21,7 @@ const ContentSection = forwardRef((props, ref) => {
     // Aparece la sección hero
     tl.fromTo(".hero-section",
       { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 1 }
+      { scale: 1, autoAlpha: 1, duration: 2 }
     );
     // Desaparece la sección hero
     tl.to(".hero-section", {
@@ -53,6 +53,17 @@ const ContentSection = forwardRef((props, ref) => {
       autoAlpha: 0,
       duration: 3
     });
+
+    tl.fromTo(".serv-title",
+      { scale: 1.2, autoAlpha: 0 },
+      { scale: 1, autoAlpha: 1, duration: 2 }
+    );
+
+    tl.to(".serv-title", {
+      scale: 2,
+      autoAlpha: 0,
+      duration: 3
+    });
   }, []);
   return (
     <>
@@ -62,7 +73,7 @@ const ContentSection = forwardRef((props, ref) => {
         <div className="hero-section" >
           <h1 style={{ fontSize: '3rem' }}>
             Yo puedo 
-            <h2 className="visualizar" style={{ color: ' #8CDA05', fontSize: '2.9rem' }}>Visualizar </h2>
+            <p className="visualizar" style={{ color: ' #8CDA05', fontSize: '2.9rem' }}>Visualizar </p>
             Su Idea
           </h1>
           <p style={{color: 'white', fontSize: '1.2rem', position: 'relative', top: '2rem' }}>
@@ -163,9 +174,41 @@ const ContentSection = forwardRef((props, ref) => {
                 <span className="skill-icon">Docker</span>
                 <img width="45px" height="45px" src="./docker.png" alt="SQL" className="skill-icon" />
               </div>
-
           </div>
         </div>
+
+          <div className="serv-title">  
+            <h1 className="servicios-titulo"> 
+              Servicios que ofrezco </h1>
+ <div className="servicios-grid">
+        <div className="servicio-box "  >
+          <h3>Diseño de UI/UX de sitios web</h3>
+          <p>
+            Diseño interfaces atractivas y experiencias de usuario intuitivas que
+            combinan estética y funcionalidad. Creo sitios web fáciles de usar,
+            visualmente efectivos y adaptados a tus objetivos.
+          </p>
+        </div>
+        <div className="servicio-box "  >
+          <h3>Diseño de UI/UX de aplicaciones móviles</h3>
+          <p>
+            Diseño interfaces y experiencias de usuario para aplicaciones móviles,
+            enfocadas en usabilidad, estética y rendimiento. Creo apps intuitivas,
+            modernas y adaptadas a las necesidades de tus usuarios.
+          </p>
+        </div>
+        <div className="servicio-box " >
+          <h3>Diseño de dashboards de control y software</h3>
+          <p>
+            Diseño dashboards y software personalizados con interfaces claras y
+            funcionales. Ofrezco soluciones visuales que facilitan la gestión de
+            datos y mejoran la experiencia del usuario en plataformas digitales.
+          </p>
+        </div>
+      </div>
+          </div>
+
+
       </div>
       </div>
               </>
