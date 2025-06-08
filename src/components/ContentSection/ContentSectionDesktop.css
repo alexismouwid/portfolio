@@ -277,4 +277,20 @@
   margin-bottom: 2rem;
 }
 
+  .content-principal {
+  width: 100%; /* Asegura que ocupa toda la pantalla horizontal */
+  height: 345vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 100%;
+  height: 345vh;
+  background: linear-gradient(to right, #0f2027, #8e2de2);
+  color: white;
+}
+
 }
