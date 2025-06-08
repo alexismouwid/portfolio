@@ -20,8 +20,8 @@ const ContentSection = forwardRef((props, ref) => {
     const splitText3 = new SplitText(".profile-title", { type: "words, chars, lines" });
 const tl = gsap.timeline();
    
-    tl.from(splitText2.words, {
-        duration: 2.5,
+    tl.from(splitText2.chars, {
+        duration: 2,
         y: 20,
         stagger: 0.3,
         opacity: 0,
