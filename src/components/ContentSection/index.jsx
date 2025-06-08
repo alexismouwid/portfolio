@@ -21,9 +21,9 @@ const ContentSection = forwardRef((props, ref) => {
 const tl = gsap.timeline();
    
     tl.from(splitText2.words, {
-        duration: 0.5,
+        duration: 1,
         y: 20,
-        stagger: 0.2,
+        stagger: 0.3,
         opacity: 0,
 				filter: "blur(10px)",
 
@@ -36,9 +36,9 @@ const tl = gsap.timeline();
 
 
     .from(splitText.words, {
-        duration: 0.02,
+        duration: 1,
         y: 10,
-        stagger: 0.02,
+        stagger: 0.3,
         opacity: 0,
         filter: "blur(10px)",
      })
@@ -46,9 +46,9 @@ const tl = gsap.timeline();
     
 
         .from(splitText3.words, {
-        duration: 0.1,
+        duration: 1,
         y: 20,
-        stagger: 0.02,
+        stagger: 0.3,
         opacity: 0,
         filter: "blur(10px)",
     }, ">")
