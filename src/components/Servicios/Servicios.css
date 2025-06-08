@@ -71,13 +71,17 @@
 @media (max-width: 768px) {
   .servicios-container {
     width: 100%;
-    height: auto;
+    height: 1300px;
     padding: 2rem;
+    position: relative;
+    top: 0rem;
   }
   .servicios-grid {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    position: relative;
+    top: 10rem;
     gap: 2rem;
   }
 
@@ -90,10 +94,13 @@
     
   margin-bottom: -1rem;
     font-size: 2rem;
+    position: relative;
+    top: 10rem;
+    left: -2rem;
   }
   .boton-contacto{
     position: relative;
-    top: 0rem;
+    top: 10rem;
     left: -2rem;
   }
 }
