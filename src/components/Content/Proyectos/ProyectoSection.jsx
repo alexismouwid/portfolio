@@ -1,0 +1,140 @@
+import React, { useEffect, useState, forwardRef  } from "react";
+import  { useIsMobile  } from "../../../utils/useIsMobile";
+
+
+const Proyectos = ({ refProyectos, isMobile }) => {
+
+isMobile = useIsMobile();
+  return (
+    <section className="proyectos-container">
+      <h2 className="proyectos-titulo">Mis proyectos recientes</h2>
+      
+      <div ref={refProyectos} className="proyectos-grid">
+        {/* Proyecto 1 */}
+        <div className="proyecto-box">
+          <div className="imagen-placeholder">
+            <img
+              src={isMobile ? "/paint-mobile.jpg" : "/paint.jpg"}
+              alt="paint"
+              className="image-proyect"
+            />
+          </div>
+          <div className="proyecto-desc">
+            <span>
+              Una aplicación que permite al usuario trazar y dibujar figuras geométricas.
+            </span>
+          </div>
+          <div className="proyecto-detalle">
+            <a
+              href="https://new-paint-with-me.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+            </a>
+            <a
+              href="https://github.com/alexismouwid/new-paint-with-me-?tab=readme-ov-file"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link github"
+            >
+              <img
+                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Proyecto 2 */}
+        <div className="proyecto-box">
+          <div className="imagen-placeholder">
+            <img
+              src={isMobile ? "/ecomerce-mobile.jpg" : "/ecomerce.jpg"}
+              alt="e-commerce"
+              className="image-proyect"
+            />
+          </div>
+          <div className="proyecto-desc">
+            <span>
+              Tienda virtual con catálogos de productos, carrito de compras, login y registro,
+              autenticación y encriptación.
+            </span>
+          </div>
+          <div className="proyecto-detalle">
+            <a
+              href="https://e-commerce-two-topaz-93.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+            </a>
+            <a
+              href="https://github.com/alexismouwid/e-commerce"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link github"
+            >
+              <img
+                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Proyecto 3 */}
+        <div className="proyecto-box">
+          <div className="imagen-placeholder">
+            <img
+              src={isMobile ? "/avianca-mobile.jpg" : "/avianca.jpg"}
+              alt="avianca"
+              className="image-proyect"
+            />
+          </div>
+          <div className="proyecto-descA">
+            <span>
+              Este es el clon de la web oficial de Avianca, tiene grandes detalles, animaciones y funcionalidades.
+            </span>
+          </div>
+          <div className="proyecto-detalle">
+            <a
+              href="https://avianca-co-fn142.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link"
+            >
+              <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+            </a>
+            <a
+              href="https://github.com/alexismouwid/avianca.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proyecto-link github"
+            >
+              <img
+                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="proyecto-boton-container">
+        <a
+          href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información"
+          target="_blank"
+          className="proyecto-boton ejeY"
+        >
+          ¡Empecemos a discutir sobre tu proyecto!
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default Proyectos;
+

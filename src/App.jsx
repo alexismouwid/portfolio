@@ -4,7 +4,7 @@ import './App.css';
 import '@n8n/chat/style.css';
 import { createChat } from '@n8n/chat';
 import Header from './components/Header';
-import ContentSection from './components/ContentSection';
+import Content from './components/Content';
 import ProyectosRecientes from './components/ProyectosRecientes';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
@@ -105,8 +105,10 @@ const scrollToHome = () => {
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
 
-      <ContentSection ref={HomeRef}/>
-     <div id="n8n-chat" />
+      <Content
+          ref={HomeRef}
+          ref2={serviciosRef}/>
+          <div id="n8n-chat" />
           <FloatingWhatsAppButton />
         </div>
 

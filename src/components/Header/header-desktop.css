@@ -61,7 +61,7 @@ position: fixed;        /* Lo hace quedarse fijo */
 
 .nav-links-desktop{
   position: relative;
-  left: 19rem;
+  left: 9rem;
   list-style: none;
     display: flex;
     flex-direction: row;

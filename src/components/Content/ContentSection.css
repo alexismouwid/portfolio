@@ -1,0 +1,24 @@
+@import "./styles/Hero-section.css";
+@import "./styles/Profile-section.css";
+@import "./styles/Skills.css";
+@import "./styles/Services.css";
+@import "./styles/Proyectos.css";
+
+.content-principal {
+  width: 100%; /* Asegura que ocupa toda la pantalla horizontal */
+  height: 400vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 100%;
+  height: 400vh;
+  padding: 6rem 0; /* solo vertical */
+  background: linear-gradient(to right, #0f2027, #8e2de2);
+  color: white;
+}
+
+
