@@ -2,19 +2,23 @@ import React, { useEffect, useState, forwardRef  } from "react";
 import  { useIsMobile  } from "../../../utils/useIsMobile";
 
 
-const Proyectos = ({ refProyectos, isMobile }) => {
+const Proyectos = ({  isMobile }) => {
 
 isMobile = useIsMobile();
   return (
     <section className="proyectos-container">
-      <h2 className="proyectos-titulo">Mis proyectos recientes</h2>
       
-      <div ref={refProyectos} className="proyectos-grid">
+            
+      <div className="proyectos-grid">
         {/* Proyecto 1 */}
+<section className="proyecto1">
+<h1 className="proyectos-titulo">Mis proyectos recientes</h1>
+  
+  {/* Proyecto 1 */}
         <div className="proyecto-box">
           <div className="imagen-placeholder">
             <img
-              src={isMobile ? "/paint-mobile.jpg" : "/paint.jpg"}
+              src="/paint.jpg"
               alt="paint"
               className="image-proyect"
             />
@@ -47,11 +51,15 @@ isMobile = useIsMobile();
           </div>
         </div>
 
+
+      </section>
+
         {/* Proyecto 2 */}
-        <div className="proyecto-box">
+        <section className="proyecto2">
+           <div className="proyecto-box">
           <div className="imagen-placeholder">
             <img
-              src={isMobile ? "/ecomerce-mobile.jpg" : "/ecomerce.jpg"}
+              src="/ecomerce.jpg"
               alt="e-commerce"
               className="image-proyect"
             />
@@ -85,11 +93,17 @@ isMobile = useIsMobile();
           </div>
         </div>
 
-        {/* Proyecto 3 */}
-        <div className="proyecto-box">
+
+
+        </section>
+
+                       {/* Proyecto 3 */}
+      <section className="proyecto3"> 
+
+ <div className="proyecto-box">
           <div className="imagen-placeholder">
             <img
-              src={isMobile ? "/avianca-mobile.jpg" : "/avianca.jpg"}
+              src="/avianca.jpg"
               alt="avianca"
               className="image-proyect"
             />
@@ -121,17 +135,11 @@ isMobile = useIsMobile();
             </a>
           </div>
         </div>
-      </div>
 
-      <div className="proyecto-boton-container">
-        <a
-          href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información"
-          target="_blank"
-          className="proyecto-boton ejeY"
-        >
-          ¡Empecemos a discutir sobre tu proyecto!
-        </a>
-      </div>
+      </section>
+             </div>
+
+      
     </section>
   );
 };

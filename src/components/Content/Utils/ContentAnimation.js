@@ -45,12 +45,12 @@ export default function useContentSectionAnimation() {
     });
 
     // Aparece la sección habilidades justo después
-    tl.fromTo(".skills-section",
+    tl.fromTo(".skills-inner",
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".skills-section", {
+    tl.to(".skills-inner", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
@@ -69,16 +69,40 @@ export default function useContentSectionAnimation() {
     });
 
     // Aparece y desaparece la sección de proyectos
-    tl.fromTo(".proyectos-container", 
+    tl.fromTo(".proyecto1", 
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".proyectos-container", {
+    tl.to(".proyecto1", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
     });
+// Aparece y desaparece la sección de proyectos
+    tl.fromTo(".proyecto2", 
+      { scale: 1.2, autoAlpha: 0 },
+      { scale: 1, autoAlpha: 1, duration: 2 }
+    );
+
+    tl.to(".proyecto2", {
+      scale: 2,
+      autoAlpha: 0,
+      duration: 3
+    });
+// Aparece y desaparece la sección de proyectos
+    tl.fromTo(".proyecto3", 
+      { scale: 1.2, autoAlpha: 0 },
+      { scale: 1, autoAlpha: 1, duration: 2 }
+    );
+
+    tl.to(".proyecto3", {
+      scale: 2,
+      autoAlpha: 0,
+      duration: 3
+    });
+
+
 
     // Controles de la animación
     window.play.onclick = () => {

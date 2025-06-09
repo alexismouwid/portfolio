@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState,  useEffect, useRef } from 'react';
+import  { useIsMobile  } from "./utils/useIsMobile";
 import './App.css';
 import '@n8n/chat/style.css';
 import { createChat } from '@n8n/chat';
 import Header from './components/Header';
 import Content from './components/Content';
-import ProyectosRecientes from './components/ProyectosRecientes';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 
@@ -15,11 +15,14 @@ export default function App() {
    const [loading, setLoading] = useState(true);
    const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
 // 🔸 Creamos las referencias
+  const homeRef = useRef(null);
+  const profileRef = useRef(null);
+  const skillsRef = useRef(null);
   const serviciosRef = useRef(null);
   const proyectosRef = useRef(null);
   const preguntasRef = useRef(null);
-  const HomeRef = useRef(null);
 
 useEffect(() => {
 		createChat({
@@ -49,7 +52,6 @@ useEffect(() => {
 	},		});
 	}, []);
 
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -60,21 +62,7 @@ useEffect(() => {
     };
   })
 
-const scrollToHome = () => {
-    homeRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
-  const scrollToServicios = () => {
-    serviciosRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToProyectos = () => {
-    proyectosRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToPreguntas = () => {
-    preguntasRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   
 
@@ -100,14 +88,10 @@ const scrollToHome = () => {
  <Header 
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
-      scrollToHome={scrollToHome}
-      scrollToServicios={scrollToServicios}
-      scrollToProyectos={scrollToProyectos}
-      scrollToPreguntas={scrollToPreguntas}/>
+     />
 
       <Content
-          ref={HomeRef}
-          ref2={serviciosRef}/>
+         />
           <div id="n8n-chat" />
           <FloatingWhatsAppButton />
         </div>

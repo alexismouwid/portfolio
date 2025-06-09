@@ -48,20 +48,14 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               </button>
             </div>
 
-            <li className="li-mobile">
-              <button onClick={() => handleScrollAndClose(scrollToHome)} className="btn1">Home</button>
-            </li>
-            <li className="li-mobile">
-              <button onClick={() => handleScrollAndClose(scrollToServicios)} className="btn2">Servicios</button>
-            </li>
-            <li className="li-mobile">
-              <button onClick={() => handleScrollAndClose(scrollToProyectos)} className="btn3">Proyectos</button>
-              <span className="check">Recientes</span>
-            </li>
-            <li className="li-mobile">
-              <button onClick={() => handleScrollAndClose(scrollToPreguntas)} className="btn4">Preguntas</button>
-              <span className="check">Frecuentes</span>
-            </li>
+            <div className="mobile-search ">
+        <a href="https://www.linkedin.com/in/alexis-vega-3b4437333/" target="_blank" rel="noopener noreferrer" className="links-redes">
+          <img width="55px" height="55px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" className="skill-icon" />
+        </a>
+        <a href="https://github.com/alexismouwid" target="_blank" rel="noopener noreferrer" className="links-redes">
+          <img width="55px" height="55px" src="./git.png" alt="Github" className="skill-icon" />
+        </a>
+      </div>
            
           </ul>
         ) : (
@@ -70,28 +64,15 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               <img src="./logo.png" alt="Logo" width="120px" />
             </div>
 
-            <li className="li-desktop ejeL">
-              <button onClick={scrollToHome} className="button1-desktop">Home</button>
-            </li>
-            <li className="li-desktop ejeL">
-              <button onClick={scrollToServicios} className="button2-desktop">Servicios</button>
-            </li>
-            <li className="li-desktop ejeL">
-              <button onClick={scrollToProyectos} className="button3-desktop">
-                Proyectos
-                <span className="check">Recientes</span>
-              </button>
-            </li>
-            <li className="li-desktop ejeL">
-              <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
-              <span className="check">Frecuentes</span>
-            </li>
-            <li className="li-desktop ejeL">
-            <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="button6-desktop">
-            Contactame Ahora
-            </a> 
-            </li>
-          </ul>
+              <div className="searchhere ejeL">
+        <a href="https://www.linkedin.com/in/alexis-vega-3b4437333/" target="_blank" rel="noopener noreferrer" className="links-redes">
+          <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" className="skill-icon" />
+        </a>
+        <a href="https://github.com/alexismouwid" target="_blank" rel="noopener noreferrer" className="links-redes">
+          <img width="45px" height="45px" src="./git.png" alt="Github" className="skill-icon" />
+        </a>
+      </div>
+         </ul>
         )}
       </div>
     </nav>

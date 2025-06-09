@@ -10,7 +10,11 @@
   pointer-events: none; /* evita interacción mientras está fijo */
   z-index: 1; }
 
-
+.skills-inner {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
 .skills-section h3 {
   font-size: 2.5rem;
   color: #8CDA05;

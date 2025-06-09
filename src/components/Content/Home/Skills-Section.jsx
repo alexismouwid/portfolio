@@ -3,7 +3,9 @@ import React from 'react';
 
 const SkillsSection = () => (
   <div className="skills-section">
-    <h3 className="software-experience">Software Experience</h3>
+
+    <div className="skills-inner"> 
+<h3 className="software-experience">Software Experience</h3>
     <div className="skills-grid">
       {[
         { name: 'Javascript', src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },
@@ -25,7 +27,10 @@ const SkillsSection = () => (
         </div>
       ))}
     </div>
-  </div>
+
+
+    </div>
+      </div>
 );
 
 export default SkillsSection;
