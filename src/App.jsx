@@ -6,6 +6,7 @@ import '@n8n/chat/style.css';
 import { createChat } from '@n8n/chat';
 import Header from './components/Header';
 import Content from './components/Content';
+import ContentStatic from './components/ContentStatic';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 import Play from './components/Play';
@@ -17,6 +18,7 @@ export default function App() {
    const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [modeStatic, setmodeStatic] = useState(false);
 
 // 🔸 Creamos las referencias
   const homeRef = useRef(null);
@@ -90,10 +92,9 @@ useEffect(() => {
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
      />
-
-      <Content
-         />
+ {modeStatic ? <ContentStatic /> : <Content />}
           <div id="n8n-chat" />
+          <button className="changemodeButton" onClick={() => setmodeStatic(!modeStatic)}>{modeStatic ? "Modo Scrolling" : "Modo Estático"}</button>
           <FloatingWhatsAppButton />
          <Pause /> 
           <Play />

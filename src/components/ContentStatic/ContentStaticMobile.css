@@ -1,31 +1,25 @@
 /* Para tablets y móviles grandes */
 @media (max-width: 768px) {
-.content-principal {
+.static-principal {
   width: 100vw; /* Asegura que ocupa toda la pantalla horizontal */
-  height: 345vh;
+  height: 100dvh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content-container {
+.static-content {
   width: 100vw;
-  height: 345vh;
+  height: 100dvh;
   padding: 6rem 0; /* solo vertical */
   background: linear-gradient(to right, #0f2027, #8e2de2);
   color: white;
 }
 
-  .subtexto-info {
-    background-color: white;
-    color: black;
-    width: 100%;
-    margin: 0 auto;
-    border: none;
-  }
+/* Sección Hero */
 
-  .hero-section {
+  .hero-static {
    position: fixed;
   top: 0;
   left: 0;
@@ -42,13 +36,13 @@
     
   }
 
-  .hero-section h1 {
+  .hero-static h1 {
     font-size: 2rem;
     color: white;
     margin-bottom: 1rem;
   }
 
-  .hero-section p {
+  .hero-static p {
     font-size: 1rem;
     color: #7f8c8d;
   }
@@ -64,8 +58,8 @@
     cursor: pointer;
     color: #000000;
   }
-
-  .profile-section {
+/* Sección Perfil */
+  .profile-static {
     position: fixed;
   top: -5rem;
   left: 0;
@@ -78,18 +72,18 @@
   pointer-events: none; /* evita interacción mientras está fijo */
   z-index: 1;  }
 
-  .profile-image {
+  .image-container {
     width: 70%;
     top: 6rem;
   }
 
-  .perfil {
+  .perfil-static {
     width: 100%;
     object-fit: cover;
     border-radius: 360px;
   }
 
-  .profile-info {
+  .details-container {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -98,7 +92,7 @@
     text-align: center;
   }
 
-  .profile-info h2{
+  .details-container h2{
 
   
     color: #ffffff;
@@ -125,7 +119,7 @@
 
   
 /* Sección Habilidades */
-.skills-section {
+.skills-static {
   position: fixed;
   top: 0;
   left: 0;
@@ -137,7 +131,7 @@
   z-index: 1; }
 
 
-.skills-section h3 {
+.skills-static h3 {
   font-size: 0.5rem;
   color: #8CDA05;
   padding-bottom: 0.5rem;
@@ -149,7 +143,7 @@
   height: 60vh;
 }
 
-.skills-grid {
+.grid-static{
   background-color: transparent;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 4 columnas */
@@ -176,7 +170,7 @@
 
 }
   
-  .skill-item-busqueda.visible {
+  .contacto.visible {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -203,11 +197,11 @@
 
 /* Para móviles medianos (menos de 600px) */
 @media (max-width: 600px) {
-  .hero-section h1 {
+  .hero-static h1 {
     font-size: 1.8rem;
   }
 
-  .skill-item-busqueda {
+  .contacto {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -217,7 +211,7 @@
     right: 0;
     text-align: center;
   }
-  .hero-section p {
+  .hero-static p {
     font-size: 0.9rem;
   }
 
@@ -228,16 +222,16 @@
     font-size: 0.95rem;
   }
 
-  .perfil {
+  .perfil-static {
     width: 90%;
   }
 
-  .profile-info h2,
+  .details-container h2,
   .profile-title {
     font-size: 1rem;
   }
 
-  .skills-section h3 {
+  .skills-static h3 {
     color:  #8CDA05;
     display:grid;
     font-size: 1.5rem;
@@ -254,15 +248,15 @@
 
 /* Para móviles pequeños (menos de 400px) */
 @media (max-width: 400px) {
-  .content-container {
+  .static-content {
     gap: 1.5rem;
   }
 
-  .hero-section h1 {
+  .hero-static h1 {
     font-size: 1.5rem;
   }
 
-  .hero-section p {
+  .hero-static p {
     font-size: 0.9rem;
   }
 
@@ -271,11 +265,11 @@
     font-size: 0.9rem;
   }
 
-  .profile-image {
+  .image-container {
     width: 70%;
   }
 
-  .perfil {
+  .perfil-static {
     width: 100%;
   }
 
@@ -284,7 +278,7 @@
     font-size: 0.95rem;
   }
 
-  .skills-section {
+  .skills-static {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10rem;
@@ -292,7 +286,7 @@
     left: 2rem;
   }
 
-  .skills-section h3 {
+  .skills-static h3 {
     color: #8cda05;
     font-size: 0.9rem;
   }
