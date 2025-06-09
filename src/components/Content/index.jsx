@@ -26,15 +26,7 @@ const ContentSection = ()  => {
                 
         
         
-        <footer>
-          <button id="play">reproducir</button>
-          <button id="pause">pausar</button>
-          <button id="resume">resumir</button>
-          <button id="reverse">revertir</button>
-          <button id="restart">reiniciar</button>
-          <button id="turbo">turbo</button>
-        </footer>
-      </div>
+             </div>
     </div>
   );
 };

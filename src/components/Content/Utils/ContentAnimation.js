@@ -7,6 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function useContentSectionAnimation() {
   useGSAP(() => {
+
+    gsap.fromTo(".hero-inner",
+      { scale: 1.2, autoAlpha: 0 },
+      { scale: 1, 
+        autoAlpha: 1,
+        duration: 1.5,
+        ease: "power3.out" 
+      }
+
+    )
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".content-container",
@@ -19,12 +30,10 @@ export default function useContentSectionAnimation() {
       }
     });
 
-    // Aparece la sección hero
     tl.fromTo(".hero-inner",
       { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 2 }
+      { scale: 1, autoAlpha: 1, duration: 3 }
     );
-    
     // Desaparece la sección hero
     tl.to(".hero-inner", {
       scale: 2,
@@ -35,7 +44,7 @@ export default function useContentSectionAnimation() {
     // Aparece la sección perfil justo después
     tl.fromTo(".profile-inner",
       { scale: 0.4, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 2 }
+      { scale: 1, autoAlpha: 1, duration: 3 }
     );
 
     tl.to(".profile-inner", {
@@ -47,13 +56,13 @@ export default function useContentSectionAnimation() {
     // Aparece la sección habilidades justo después
     tl.fromTo(".skills-inner",
       { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 2 }
+      { scale: 1, autoAlpha: 1, duration: 4 }
     );
 
     tl.to(".skills-inner", {
       scale: 2,
       autoAlpha: 0,
-      duration: 3
+      duration: 4
     });
 
     // Aparece y desaparece el título de servicios
@@ -103,8 +112,7 @@ export default function useContentSectionAnimation() {
     });
 
 
-
-    // Controles de la animación
+    // MODO DEV Controles de la animación
     window.play.onclick = () => {
       tl.play();
       window.log.innerHTML += 'play <br>';
@@ -114,7 +122,7 @@ export default function useContentSectionAnimation() {
       tl.pause();
       window.log.innerHTML += 'pause <br>';
     };
-
+  /*
     window.resume.onclick = () => {
       tl.resume();
       window.log.innerHTML += 'resume <br>';
@@ -133,8 +141,17 @@ export default function useContentSectionAnimation() {
     window.turbo.onclick = () => {
       tl.timeScale(2);
       window.log.innerHTML += 'turbo <br>';
-    };
+    }; 
+     <footer>
+          <button id="play">reproducir</button>
+          <button id="pause">pausar</button>
+          <button id="resume">resumir</button>
+          <button id="reverse">revertir</button>
+          <button id="restart">reiniciar</button>
+          <button id="turbo">turbo</button>
+        </footer> 
+*/
 
-  }, []);
+   }, []);
 }
 

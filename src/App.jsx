@@ -8,13 +8,15 @@ import Header from './components/Header';
 import Content from './components/Content';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
-
+import Play from './components/Play';
+import Pause from './components/Pause';
 export default function App() {
 
 
    const [loading, setLoading] = useState(true);
    const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
 // 🔸 Creamos las referencias
   const homeRef = useRef(null);
@@ -63,7 +65,6 @@ useEffect(() => {
   })
 
 
-
   
 
   useEffect(() => {
@@ -94,6 +95,8 @@ useEffect(() => {
          />
           <div id="n8n-chat" />
           <FloatingWhatsAppButton />
+         <Pause /> 
+          <Play />
         </div>
 
       </div>

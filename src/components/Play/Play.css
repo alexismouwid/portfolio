@@ -1,0 +1,21 @@
+#play {
+  position: fixed;
+  bottom: 150px;
+  right: 16px;
+  background-color: #0f2027;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.2s ease-in-out;
+}
+
+#play:hover {
+  background-color: #242424;
+  transform: scale(1.1);
+}

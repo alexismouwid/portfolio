@@ -13,7 +13,7 @@ const FloatingWhatsAppButton = () => {
     >
       <FaWhatsapp size={33} />
     </a>
-  );
+ );
 };
 
 export default FloatingWhatsAppButton;
