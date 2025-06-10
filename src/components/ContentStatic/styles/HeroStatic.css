@@ -1,0 +1,110 @@
+/* Sección Hero */
+.heroe-static {
+  text-align: center;
+  padding: 2rem;
+   background: transparent;
+  height: 500px;
+  width: 30%;
+ 
+}
+
+
+.heroe-static h1 {
+  font-size: 2.5rem;
+  color: #0000000;
+  margin-bottom: 1rem;
+}
+
+.heroe-static p {
+  font-size: 1.2rem;
+  color: #8CDA05;
+  margin-bottom: 2rem;
+}
+.heroe-button {
+  border: none;
+  font-weight: bold;
+  color: black;
+  background-color: #8CDA05;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 4rem;
+  }
+
+.heroe-button:hover {
+  cursor: pointer;
+   background-color:#A4F522;
+  color: #000000;
+  border: none;
+
+}
+
+@media (max-width: 768px) {
+
+.heroe-static {
+    margin: 0;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    position: relative;
+    bottom: 4rem;
+    
+  }
+  .heroe-static.visible {
+    margin: 0;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    position: relative;
+    bottom: 4rem;
+  }
+
+  .heroe-static h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .heroe-static p {
+    font-size: 1rem;
+    width: 100%;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroe-button {
+
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 5rem;
+  }
+
+  .heroe-button:hover {
+    color: black;
+    cursor: pointer;
+    color: #000000;
+  }
+
+
+  }
+
+  @media (max-width: 480px) {
+    .heroe-static h1 {
+      font-size: 1.8rem;
+    }
+    
+    .heroe-static p {
+      font-size: 0.9rem;
+    }
+    
+    .heroe-button {
+position: relative;
+ top: 4rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    }
+  }

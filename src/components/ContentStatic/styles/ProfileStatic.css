@@ -1,0 +1,120 @@
+.profile-static {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: transparent;
+  width: 30%;
+  height: 500px;
+  position: relative;
+  top: 1rem;
+ 
+  
+}
+
+.image-container {
+
+  position: relative;
+  top: 3rem;
+  width: 50%;
+  left: 5rem; 
+  border-radius: 360px;
+ background-color: transparent;
+  margin: 0;
+}
+.perfil-static{ 
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0rem;
+  border-radius: 360px;
+
+}
+
+.details-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  position: relative;
+  top: 3rem;
+  height: 100px;
+}
+
+.profile-info h2 {
+  font-size: 1.3rem;
+  color: white;
+  padding: 10px 15px;
+  position: relative;
+  
+}
+
+.descripccion {
+  font-size: 1.1rem;
+  color: white ;
+  width: 100%;
+  font-weight: 500;
+  position: relative;
+  bottom: 0rem;
+}
+
+@media (max-width: 768px) {
+ .profile-static {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    top: 10rem;
+    height: auto;}
+
+  .image-container {
+    width: 70%;
+    left: 4rem;
+    top: 0
+  }
+
+  .perfil-static {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 360px;
+  }
+
+  .details-container {
+  flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    left: 2rem;
+    top: 0;
+    text-align: center;  }
+
+  .details-container h2{
+
+  
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+ 
+
+
+  .busquedaMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+  .ico-busquedaMobile{
+    left: 2rem;
+    font-size: 1.5rem;
+
+  }
+ 
+
+}
+

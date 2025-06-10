@@ -12,7 +12,7 @@ export default function useContentSectionAnimation() {
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, 
         autoAlpha: 1,
-        duration: 1.5,
+        duration: 0.5,
         ease: "power3.out" 
       }
 
