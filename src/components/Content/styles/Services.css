@@ -21,13 +21,39 @@
   margin-top: 2rem;
 }
 .servicios-titulo{
+  font-family: 'Bebas Neue', sans-serif;
   position: relative;
   top: 5rem;
   color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #8CDA05,
+    #0084ff,
+    #00ffd4,
+    #A4F522
+  );
+  background-size: 300%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
  .servicio-box{
+   border-radius: 25px;
+   padding: 10px 15px;
     top: 1rem;
-    width: 70%;
+    width: 80%;
   }
 
 

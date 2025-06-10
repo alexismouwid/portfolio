@@ -9,6 +9,7 @@
 }
 
 .proyecto1{
+
  position: fixed;
   top: 1rem;
   left: 0;
@@ -33,6 +34,7 @@
   z-index: 1;
 }
 .proyecto3{
+
  position: fixed;
   top: 1rem;
   left: 0;
@@ -62,10 +64,10 @@
 .proyecto-box {
   width: 100%;
   min-width: 280px;
-  max-width: 550px;
-  height: 357px;
+  max-width: 700px;
+  height: 360px;
   background-color: black;
-  border: none;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
