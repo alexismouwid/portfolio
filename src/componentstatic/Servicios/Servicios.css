@@ -73,6 +73,7 @@
     width: 100%;
     height: auto;
     padding: 2rem;
+    
   }
   .oficios-grid {
     flex-direction: column;
