@@ -1,6 +1,6 @@
 .services-static-container {
  width: 100%;
- height: 100dvh;
+ height: 80dvh;
   margin: 0 auto;
  background: linear-gradient(to right, #0f2027, #8e2de2);
   text-align: center;
@@ -9,12 +9,24 @@
 
 
 .services-static-title {
-  color: white;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
+   font-family: 'Bebas Neue', sans-serif;
   position: relative;
-  left: 2rem;
+  top: 0rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #8CDA05,
+    #0084ff,
+    #00ffd4,
+    #A4F522
+  );
+  background-size: 300%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 5s infinite linear;
 }
 .services-static-grid {
  display: flex;

@@ -21,10 +21,10 @@ const ContentStatic = forwardRef((props, ref) => {
         <HeroStatic />
         <ProfileStatic />
         <SkillStatic />
+
              </div>
       </div>
 
-        <ServiceStatic />
         <ProyectoStatic />
               </>
   );

@@ -8,6 +8,7 @@
   bottom: 260px;
   right: 16px;
 	font-size: 10px;
+	font-weight: bold;
   background-color: green;
   color: white;
   border-radius: 15%;
@@ -24,6 +25,7 @@
 .changemodeButton:hover {
 	background-color: #242424;
 	transform: scale(1.1);
+	cursor: pointer; 
 }
 
 

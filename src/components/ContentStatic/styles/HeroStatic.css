@@ -1,25 +1,44 @@
 /* Sección Hero */
 .heroe-static {
-  text-align: center;
-  padding: 2rem;
-   background: transparent;
-  height: 500px;
+   position: relative;
+  top: 0;
+  left: 0;
   width: 30%;
- 
+  height: 100vh; /* Ocupa pantalla completa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* evita interacción mientras está fijo */
+  z-index: 1; 
 }
 
-
-.heroe-static h1 {
-  font-size: 2.5rem;
-  color: #0000000;
-  margin-bottom: 1rem;
+/* Líneas de texto principales */
+.one-line {
+  font-size: 2.69rem;
+  color: white; /* corregido */
+  margin-bottom: 1.2rem;
 }
 
-.heroe-static p {
+.second-line {
+  font-size: 3rem;
+  color: #BCDA05;
+  margin-bottom: 1.2rem;
+}
+
+.three-line {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.four-line {
   font-size: 1.2rem;
-  color: #8CDA05;
+  color: white;
   margin-bottom: 2rem;
 }
+
+/* Botón */
 .heroe-button {
   border: none;
   font-weight: bold;
@@ -28,83 +47,57 @@
   padding: 1rem 2rem;
   border-radius: 15px;
   transition: all 0.3s ease;
-  position: relative;
-  top: 4rem;
-  }
+  margin-top: 2rem; /* en lugar de top: 4rem */
+}
 
 .heroe-button:hover {
   cursor: pointer;
-   background-color:#A4F522;
+  background-color: #A4F522;
   color: #000000;
   border: none;
-
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-
-.heroe-static {
-    margin: 0;
-    text-align: center;
+  .heroe-static {
+    align-items: center;
     background: transparent;
     width: 100%;
+    height: 100dvh;
     position: relative;
-    bottom: 4rem;
-    
-  }
-  .heroe-static.visible {
-    margin: 0;
-    text-align: center;
-    background: transparent;
-    width: 100%;
-    position: relative;
-    bottom: 4rem;
+    top: -5rem;
+    left: 1;
   }
 
-  .heroe-static h1 {
-    font-size: 2rem;
+  .one-line {
+    font-size: 3rem;
+  white-space: nowrap;
     color: white;
     margin-bottom: 1rem;
   }
 
-  .heroe-static p {
-    font-size: 1rem;
+  .second-line {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .three-line {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.2rem;
+  }
+
+  .four-line {
     width: 100%;
-    color: #7f8c8d;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
   }
 
   .heroe-button {
-
-    font-weight: bold;
-    color: black;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    position: relative;
-    top: 5rem;
-  }
-
-  .heroe-button:hover {
-    color: black;
-    cursor: pointer;
-    color: #000000;
-  }
-
-
-  }
-
-  @media (max-width: 480px) {
-    .heroe-static h1 {
-      font-size: 1.8rem;
-    }
-    
-    .heroe-static p {
-      font-size: 0.9rem;
-    }
-    
-    .heroe-button {
-position: relative;
- top: 4rem;
     padding: 0.7rem 1.2rem;
     font-size: 0.95rem;
-    }
+    margin-top: 2rem; /* en lugar de bottom: 5rem */
   }
+}
+

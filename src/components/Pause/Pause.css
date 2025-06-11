@@ -18,4 +18,5 @@
 #pause:hover {
   background-color: #242424;
   transform: scale(1.1);
+	cursor: pointer; 
 }
