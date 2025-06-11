@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import './ContentSection.css';
 import useContentSectionAnimation from "./Utils/ContentAnimation.js";
 import { useIsMobile } from "../../utils/useIsMobile";
 import HeroSection from "./Home/Hero-Section";
@@ -7,6 +6,7 @@ import ProfileSection from "./Home/Profile-Section";
 import SkillsSection from "./Home/Skills-Section";
 import Servicios from "./Services/Services-Section";
 import Proyectos from "./Proyectos/ProyectoSection";
+import Preguntas from "./Preguntas"
 
 
 const ContentSection = ()  => {
@@ -23,6 +23,7 @@ const ContentSection = ()  => {
         <SkillsSection />
         <Servicios  />
         <Proyectos  />
+        <Preguntas  />
                 
         
         

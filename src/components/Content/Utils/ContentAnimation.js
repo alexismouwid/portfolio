@@ -110,6 +110,17 @@ export default function useContentSectionAnimation() {
       autoAlpha: 0,
       duration: 3
     });
+    // Aparece y desaparece la sección de proyectos
+    tl.fromTo(".preguntas-contenedor", 
+      { scale: 1.2, autoAlpha: 0 },
+      { scale: 1, autoAlpha: 1, duration: 2 }
+    );
+
+    tl.to(".preguntas-contenedor", {
+      scale: 2,
+      autoAlpha: 0,
+      duration: 3
+    });
 
 
     // MODO DEV Controles de la animación

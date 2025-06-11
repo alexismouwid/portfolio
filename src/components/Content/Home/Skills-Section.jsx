@@ -1,5 +1,6 @@
 // src/components/ContentSection/SkillsSection.jsx
 import React from 'react';
+import './Skills.css';
 
 const SkillsSection = () => (
   <div className="skills-section">

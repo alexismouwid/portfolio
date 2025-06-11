@@ -1,5 +1,6 @@
 // src/components/ContentSection/ProfileSection.jsx
 import React from 'react';
+import './Profile-section.css';
 
 const ProfileSection = () => (
   <div className="profile-section">

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, forwardRef  } from "react";
 import  { useIsMobile  } from "../../../utils/useIsMobile";
+import './Proyectos.css';
 
 
 const Proyectos = ({  isMobile }) => {

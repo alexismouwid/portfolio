@@ -1,86 +1,34 @@
 import React from 'react';
 import { useState,  useEffect, useRef } from 'react';
-import  { useIsMobile  } from "./utils/useIsMobile";
-import '@n8n/chat/style.css';
-import { createChat } from '@n8n/chat';
+import { useIsMobile } from './utils/useIsMobile';
+import { useN8nChat } from './utils/useN8nChat';
+import { useDynamicCss } from './utils/useDynamicCss';
+import { useDelayedLoading } from './utils/useDelayedLoading';
 import Header from './components/Header';
 import Content from './components/Content';
-import ContentStatic from './components/ContentStatic';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 import Play from './components/Play';
 import Pause from './components/Pause';
+import '@n8n/chat/style.css';
+
 export default function App( {toggleApp} ) {
 
 
-   const [loading, setLoading] = useState(true);
    const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [modeStatic, setmodeStatic] = useState(false);
 
-useEffect(() => {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/styles/App.css';
-    link.id = 'app-css';
-    document.head.appendChild(link);
-
-    return () => {
-      const existingLink = document.getElementById('app-css');
-      if (existingLink) existingLink.remove();
-    };
-  }, []);
-
-  useEffect(() => {
-		createChat({
-		webhookUrl: 'https://n8n-i83n.onrender.com/webhook/e8d05464-738b-466c-93cf-47c1456ec0fe/chat',
-	webhookConfig: {
-		method: 'POST',
-		headers: {}
-	},
-	target: '#n8n-chat',
-	mode: 'window',
-	chatInputKey: 'chatInput',
-	chatSessionKey: 'sessionId',
-	metadata: {},
-	showWelcomeScreen: false,
-	defaultLanguage: 'en',
-	initialMessages: [
-		 'Haz una pregunta?'
-	],
-	i18n: {
-		en: {
-			title: 'Hey! 👋',
-			subtitle: "Aqui puedes hacerme cualquier pregunta",
-			footer: '',
-			getStarted: 'New Conversation',
-			inputPlaceholder: 'Type your question..',
-		},
-	},		});
-	}, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  })
+   //declared Utils
+  const loading = useDelayedLoading(1500);
+  const isMobile = useIsMobile();
+    useDynamicCss('/styles/App.css', 'app-css');
+    useN8nChat();
 
 
-  
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
 
-  
 
-  if(loading) {
+   if(loading) {
     return (
 <div className="loading-bar">Loading</div>
    );
@@ -95,18 +43,15 @@ useEffect(() => {
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
      />
- {modeStatic ? <ContentStatic /> : <Content />}
+ <Content />
           <div id="n8n-chat" />
-         
-          <button onClick={toggleApp} className="changemodeButton">ModeStatic</button>
+  <button onClick={toggleApp} className="changemodeButton">ModeStatic</button>
           <FloatingWhatsAppButton />
-         <Pause /> 
+          <Pause /> 
           <Play />
         </div>
 
       </div>
-  
-     
     </>
   );
 }

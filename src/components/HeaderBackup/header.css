@@ -1,6 +1,0 @@
-@import "./header-desktop.css"; 
-@import "./header-mobile.css"; 
-.no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}

@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
-
+import './Hero-section.css';
+ 
 const HeroSection = forwardRef((props, ref) => {
   return (
     <div className="hero-section" ref={ref}>
