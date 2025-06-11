@@ -211,7 +211,10 @@
     background-color: #A4F522;
     font-weight: bold;
   }
-
+.mobile-redes {
+  display: flex;
+  flex-direction: row;
+}
   }
 
 /* 📱🔹 Móviles pequeños */
@@ -228,6 +231,11 @@
     background-color:#0f2027;
   }
 
+.mobile-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
   .navbar-container {
     padding: 1rem;
     margin: 0;
