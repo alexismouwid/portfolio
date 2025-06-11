@@ -8,7 +8,15 @@
         opacity: 1;
     }
 }
-
+.header-contacto{
+  display: flex;
+  direction: row;
+  position: relative;
+  left: 26rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 .navbar {
   animation: aparecer 1s ease-in-out;
 position: fixed;        /* Lo hace quedarse fijo */
@@ -58,18 +66,6 @@ position: fixed;        /* Lo hace quedarse fijo */
   height: 150px;
 }
 
-
-.nav-links-desktop{
-  position: relative;
-  left: 19rem;
-  list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    height: 35px;
-
-}
 
 .li.desktop{
   display: flex;
@@ -136,20 +132,31 @@ transition: 0.20s;
 }
 
 .nav-links-desktop li:nth-child(2) { 
+
+
+  font-family: 'Anton', sans-serif;
+  position: relative;
+  left: 10rem;
   width: 70px;
- height: 43.5px;
+ height: 50px;
 }
 .nav-links-desktop li:nth-child(3) { 
+ position: relative;
+  left: 10rem;
   width: 100px;
- height: 42.5px;
+ height: 50px;
 }
 .nav-links-desktop li:nth-child(4) { 
+ position: relative;
+  left: 10rem;
   width: 180px;
- height: 43.2px;
+ height: 50px;
 }
 .nav-links-desktop li:nth-child(5) { 
+ position: relative;
+  left: 10rem;
   width: 200px;
- height: 43.2px;
+ height: 50px;
 }
 
 /* Borde inferior solo en hover */

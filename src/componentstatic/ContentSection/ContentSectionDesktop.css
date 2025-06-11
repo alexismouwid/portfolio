@@ -131,6 +131,8 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   padding: 2rem;
   background: transparent;
   width: 35%;
+  position: relative;
+  top: 2rem;
 }
 
 

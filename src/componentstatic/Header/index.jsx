@@ -86,12 +86,32 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
               <span className="check">Frecuentes</span>
             </li>
-            <li className="li-desktop ejeL">
-            <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="button6-desktop">
-            Contactame Ahora
-            </a> 
-            </li>
-          </ul>
+
+  <div className="header-contacto">
+              <a 
+                href="https://www.linkedin.com/in/alexis-vega-3b4437333/" 
+                target="_blank"   
+                rel="noopener noreferrer" 
+                className='links-redes'> 
+                <img 
+                  width="45px" height="45px" 
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
+                  className="habilidad-icon" 
+                /> 
+              </a>
+              <a 
+                href="https://github.com/alexismouwid" 
+                target="_blank"   
+                rel="noopener noreferrer" 
+                className='links-redes'>
+                <img 
+                  width="45px" height="45px" 
+                  src="./git.png" alt="Github" 
+                  className="habilidad-icon" 
+                />
+              </a>
+            </div> 
+                     </ul>
         )}
       </div>
     </nav>

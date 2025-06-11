@@ -19,7 +19,7 @@ export default function App2( {toggleApp} ) {
   const serviciosRef = useRef(null);
   const proyectosRef = useRef(null);
   const preguntasRef = useRef(null);
-  const HomeRef = useRef(null);
+  const homeRef = useRef(null);
 
 useEffect(() => {
     const link = document.createElement('link');
@@ -116,7 +116,7 @@ const scrollToHome = () => {
       scrollToServicios={scrollToServicios}
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
-      <ContentSection ref={HomeRef}/>
+      <ContentSection ref={homeRef}/>
       <Servicios ref={serviciosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>
       <PreguntasFrecuentes ref={preguntasRef}/>

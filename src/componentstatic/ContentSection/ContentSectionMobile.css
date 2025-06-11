@@ -21,13 +21,7 @@
   left: 0;
   color: #8CDA05;
 }
-  .subtexto-info {
-    background-color: white;
-    color: black;
-    width: 100%;
-    margin: 0 auto;
-    border: none;
-  }
+  
 
   .seccion-primaria {
     margin: 0;
@@ -37,12 +31,14 @@
     height: 100dvh;
     position: relative;
     bottom: -1rem;
-    right: 1rem;
+    right: -0.7rem;
     
   }
 
   .seccion-primaria h1 {
-    font-size: 2rem;
+
+  flex-wrap: nowrap;
+    font-size: 2.5rem;
     color: white;
     margin-bottom: 1rem;
   }
@@ -75,7 +71,7 @@
     align-items: center;
     gap: 1rem;
     position: relative;
-    bottom: 15rem;
+    bottom: 10rem;
   }
 
   .perfil-image {
@@ -134,10 +130,9 @@
   .habilidades-section {
     position: relative;
     width: 100%;
-    bottom: 4rem;
     display: flex;
     align-items: center;
-    left: 1rem;
+    left: 2.5rem;
     margin-left: -2rem;
   }
 
