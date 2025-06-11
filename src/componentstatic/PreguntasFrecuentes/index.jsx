@@ -21,7 +21,7 @@ const preguntas = [
   },
 ];
 
-const Preguntas = forwardRef((props, ref) => {
+const PreguntasFrecuentes = forwardRef((props, ref) => {
 
 
   useVisibilityObserver(".ejeX");
@@ -57,5 +57,5 @@ const Preguntas = forwardRef((props, ref) => {
   );
 });
 
-export default Preguntas;
+export default PreguntasFrecuentes;
 

@@ -21,11 +21,11 @@ const ProyectosRecientes = forwardRef((props, ref) => {
   
    
   return (
-    <section className="proyectos-container" >
-      <h2 className="proyectos-titulo ejeY">Mis proyectos recientes</h2>
-      <div  ref={ref} className="proyectos-grid" >
+    <section className="desarrollos-container" >
+      <h2 className="desarrollos-titulo ejeY">Mis desarrollos recientes</h2>
+      <div  ref={ref} className="desarrollos-grid" >
         {/* Proyecto 1 */}
-        <div className="proyecto-box ejeY">
+        <div className="desarrollo-box ejeY">
           <div className="imagen-placeholder">
             <img
               src={isMobile ? "/paint-mobile.jpg" : "/paint.jpg"}
@@ -33,18 +33,18 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               className="image-proyect"
             />
           </div>
-          <div className="proyecto-desc"> 
+          <div className="desarrollo-desc"> 
 
             <span>Una aplicación que permite al usuario trazar y dibujar figuras geometricas. </span>
           </div>
 
-          <div className="proyecto-detalle">
+          <div className="desarrollo-detalle">
 
             <a
               href="https://new-paint-with-me.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="proyecto-link"
+              className="desarrollo-link"
             >
               <img src="https://vercel.com/button" alt="Deploy with Vercel" />
             </a>
@@ -52,7 +52,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               href="https://github.com/alexismouwid/new-paint-with-me-?tab=readme-ov-file"
               target="_blank"
               rel="noopener noreferrer"
-              className="proyecto-link github"
+              className="desarrollo-link github"
             >
               <img
                 src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
@@ -63,7 +63,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
         </div>
 
         {/* Proyecto 2 */}
-        <div className="proyecto-box ejeY">
+        <div className="desarrollo-box ejeY">
           <div className="imagen-placeholder">
             <img
               src={isMobile ? "/ecomerce-mobile.jpg" : "/ecomerce.jpg"}
@@ -71,17 +71,17 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               className="image-proyect"
             />
           </div>
-<div className="proyecto-desc"> 
+<div className="desarrollo-desc"> 
 
             <span>Tienda virtual con catalogos de productos, carrito de compras, login y register, autenticación y encriptación.</span>
           </div>
 
-          <div className="proyecto-detalle">
+          <div className="desarrollo-detalle">
             <a
               href="https://e-commerce-two-topaz-93.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="proyecto-link"
+              className="desarrollo-link"
             >
               <img src="https://vercel.com/button" alt="Deploy with Vercel" />
             </a>
@@ -89,7 +89,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               href="https://github.com/alexismouwid/e-commerce"
               target="_blank"
               rel="noopener noreferrer"
-              className="proyecto-link github"
+              className="desarrollo-link github"
             >
               <img
                 src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
@@ -100,7 +100,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
         </div>
 
         {/* Proyecto 3 */}
-        <div className="proyecto-box ejeY">
+        <div className="desarrollo-box ejeY">
           <div className="imagen-placeholder">
             <img
               src={isMobile ? "/avianca-mobile.jpg" : "/avianca.jpg"}
@@ -108,18 +108,18 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               className="image-proyect"
             />
           </div>
-<div className="proyecto-descA"> 
+<div className="desarrollo-descA"> 
 
             <span>Este es el clon de la web oficial de Avianca, tiene grandes detalles, animaciones y funcionalidades.</span>
           </div>
 
 
-          <div className="proyecto-detalle">
+          <div className="desarrollo-detalle">
             <a
               href="https://avianca-co-fn142.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="proyecto-link"
+              className="desarrollo-link"
             >
               <img src="https://vercel.com/button" alt="Deploy with Vercel" />
             </a>
@@ -127,7 +127,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
               href="https://github.com/alexismouwid/avianca.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="proyecto-link github"
+              className="desarrollo-link github"
             >
               <img
                 src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
@@ -138,9 +138,9 @@ const ProyectosRecientes = forwardRef((props, ref) => {
         </div>
       </div>
 
-      <div className="proyecto-boton-container">
-                <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="proyecto-boton ejeY">
-            ¡Empecemos a discutir sobre tu proyecto!
+      <div className="desarrollo-boton-container">
+                <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información" target="_blank" className="desarrollo-boton ejeY">
+            ¡Empecemos a discutir sobre tu desarrollo!
 
             </a>
       </div>

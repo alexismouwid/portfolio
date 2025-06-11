@@ -1,6 +1,7 @@
-.proyectos-container {
+.desarrollos-container {
   width: 100%;
   padding: 4rem 2rem;
+
   background: linear-gradient(to right, #0f2027, #8e2de2);
   text-align: center;
   color: white;
@@ -8,20 +9,20 @@
   height: auto;
 }
 
-.proyectos-titulo {
+.desarrollos-titulo {
   font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 3rem;
 }
 
-.proyectos-grid {
+.desarrollos-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
 
-.proyecto-box {
+.desarrollo-box {
   width: 30%;
   min-width: 280px;
   max-width: 550px;
@@ -44,7 +45,7 @@
   font-size: 1.2rem;
 }
 
-.proyecto-desc {
+.desarrollo-desc {
   flex: 1;
   blur: 2px;
   background: rgba(0, 0, 0, 0.6);
@@ -57,7 +58,7 @@
   align-items: center;
   justify-content: center;
 }
-.proyecto-descA{
+.desarrollo-descA{
  flex: 1;
   blur: 2px;
   background: rgba(0, 0, 0, 0.6);
@@ -71,10 +72,10 @@
   justify-content: center;
 
     }
-.proyecto-desc span{
+.desarrollo-desc span{
   font-size: 0.9rem;
 }
-.proyecto-detalle {
+.desarrollo-detalle {
   
   height: auto;
   display: flex;
@@ -97,7 +98,7 @@
   object-fit: cover;
 }
 
-.proyecto-link {
+.desarrollo-link {
   text-decoration: none;
   color: black;
   padding: 0.5rem;
@@ -106,7 +107,7 @@
   transition: background-color 0.3s ease;
 }
 
-.proyecto-link:hover {
+.desarrollo-link:hover {
   cursor: pointer;
 }
 
@@ -118,11 +119,11 @@
   cursor: pointer;
 }
 
-.proyecto-boton-container {
+.desarrollo-boton-container {
   margin-top: 3rem;
 }
 
-.proyecto-boton {
+.desarrollo-boton {
   color: black;
   background-color:  #8CDA05 ;
   border: none;
@@ -134,49 +135,49 @@
   transition: background-color 0.3s ease;
 }
 
-.proyecto-boton:hover {
+.desarrollo-boton:hover {
   color: black;
   background-color:  #A4F522;
 }
 
 /* Responsive ajustes */
 @media (max-width: 1024px) {
-  .proyecto-box {
+  .desarrollo-box {
     width: 45%;
   }
 }
 
 @media (max-width: 768px) {
-  .proyectos-titulo {
+  .desarrollos-titulo {
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
 
-  .proyectos-grid {
+  .desarrollos-grid {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
 
-  .proyecto-desc{
+  .desarrollo-desc{
     padding: 0.8rem;
     top: 30rem;
   }
-  .proyecto-detalle{
+  .desarrollo-detalle{
     padding: 1rem;
   }
-.proyecto-descA{
+.desarrollo-descA{
    top: 29.2rem;
     padding: 1rem;
   }
 
 
-  .proyecto-box {
+  .desarrollo-box {
     width: 90%;
     height: auto;
   }
 
-  .proyecto-boton {
+  .desarrollo-boton {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
@@ -184,7 +185,7 @@
 }
 
 @media (max-width: 480px) {
-  .proyectos-container {
+  .desarrollos-container {
     padding: 2rem;
   }
 }

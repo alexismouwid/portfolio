@@ -113,6 +113,7 @@ html, body, #root, .App {
   margin: 0;
   padding: 0;
   background-color: #242424;
+
 }
 
 html {
@@ -215,6 +216,7 @@ html {
 @media (max-width: 768px) {
 	body, html {
   height: 100vh;
+ 
 	}
 }
 
