@@ -3,9 +3,11 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
-export default function useContentSectionAnimation() {
+
+export default function useScrollTrigger() {
   useGSAP(() => {
 
     gsap.fromTo(".hero-inner",
@@ -124,7 +126,7 @@ export default function useContentSectionAnimation() {
 
 
     // MODO DEV Controles de la animación
-    window.play.onclick = () => {
+    /*window.play.onclick = () => {
       tl.play();
       window.log.innerHTML += 'play <br>';
     };

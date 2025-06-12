@@ -11,6 +11,7 @@ import Play from './components/Play';
 import Pause from './components/Pause';
 import '@n8n/chat/style.css';
 
+
 export default function App( {toggleApp} ) {
 
 
@@ -31,11 +32,12 @@ export default function App( {toggleApp} ) {
    if(loading) {
     return (
 <div className="loading-bar">Loading</div>
-   );
+   ); 
   }  
   return (
     <>
 
+ 
       <div className='App'> 
 
         <div className='content'> 
@@ -50,8 +52,8 @@ export default function App( {toggleApp} ) {
           <Pause /> 
           <Play />
         </div>
-
       </div>
+
     </>
   );
 }
