@@ -41,19 +41,28 @@
   pointer-events: auto;
 }
 
-.hero-section h1 {
-  font-size: 3.5rem;
+.el-h1 {
+  font-size: 3.8rem;
   color: #0000000;
   margin-bottom: 1rem;
 }
 
-.hero-section p {
-  font-size: 1.6rem;
+.visco {
+  font-size: 4rem;
+  position: relative;
+  top: 0rem;
   color: #8CDA05;
-  margin-bottom: 2rem;
+}
+
+.cuento{
+
+  font-size: 1.8rem;
+  position: relative;
+  top: 1rem;
+  color: white;
 }
 .cta-button {
-  border: none;
+  font-size: 1.5rem;
   font-weight: bold;
   color: black;
   background-color: #8CDA05;
@@ -80,42 +89,60 @@
   .hero-section h1{
     font-size : 3.2rem;
   }
-  .hero-section p {
-    width: 60%;
-    left: 5rem;
+  
  }
- .visualizar{
-   font-size: 3rem;
+.visco {
+  font-size: 3.5rem;
   position: relative;
   top: 0rem;
-  left: 5rem;
+  color: #8CDA05;
+}
+
+.cuento{
+
+  font-size: 1.3rem;
+  position: relative;
+  top: 1rem;
+  color: white;
+  width: 80%;
+  left: 2rem;
+}
+
+
+
 
  
- }
- .hero-inner{
-  position: relative;
-  left: 0rem;
- }
- }
+
+
 
  @media (max-width: 400px){
 
-   .hero-section h1{
-font-size : 2.3rem;
-
-   }
-
-   .hero-section p{
-
-font-size : 1rem;
-   }
    .hero-inner{
-    position: relative;
-    left: -1rem;
+     right: 1.2rem;
+     top: 1rem;
    }
-   
-
-
-
-
+  .hero-section h1{
+    font-size : 2.3rem;
+  }
+  
  }
+.visco {
+  font-size: 2.6rem;
+  position: relative;
+  top: 0rem;
+  color: #8CDA05;
+}
+
+.cuento{
+
+  font-size: 0.9rem;
+  position: relative;
+  top: 1rem;
+  color: white;
+  width: 80%;
+  left: 2rem;
+}
+
+
+
+ 

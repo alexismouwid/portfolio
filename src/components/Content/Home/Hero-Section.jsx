@@ -5,12 +5,12 @@ const HeroSection = forwardRef((props, ref) => {
   return (
     <div className="hero-section" ref={ref}>
       <div className="hero-inner">
-        <h1 >
+        <h1 className="el-h1">
           Yo puedo
-          <p className="visualizar" style={{ color: '#BCDA05', fontSize: '4rem' }}>Visualizar </p>
+          <p className="visco" >Visualizar </p>
           Su Idea
         </h1>
-        <p style={{ color: 'white',  position: 'relative', top: '2rem' }}>
+        <p className="cuento">
           Cuento con el conocimiento y las herramientas necesarias
         </p>
         <a
