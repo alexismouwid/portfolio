@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useIsMobile } from "../../utils/useIsMobile";
-import { useScrollSmoother } from "../../utils/scrollSmoother";
 import useScrollTrigger from "../../utils/scrollTrigger";
 import HeroSection from "./Home/Hero-Section";
 import ProfileSection from "./Home/Profile-Section";
@@ -14,12 +13,10 @@ const ContentSection = ()  => {
   const [isMobile, setIsMobile] = useState(false);
   
   useIsMobile();
-  useScrollSmoother();
     useScrollTrigger();
 
   return (
-<div id="smooth-wrapper">
-  <div id="smooth-content">
+
     <div className="content-principal">
       <div className="content-container" >
         <HeroSection  />
@@ -30,8 +27,7 @@ const ContentSection = ()  => {
         <Preguntas  />
              </div>
     </div>
- </div>
-    </div>
+ 
   );
 };
 

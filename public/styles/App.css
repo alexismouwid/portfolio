@@ -120,24 +120,7 @@ html {
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
-html, body{
-	overflow-x: hidden;
-}
-#smooth-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 
-#smooth-content {
-  position: absolute;
-  width: 100%;
-  will-change: transform;
-  /* Si usas ScrollSmoother, este es el contenedor que se moverá */
-}
 /* Estilo para el div raíz */
 #root {
   width: 100%;
