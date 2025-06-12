@@ -241,9 +241,29 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .proyectos-container {
     padding: 2rem;
+  }
+  .proyecto-box{
+    top: 1rem;
+    width: 85%;
+  }
+  .proyecto-desc{
+    padding: 0.8rem;
+    position: relative;
+    top: -2.1rem;
+    
+  }
+  .proyecto-descA{
+    padding: 0.8rem;
+    position: relative;
+    top: -2.1rem;
+    
+  }
+  .proyectos-titulo{
+    font-size: 1.7rem;
+    top: 0;
   }
 }
 

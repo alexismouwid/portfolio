@@ -98,7 +98,8 @@
 }
 .skills-section h3 {
   font-size: 1.5rem;
-  top: 17rem;
+  top: 16rem;
+  right: 1rem;
   border: none;
 }
 .skill-item img{
@@ -113,6 +114,25 @@
     text-align: center;
   }
 
+
+ }
+ @media (max-width: 400px){
+
+.skills-grid {
+    width: 100%;
+    padding: 0 1rem;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en dispositivos pequeños */
+    top: -7rem;
+    left: -1rem;
+    gap: 0;
+  }
+  .skill-item img{
+  width: 28px;
+  height: 28px;
+}
+.software-experience{
+  font-size: 1rem;
+}
 
  }
 

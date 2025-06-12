@@ -24,7 +24,7 @@
 .profile-image {
 
   position: relative;
-  left: 37.5rem;
+  left: 36rem;
   width: 10%;
   border-radius: 50%;
  background-color: transparent;
@@ -42,13 +42,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 2%;
   background-color: transparent;
   position: relative;
 }
 
 .profile-info h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: white;
   padding: 10px 15px;
   position: relative;
@@ -56,7 +55,7 @@
 }
 
 .profile-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white ;
   width: 40%;
   font-weight: 500;
@@ -77,9 +76,9 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  left: 35rem;
+  left: 32.5rem;
   position: relative;
-  top: -1rem;
+  top: 0rem;
   font-weight: bold;
   font-size: 1.2rem;
 } 
@@ -125,4 +124,26 @@
 
  
 }
+}
+
+@media (max-width: 400px){
+
+.profile-image {
+  width: 30%;
+}
+
+.profile-title{
+  font-size: 0.9rem;
+  width: 80%;
+  left: 0.7rem;
+  text-align: center;
+}
+
+.profile-info h2{
+  font-size: 1.4rem;
+  left: -1rem;
+
+}
+
+
 }
