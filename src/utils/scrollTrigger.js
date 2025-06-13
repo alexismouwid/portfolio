@@ -11,11 +11,11 @@ export default function useScrollTrigger() {
   useGSAP(() => {
 
     gsap.fromTo(".hero-inner",
-      { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, 
+      { scale: 0.4, autoAlpha: 0 },
+      { scale: 0.8, 
         autoAlpha: 1,
-        duration: 0.5,
-        ease: "power3.out" 
+        duration: 1,
+        ease: "power3.inOut" 
       }
 
     )
@@ -32,9 +32,15 @@ export default function useScrollTrigger() {
       }
     });
 
+     tl.from(".hero-inner",{
+        scale: 0.8,
+            autoAlpha: 1,
+       duration: 1
+      })
+
     tl.fromTo(".hero-inner",
-      { scale: 1.2, autoAlpha: 0 },
-      { scale: 1, autoAlpha: 1, duration: 3 }
+      { scale: 1, autoAlpha: 0 },
+      { scale: 1.2, autoAlpha: 1, duration: 0.1 }
     );
     // Desaparece la sección hero
     tl.to(".hero-inner", {
@@ -123,7 +129,6 @@ export default function useScrollTrigger() {
       autoAlpha: 0,
       duration: 3
     });
-
 
     // MODO DEV Controles de la animación
     /*window.play.onclick = () => {
