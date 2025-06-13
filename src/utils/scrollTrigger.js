@@ -11,7 +11,7 @@ export default function useScrollTrigger() {
   useGSAP(() => {
 
     gsap.fromTo(".hero-inner",
-      { scale: 0.4, autoAlpha: 0 },
+      { scale: 0.6, autoAlpha: 0 },
       { scale: 0.8, 
         autoAlpha: 1,
         duration: 1,
@@ -32,16 +32,21 @@ export default function useScrollTrigger() {
       }
     });
 
-     tl.from(".hero-inner",{
+    
+
+    tl.from(".hero-inner",{
         scale: 0.8,
             autoAlpha: 1,
-       duration: 1
+      duration: 0.01
       })
 
+
+    
     tl.fromTo(".hero-inner",
-      { scale: 1, autoAlpha: 0 },
-      { scale: 1.2, autoAlpha: 1, duration: 0.1 }
+      { scale: 0.8, autoAlpha: 0 },
+      { scale: 1, autoAlpha: 1, duration: 1 }
     );
+
     // Desaparece la sección hero
     tl.to(".hero-inner", {
       scale: 2,
