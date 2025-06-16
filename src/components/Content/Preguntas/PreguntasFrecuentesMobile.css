@@ -66,33 +66,34 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 @media (max-width: 400px) {
-  
   .preguntas-left h2 {
     font-size: 1.4rem;
     left: 0.5rem;
     bottom: 0rem;
     text-align: center;
   }
+
   .preguntas-image {
     bottom: 0rem;
-}
+  }
+
   .preguntas-left,
   .preguntas-right {
     position: relative;
-  width: 100%;
-  top: -10rem;
-  }}
+    width: 100%;
+    top: -10rem;
+  }
 
   .preguntas-pregunta {
     width: 100%;
     left: 0rem;
     font-size: 1rem;
   }
+
   .preguntas-respuesta {
     position: relative;
     left: 1rem;
     font-size: 0.8rem;
   }
-}
-
+} /* ← solo una llave de cierre al final */
 
