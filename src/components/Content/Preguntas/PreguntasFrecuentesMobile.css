@@ -23,7 +23,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
   .preguntas-left h2 {
     bottom: 4rem;
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     left: 0.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -46,13 +46,13 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
     position: relative;
     left: 0rem;
     bottom: 2.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .icono {
     font-weight: bold;
     color: #8CDA05;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .preguntas-respuesta {
@@ -60,7 +60,37 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
     position: relative;
     left: 1rem;
     bottom: 2rem;
-    font-size: 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .preguntas-left h2 {
+    font-size: 1.4rem;
+    left: 0.5rem;
+    bottom: 0rem;
+    text-align: center;
+  }
+  .preguntas-image {
+    bottom: 0rem;
+}
+  .preguntas-left,
+  .preguntas-right {
+    position: relative;
+  width: 100%;
+  top: -10rem;
+  }}
+
+  .preguntas-pregunta {
+    width: 100%;
+    left: 0rem;
+    font-size: 1rem;
+  }
+  .preguntas-respuesta {
+    position: relative;
+    left: 1rem;
+    font-size: 0.8rem;
   }
 }
 

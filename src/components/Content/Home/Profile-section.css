@@ -111,6 +111,9 @@
  left: 8rem;
   width: 40%;
 }
+.profile-info h2{
+  left: -0.7rem;
+}
   .skill-item-busqueda{
   max-width: 100vw; /* <- evita desbordes */
     justify-content: center;
