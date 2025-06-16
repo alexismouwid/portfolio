@@ -136,7 +136,7 @@ export default function useScrollTrigger() {
     });
 
     // MODO DEV Controles de la animación
-    /*window.play.onclick = () => {
+    window.play.onclick = () => {
       tl.play();
       window.log.innerHTML += 'play <br>';
     };

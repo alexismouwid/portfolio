@@ -23,7 +23,7 @@
   position: relative;
   top: 5rem;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   background: linear-gradient(
     90deg,
@@ -48,11 +48,13 @@
   }
 }
  .servicio-box{
+     font-family: 'Bebas Neue', sans-serif;
    position: relative;
    right: 3rem;
    padding: 10px 15px;
     top: 1rem;
-    width: 100%;
+    width: 90%;
+    font-size: 1.2rem;
   }
 
 

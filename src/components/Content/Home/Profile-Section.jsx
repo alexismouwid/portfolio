@@ -16,7 +16,7 @@ const ProfileSection = () => (
         Desarrollador web en formación continua, con experiencia práctica y pasión por aprender. Busco crecer y aportar en un equipo con grandes desafíos.
       </p>
       <div className="skill-item-busqueda">
-        <span className="buscame-en">Buscame en</span>
+        <span className="buscame-redes">Buscame en</span>
         <a href="https://www.linkedin.com/in/alexis-vega-3b4437333/" target="_blank" rel="noopener noreferrer" className="links-redes">
           <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" className="skill-icon" />
         </a>

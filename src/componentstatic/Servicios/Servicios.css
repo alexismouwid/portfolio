@@ -44,13 +44,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   position: relative;
   top: 6rem;
   
 }
 
 .oficio-box {
+    font-family: 'Bebas Neue', sans-serif;
   color: white;
   background-color: transparent;
   width: 24%;
@@ -65,7 +66,7 @@
 }
 
 .oficio-box p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -74,25 +75,25 @@
 }
 
 .boton-contacto {
+    font-family: 'Bebas Neue', sans-serif;
   position: relative;
   top: 10rem;
   left -5rem;
-  color: black;
-  background-color: #D4FF00;
-
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 6px;
+  color: white;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #566573;
+  padding: 0.8rem 3rem;
+  font-size: 1.3rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .boton-contacto:hover {
-  color: black;
-  background-color: #AACC00;
-    text-shadow: 0 0 5px #D4FF00, 0 0 10px #D4FF00;
+   cursor: pointer;
+  color: #D4FF00;
+  backdrop-filter: blur(0px);
+   background-color: #1c1e1b;
  
 }
 

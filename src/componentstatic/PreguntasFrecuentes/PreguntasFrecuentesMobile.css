@@ -36,7 +36,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
   .faq-pregunta {
     width: 90%;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .icono {
@@ -47,7 +47,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
   .faq-respuesta {
     position: relative;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

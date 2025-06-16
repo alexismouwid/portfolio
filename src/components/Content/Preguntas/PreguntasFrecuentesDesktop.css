@@ -20,6 +20,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .preguntas-left h2 {
+ 
   font-size: 2.4rem;
   margin-bottom: 0rem;
   position: relative;
@@ -78,6 +79,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
 
 .preguntas-pregunta {
+    font-family: 'Bebas Neue', sans-serif;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -93,6 +95,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .preguntas-respuesta {
+    font-family: 'Bebas Neue', sans-serif;
   color: white;
   margin-top: 1rem;
   font-size: 1.2rem;

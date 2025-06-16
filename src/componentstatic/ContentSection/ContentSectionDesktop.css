@@ -41,29 +41,31 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .seccion-primaria p {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 1.2rem;
   color: #D4FF00;
   margin-bottom: 2rem;
 }
 .cta-button {
-  border: none;
-  font-weight: bold;
-  color: black;
-  background-color:  #D4FF00;
-  border-radius: 15px;
+    font-family: 'Bebas Neue', sans-serif; 
+  color: white;
+   backdrop-filter: blur(2px);
+  background-color:  rgba(0, 0, 0, 0.2);
+  border: 1px solid #566573;
+  border-radius: 1px;
   transition: all 0.3s ease;
   position: relative;
   top: 4rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.8rem 1.5rem;
 
   }
 
 .cta-button:hover {
   cursor: pointer;
-   background-color:#AACC00;;
-  color: #000000;
-  border: none;
+  color: #D4FF00;
+  backdrop-filter: blur(0px);
+   background-color: #1c1e1b;
 
 }
 
@@ -118,6 +120,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .perfil-title {
+    font-family: 'Bebas Neue', sans-serif;
   font-size: 1.1rem;
   color: white ;
   font-weight: 500;
@@ -148,6 +151,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .habilidades-grid {
+    font-family: 'Bebas Neue', sans-serif;
   background-color: transparent;
   display: flex;
   gap: 3rem;

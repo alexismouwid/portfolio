@@ -75,6 +75,8 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
 
 .faq-pregunta {
+
+   font-family: 'Bebas Neue', sans-serif;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -90,6 +92,8 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .faq-respuesta {
+
+   font-family: 'Bebas Neue', sans-serif;
   color: white;
   margin-top: 1rem;
   font-size: 1.2rem;

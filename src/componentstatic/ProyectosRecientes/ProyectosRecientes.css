@@ -137,20 +137,20 @@
 }
 
 .desarrollo-boton {
-  color: black;
-  background-color:  #D4FF00 ;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 6px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D4FF00;
+  background-color: #1c1e1b;
+  border: 1px solid #D4FF00;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 0px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .desarrollo-boton:hover {
-  color: black;
-  background-color:  #A4F522;
+  color:#1c1e1b;
+  background-color:  #DEFF4D;;
 }
 
 /* Responsive ajustes */

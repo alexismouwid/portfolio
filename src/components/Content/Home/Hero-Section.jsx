@@ -17,7 +17,7 @@ const HeroSection = forwardRef((props, ref) => {
           href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+informacion"
           target="_blank"
           rel="noopener noreferrer"
-          className="cta-button"
+          className="button-static"
         >
           Contactame Ahora
         </a>

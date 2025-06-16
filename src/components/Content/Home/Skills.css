@@ -27,6 +27,7 @@
 }
 
 .skills-grid {
+    font-family: 'Bebas Neue', sans-serif;
   background-color: transparent;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas */

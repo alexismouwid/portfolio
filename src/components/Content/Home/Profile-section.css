@@ -47,15 +47,17 @@
 }
 
 .profile-info h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: white;
+  left: 2rem;
   padding: 10px 15px;
   position: relative;
   
 }
 
 .profile-title {
-  font-size: 1.3rem;
+   font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
   color: white ;
   width: 40%;
   font-weight: 500;
@@ -66,11 +68,12 @@
 
 
 
-.buscame-en{
+.buscame-redes{
   position: relative;
   top: 0rem;
   font-weight: bold;
   font-size: 1.2rem;
+  color: #D4FF00;
 }
 .skill-item-busqueda{
   display: flex;

@@ -51,35 +51,35 @@
   font-size: 4rem;
   position: relative;
   top: 0rem;
-  color: #8CDA05;
+  color: #D4FF00;
 }
 
 .cuento{
-
-  font-size: 1.8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
   position: relative;
   top: 1rem;
   color: white;
 }
-.cta-button {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-  background-color: #8CDA05;
-  padding: 1rem 2rem;
-  border-radius: 15px;
+.button-static {
+   font-family: 'Bebas Neue', sans-serif; 
+  color: white;
+   backdrop-filter: blur(2px);
+  background-color:  rgba(0, 0, 0, 0.2);
+  border: 1px solid #566573;
+  border-radius: 1px;
   transition: all 0.3s ease;
   position: relative;
   top: 4rem;
+  font-size: 1.7rem;
+  padding: 0.8rem 1.5rem;
   }
 
-.cta-button:hover {
-   pointer-events: auto;
-  z-index: 10;
-  cursor: pointer;
-   background-color:#A4F522;
-  color: #000000;
-  border: none;
+.button-static:hover {
+   cursor: pointer;
+  color: #D4FF00;
+  backdrop-filter: blur(0px);
+   background-color: #1c1e1b;
 
 }
 
@@ -95,7 +95,7 @@
   font-size: 3.5rem;
   position: relative;
   top: 0rem;
-  color: #8CDA05;
+  color:#D4FF00;
 }
 
 .cuento{
@@ -130,7 +130,7 @@
   font-size: 2.6rem;
   position: relative;
   top: 0rem;
-  color: #8CDA05;
+  color: #D4FF00;
 }
 
 .cuento{
