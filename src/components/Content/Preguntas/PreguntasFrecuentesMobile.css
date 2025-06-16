@@ -19,6 +19,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   .preguntas-right {
     position: relative;
   width: 100%;
+  top: -1rem;
   }
 
   .preguntas-left h2 {
