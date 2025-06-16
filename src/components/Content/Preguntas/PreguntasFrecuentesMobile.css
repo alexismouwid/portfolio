@@ -22,23 +22,12 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   }
 
   .preguntas-left h2 {
-    font-size: 2rem;
+    bottom: 4rem;
+    font-size: 1.7rem;
     left: 0.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     text-align: center;
- background: linear-gradient(
-    90deg,
-    #8CDA05,
-    #0084ff,
-    #00ffd4,
-    #A4F522
-  );
-  background-size: 300%;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: shine 2s infinite linear; 
   }
 
 

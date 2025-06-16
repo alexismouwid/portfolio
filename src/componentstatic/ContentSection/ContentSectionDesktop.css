@@ -142,10 +142,9 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
 
 .habilidades-section h3 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #D4FF00;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ecf0f1;
   position: relative;
   bottom: 3rem;
 }
@@ -154,7 +153,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
     font-family: 'Bebas Neue', sans-serif;
   background-color: transparent;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .habilidad-column {
@@ -163,7 +162,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  bottom: 3.7rem;
+  bottom: 5rem;
   left: 2rem;
   background-color: transparent;
 }
