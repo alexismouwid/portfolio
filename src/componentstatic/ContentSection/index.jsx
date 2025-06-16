@@ -78,7 +78,7 @@ const tl = gsap.timeline();
         <div className="seccion-primaria ejeY " >
           <h1  className="one-line" style={{ fontSize: '3rem' }}>
             Yo puedo 
-            <h2 className="second-line" style={{ color: ' #8CDA05', fontSize: '2.9rem' }}>Visualizar </h2>
+            <h2 className="second-line" style={{ color: ' #D4FF00', fontSize: '2.9rem' }}>Visualizar </h2>
             Su Idea
           </h1>
           <p className="thee-line" style={{color: 'white', fontSize: '1.2rem', position: 'relative', top: '2rem' }}>

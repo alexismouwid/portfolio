@@ -26,8 +26,6 @@ position: fixed;        /* Lo hace quedarse fijo */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   backdrop-filter: blur(3px);
-   background-color: rgba(0, 0, 0, 0.1);
     align-items: center;
     margin: 0;
     padding: 0;
@@ -102,7 +100,7 @@ transition: 0.20s;
   position: relative;
   left: 2rem;
   top: 5px;
-  background-color: #8CDA05;
+  background-color: #D4FF00;
   color: black;
   font-weight: bold;
   font-size: 12px;
@@ -126,7 +124,8 @@ transition: 0.20s;
   color: black;
   font-weight: bold;
   font-size: 11px;
-  background-color: #8CDA05;
+  background-color: #D4FF00;
+;
   padding: 3px 5px;
   border-radius: 12px;
 }
@@ -160,10 +159,10 @@ transition: 0.20s;
 }
 
 /* Borde inferior solo en hover */
-.nav-links-desktop li:nth-child(2):hover { border-bottom: 5px solid #8CDA05; }
-.nav-links-desktop li:nth-child(3):hover { border-bottom: 5px solid #8CDA05; }
-.nav-links-desktop li:nth-child(4):hover { border-bottom: 5px solid #8CDA05; }
-.nav-links-desktop li:nth-child(5):hover { border-bottom: 5px solid #8CDA05; }
+.nav-links-desktop li:nth-child(2):hover { border-bottom: 5px solid #D4FF00; }
+.nav-links-desktop li:nth-child(3):hover { border-bottom: 5px solid #D4FF00; }
+.nav-links-desktop li:nth-child(4):hover { border-bottom: 5px solid #D4FF00; }
+.nav-links-desktop li:nth-child(5):hover { border-bottom: 5px solid #D4FF00; }
 
 
 @media (max-width: 1366px) and (min-width: 912px) {

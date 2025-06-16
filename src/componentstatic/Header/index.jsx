@@ -46,7 +46,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
                 rel="noopener noreferrer" 
                 className='links-redes'> 
                 <img 
-                  width="45px" height="45px" 
+                  width="35px" height="35px" 
                   src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" 
                   className="habilidad-icon" 
                 /> 
@@ -57,7 +57,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
                 rel="noopener noreferrer" 
                 className='links-redes'>
                 <img 
-                  width="45px" height="45px" 
+                  width="35px" height="35px" 
                   src="./git.png" alt="Github" 
                   className="habilidad-icon" 
                 />

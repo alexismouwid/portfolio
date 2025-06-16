@@ -25,7 +25,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   bottom: 4rem;
   background: linear-gradient(
     90deg,
-    #8CDA05,
+    #D4FF00,
     #0084ff,
     #00ffd4,
     #A4F522
@@ -84,7 +84,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 .icono {
-  color: #8CDA05;
+  color: #D4FF00;
   font-weight: bold;
   font-size: 1.5rem;
 }

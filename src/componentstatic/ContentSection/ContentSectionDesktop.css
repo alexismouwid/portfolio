@@ -42,14 +42,14 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
 .seccion-primaria p {
   font-size: 1.2rem;
-  color: #8CDA05;
+  color: #D4FF00;
   margin-bottom: 2rem;
 }
 .cta-button {
   border: none;
   font-weight: bold;
   color: black;
-  background-color: #8CDA05;
+  background-color:  #D4FF00;
   border-radius: 15px;
   transition: all 0.3s ease;
   position: relative;
@@ -61,7 +61,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
 .cta-button:hover {
   cursor: pointer;
-   background-color:#A4F522;
+   background-color:#AACC00;;
   color: #000000;
   border: none;
 
@@ -140,7 +140,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
 
 .habilidades-section h3 {
   font-size: 1rem;
-  color: #8CDA05;
+  color: #D4FF00;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #ecf0f1;
   position: relative;
@@ -194,7 +194,7 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   color: #7f8c8d;
 }
 .habilidad-item-busqueda span{
-  color:  #8CDA05;
+  color:  #D4FF00;
   position: relative;
 }
 

@@ -19,7 +19,7 @@
   width: 100%;
   flex-wrap: nowrap;
   left: 0;
-  color: #8CDA05;
+  color: #D4FF00;
 }
   
 
@@ -234,7 +234,7 @@
   }
 
   .habilidades-section h3 {
-    color:  #8CDA05;
+    color:  #D4FF00;
     display:grid;
     font-size: 1.5rem;
   }
@@ -289,7 +289,7 @@
   }
 
   .habilidades-section h3 {
-    color: #8cda05;
+    color: #D4FF00;
     font-size: 0.9rem;
   }
 
