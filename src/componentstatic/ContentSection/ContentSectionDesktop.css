@@ -50,11 +50,13 @@ background: linear-gradient(to right, #0f2027, #8e2de2);
   font-weight: bold;
   color: black;
   background-color: #8CDA05;
-  padding: 1rem 2rem;
   border-radius: 15px;
   transition: all 0.3s ease;
   position: relative;
   top: 4rem;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+
   }
 
 .cta-button:hover {
